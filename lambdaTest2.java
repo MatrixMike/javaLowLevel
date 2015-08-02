@@ -37,7 +37,19 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class lambdaTest2 {
+/*
+		  private static void exercise4() throws IOException {
+    try (BufferedReader reader = 
+        Files.newBufferedReader(Paths.get("SonnetI.txt"))) {
+      long lineCount = reader.lines().count();
+      System.out.println("Number of lines = " + lineCount);
+    }
+  }
+
+
+*/
 	
+
 	public static void main (String args[]) {
 	   List<String> list = Arrays.asList(
         "The", "Quick", "BROWN", "Fox", "Jumped", "Over", "The", "LAZY", "DOG");
@@ -66,8 +78,18 @@ System.out.println("+++++++++++++++    spacer line");
         .collect(Collectors.toList());
 
     newList1.forEach(System.out::println);
+System.out.println("+++++++++++++++    spacer line");
 
-	
+    String merged = list.stream()
+        .skip(1)
+        .limit(3)
+        .collect(Collectors.joining("-"));
+    System.out.println(merged);
+
+
+System.out.println("+++++++++++++++    spacer line");
+// exercise4();
+
 	}
 }
 
