@@ -1,5 +1,5 @@
 public class Calculator {
-  
+  // 24.08.2015 15:25:35
     interface IntegerMath {
         int operation(int a, int b);   
     }

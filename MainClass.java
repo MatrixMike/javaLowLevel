@@ -2,6 +2,7 @@
 /*
  * Output:
  *  http://www.java2s.com/Code/JavaAPI/java.awt/GraphicsdrawStringStringstrintxinty.htm
+ * 24.08.2015 15:29:43
  */
 
 import java.awt.Color;
@@ -10,7 +11,8 @@ import java.awt.Font;
 import java.awt.Graphics;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing
+.JPanel;
 
 public class MainClass extends JPanel {
 

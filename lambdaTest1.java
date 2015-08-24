@@ -20,7 +20,7 @@
  * 
  * 
  */
-
+// 24.08.2015 15:27:14
 // package lambda1;
 
 //import java.utils.Arrays;
