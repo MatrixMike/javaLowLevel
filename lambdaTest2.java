@@ -55,25 +55,32 @@ public class lambdaTest2 {
 
 */
 
-System.out.println("+++++++++++++++    spacer line");
+System.out.println("++++++++++++one    spacer line");
 
 
     List<String> newList1 = list.stream()
         .filter(w -> w.length() % 2 == 1)
+        .skip(1)
+        .limit(10)
+        .distinct()							// unique words
+        .sorted()
         .map(String::toLowerCase)
         .collect(Collectors.toList());
 
     newList1.forEach(System.out::println);
-System.out.println("+++++++++++++++    spacer line");
+System.out.println("++++++++++++two    spacer line");
 
     String merged = list.stream()
         .skip(1)
         .limit(3)
-        .collect(Collectors.joining("-"));
+          .map(String::toLowerCase)       // try without this line
+          // try for unique words
+          // try also for CamelCase   i.e. first letter of each word capitalised
+        .collect(Collectors.joining("- -"));
     System.out.println(merged);
 
 
-System.out.println("+++++++++++++++    spacer line");
+System.out.println("++++++++++three    spacer line");
 // exercise4();
 
 	}

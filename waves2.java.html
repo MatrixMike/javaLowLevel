@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>/home/mikeh/javaLowLevel/waves2.java</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.25" />
+	<meta name="date" content="2015-08-25T23:16:32+1000" />
+	<style type="text/css">
+	body
+	{
+		font-family: Monospace, monospace;
+		font-size: 10pt;
+	}
+	.style_1
+	{
+		color: #d00000;
+		background-color: #ffffff;
+	}
+	.style_2
+	{
+		color: #d00000;
+		background-color: #ffffff;
+	}
+	.style_4
+	{
+		color: #007f00;
+		background-color: #ffffff;
+	}
+	.style_5
+	{
+		color: #00007f;
+		background-color: #ffffff;
+		font-weight: bold;
+	}
+	.style_6
+	{
+		color: #ff8000;
+		background-color: #ffffff;
+	}
+	.style_10
+	{
+		color: #301010;
+		background-color: #ffffff;
+	}
+	.style_11
+	{
+		color: #000000;
+		background-color: #ffffff;
+	}
+	.style_16
+	{
+		color: #991111;
+		background-color: #ffffff;
+		font-weight: bold;
+	}
+	.style_19
+	{
+		color: #0000d0;
+		background-color: #ffffff;
+		font-weight: bold;
+	}
+
+	</style>
+</head>
+
+<body>
+<p>
+<br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">awt</span><span class="style_10">.*;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">applet</span><span class="style_10">.*;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">awt</span><span class="style_10">.</span><span class="style_11">event</span><span class="style_10">.*;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">util</span><span class="style_10">.</span><span class="style_11">ArrayList</span><span class="style_10">;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">util</span><span class="style_10">.</span><span class="style_11">Arrays</span><span class="style_10">;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">util</span><span class="style_10">.</span><span class="style_11">List</span><span class="style_10">;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">util</span><span class="style_10">.</span><span class="style_11">Map</span><span class="style_10">;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">util</span><span class="style_10">.</span><span class="style_11">TreeMap</span><span class="style_10">;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">util</span><span class="style_10">.</span><span class="style_11">stream</span><span class="style_10">.</span><span class="style_11">Collectors</span><span class="style_10">;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">util</span><span class="style_10">.</span><span class="style_11">stream</span><span class="style_10">.</span><span class="style_11">Stream</span><span class="style_10">;&nbsp;</span><br />
+<span class="style_5">import&nbsp;</span><span class="style_11">java</span><span class="style_10">.</span><span class="style_11">util</span><span class="style_10">.</span><span class="style_11">stream</span><span class="style_10">.</span><span class="style_11">Collectors</span><span class="style_10">.*;&nbsp;</span><br />
+<br />
+<span class="style_5">public&nbsp;class&nbsp;</span><span class="style_19">waves2&nbsp;</span><span class="style_5">extends&nbsp;</span><span class="style_11">Applet&nbsp;</span><span class="style_10">{</span><br />
+<span class="style_2">//&nbsp;make&nbsp;it&nbsp;read&nbsp;the&nbsp;variables&nbsp;from&nbsp;either&nbsp;the&nbsp;html&nbsp;or&nbsp;the&nbsp;applet&nbsp;self</span><br />
+<span class="style_16">int&nbsp;</span><span class="style_11">cosv&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">5</span><span class="style_10">;</span><br />
+<span class="style_16">int&nbsp;</span><span class="style_11">sinv&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">19</span><span class="style_10">;</span><br />
+<span class="style_16">int&nbsp;</span><span class="style_11">paintcount&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">0</span><span class="style_10">;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">double&nbsp;</span><span class="style_11">f</span><span class="style_10">(</span><span class="style_16">double&nbsp;</span><span class="style_11">x</span><span class="style_10">)&nbsp;{</span><br />
+<span class="style_2">//&nbsp;nearly&nbsp;original&nbsp;&nbsp;return&nbsp;(Math.cos(x/cosv)&nbsp;+&nbsp;Math.sin(x/sinv)&nbsp;+&nbsp;2)&nbsp;*&nbsp;getSize().height&nbsp;/&nbsp;4;</span><br />
+<span class="style_2">//&nbsp;use&nbsp;sin&nbsp;and&nbsp;cos&nbsp;to&nbsp;change&nbsp;phase</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">return&nbsp;</span><span class="style_10">(</span><span class="style_11">Math</span><span class="style_10">.</span><span class="style_11">sin</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">/</span><span class="style_11">fqa</span><span class="style_10">)&nbsp;+&nbsp;</span><span class="style_11">Math</span><span class="style_10">.</span><span class="style_11">sin</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">/</span><span class="style_11">fqb</span><span class="style_10">)&nbsp;+&nbsp;</span><span class="style_4">2</span><span class="style_10">)&nbsp;*&nbsp;</span><span class="style_11">getSize</span><span class="style_10">().</span><span class="style_11">height&nbsp;</span><span class="style_10">/&nbsp;</span><span class="style_4">4</span><span class="style_10">;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">double&nbsp;</span><span class="style_11">f1</span><span class="style_10">(</span><span class="style_16">double&nbsp;</span><span class="style_11">x</span><span class="style_10">)&nbsp;{</span><br />
+<span class="style_2">//&nbsp;nearly&nbsp;original&nbsp;&nbsp;return&nbsp;(Math.cos(x/cosv)&nbsp;+&nbsp;Math.sin(x/sinv)&nbsp;+&nbsp;2)&nbsp;*&nbsp;getSize().height&nbsp;/&nbsp;4;</span><br />
+<span class="style_2">//&nbsp;use&nbsp;sin&nbsp;and&nbsp;cos&nbsp;to&nbsp;change&nbsp;phase</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">return&nbsp;</span><span class="style_10">(</span><span class="style_11">Math</span><span class="style_10">.</span><span class="style_11">sin</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">/</span><span class="style_11">fqa</span><span class="style_10">)&nbsp;+&nbsp;</span><span class="style_4">2</span><span class="style_10">)&nbsp;*&nbsp;</span><span class="style_11">getSize</span><span class="style_10">().</span><span class="style_11">height&nbsp;</span><span class="style_10">/&nbsp;</span><span class="style_4">4</span><span class="style_10">;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">double&nbsp;</span><span class="style_11">f2</span><span class="style_10">(</span><span class="style_16">double&nbsp;</span><span class="style_11">x</span><span class="style_10">)&nbsp;{</span><br />
+<span class="style_2">//&nbsp;nearly&nbsp;original&nbsp;&nbsp;return&nbsp;(Math.cos(x/cosv)&nbsp;+&nbsp;Math.sin(x/sinv)&nbsp;+&nbsp;2)&nbsp;*&nbsp;getSize().height&nbsp;/&nbsp;4;</span><br />
+<span class="style_2">//&nbsp;use&nbsp;sin&nbsp;and&nbsp;cos&nbsp;to&nbsp;change&nbsp;phase</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">return&nbsp;</span><span class="style_10">(</span><span class="style_11">Math</span><span class="style_10">.</span><span class="style_11">sin</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">/</span><span class="style_11">fqb</span><span class="style_10">)&nbsp;+&nbsp;</span><span class="style_4">2</span><span class="style_10">)&nbsp;*&nbsp;</span><span class="style_11">getSize</span><span class="style_10">().</span><span class="style_11">height&nbsp;</span><span class="style_10">/&nbsp;</span><span class="style_4">4</span><span class="style_10">;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">double&nbsp;</span><span class="style_11">f3</span><span class="style_10">(</span><span class="style_16">double&nbsp;</span><span class="style_11">x</span><span class="style_10">)&nbsp;{</span><br />
+<span class="style_2">//&nbsp;nearly&nbsp;original&nbsp;&nbsp;return&nbsp;(Math.cos(x/cosv)&nbsp;+&nbsp;Math.sin(x/sinv)&nbsp;+&nbsp;2)&nbsp;*&nbsp;getSize().height&nbsp;/&nbsp;4;</span><br />
+<span class="style_2">//&nbsp;use&nbsp;sin&nbsp;and&nbsp;cos&nbsp;to&nbsp;change&nbsp;phase</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">return&nbsp;</span><span class="style_10">(</span><span class="style_11">Math</span><span class="style_10">.</span><span class="style_11">sin</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">/</span><span class="style_11">fqa</span><span class="style_10">)&nbsp;*&nbsp;</span><span class="style_11">Math</span><span class="style_10">.</span><span class="style_11">sin</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">/</span><span class="style_11">fqb</span><span class="style_10">)&nbsp;+&nbsp;</span><span class="style_4">2</span><span class="style_10">)&nbsp;*&nbsp;</span><span class="style_11">getSize</span><span class="style_10">().</span><span class="style_11">height&nbsp;</span><span class="style_10">/&nbsp;</span><span class="style_4">4</span><span class="style_10">;</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">/*</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">public&nbsp;&nbsp;void&nbsp;stream_from_function()&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">Stream.iterate(0,&nbsp;n&nbsp;-&gt;&nbsp;n&nbsp;+&nbsp;1)</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">.limit(getSize().width)</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">//&nbsp;&nbsp;.skip(2)</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">//&nbsp;&nbsp;.filter(w&nbsp;-&gt;&nbsp;(w&nbsp;%&nbsp;5)&nbsp;==&nbsp;0)</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">.forEach(System.out::println);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">//&nbsp;&nbsp;.forEach(&nbsp;&nbsp;&nbsp;x&nbsp;-&gt;&nbsp;&nbsp;&nbsp;&nbsp;g.drawLine(x,&nbsp;(int)f1(x),&nbsp;x&nbsp;+&nbsp;1,&nbsp;(int)f1(x&nbsp;+&nbsp;1)));</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.forEach(&nbsp;v&nbsp;-&gt;&nbsp;System.out.println("value&nbsp;is&nbsp;"+&nbsp;v));</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_1">*&nbsp;*/</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">public&nbsp;</span><span class="style_16">void&nbsp;</span><span class="style_11">paint</span><span class="style_10">(</span><span class="style_11">Graphics&nbsp;g</span><span class="style_10">)&nbsp;{</span><br />
+<span class="style_2">//&nbsp;set&nbsp;colour&nbsp;for&nbsp;combined&nbsp;waves</span><br />
+<span class="style_11">g</span><span class="style_10">.</span><span class="style_11">setColor</span><span class="style_10">(</span><span class="style_11">Color</span><span class="style_10">.</span><span class="style_11">white</span><span class="style_10">);</span><br />
+<span class="style_11">g</span><span class="style_10">.</span><span class="style_11">fillRect</span><span class="style_10">(</span><span class="style_4">0</span><span class="style_10">,</span><span class="style_4">0</span><span class="style_10">,</span><span class="style_11">getSize</span><span class="style_10">().</span><span class="style_11">width</span><span class="style_10">,&nbsp;</span><span class="style_11">getSize</span><span class="style_10">().</span><span class="style_11">width</span><span class="style_10">);</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">g</span><span class="style_10">.</span><span class="style_11">setColor</span><span class="style_10">(</span><span class="style_11">Color</span><span class="style_10">.</span><span class="style_11">blue</span><span class="style_10">);</span><br />
+<span class="style_2">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;x&nbsp;=&nbsp;0&nbsp;;&nbsp;x&nbsp;&lt;&nbsp;getSize().width&nbsp;;&nbsp;x++)&nbsp;{</span><br />
+<span class="style_2">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g.drawLine(x,&nbsp;(int)f(x),&nbsp;x&nbsp;+&nbsp;1,&nbsp;(int)f(x&nbsp;+&nbsp;1));</span><br />
+<span class="style_2">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br />
+<span class="style_2">//&nbsp;set&nbsp;colour&nbsp;for&nbsp;f1</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">g</span><span class="style_10">.</span><span class="style_11">setColor</span><span class="style_10">(</span><span class="style_11">Color</span><span class="style_10">.</span><span class="style_11">blue</span><span class="style_10">);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">Stream</span><span class="style_10">.</span><span class="style_11">iterate</span><span class="style_10">(</span><span class="style_4">0</span><span class="style_10">,&nbsp;</span><span class="style_11">n&nbsp;</span><span class="style_10">-&gt;&nbsp;</span><span class="style_11">n&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_4">3</span><span class="style_10">)&nbsp;&nbsp;&nbsp;</span><span class="style_2">//&nbsp;was&nbsp;n+1</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">.</span><span class="style_11">limit</span><span class="style_10">(</span><span class="style_11">getSize</span><span class="style_10">().</span><span class="style_11">width</span><span class="style_10">)</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//&nbsp;&nbsp;.skip(2)</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//&nbsp;&nbsp;.filter(w&nbsp;-&gt;&nbsp;(w&nbsp;%&nbsp;5)&nbsp;==&nbsp;0)</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//&nbsp;&nbsp;.forEach(System.out::println);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">.</span><span class="style_11">forEach</span><span class="style_10">(&nbsp;&nbsp;&nbsp;</span><span class="style_11">x&nbsp;</span><span class="style_10">-&gt;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="style_11">g</span><span class="style_10">.</span><span class="style_11">drawLine</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">,&nbsp;(</span><span class="style_16">int</span><span class="style_10">)</span><span class="style_11">f1</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">),&nbsp;</span><span class="style_11">x&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_4">1</span><span class="style_10">,&nbsp;(</span><span class="style_16">int</span><span class="style_10">)</span><span class="style_11">f1</span><span class="style_10">(</span><span class="style_11">x&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_4">1</span><span class="style_10">)));</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;<span class="style_2">//r&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;x&nbsp;=&nbsp;0&nbsp;;&nbsp;x&nbsp;&lt;&nbsp;getSize().width&nbsp;;&nbsp;x++)&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//r&nbsp;&nbsp;&nbsp;&nbsp;g.drawLine(x,&nbsp;(int)f1(x),&nbsp;x&nbsp;+&nbsp;1,&nbsp;(int)f1(x&nbsp;+&nbsp;1));</span><br />
+&nbsp;&nbsp;&nbsp;<span class="style_2">//r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">g</span><span class="style_10">.</span><span class="style_11">setColor</span><span class="style_10">(</span><span class="style_11">Color</span><span class="style_10">.</span><span class="style_11">green</span><span class="style_10">);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">for&nbsp;</span><span class="style_10">(</span><span class="style_16">int&nbsp;</span><span class="style_11">x&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">0&nbsp;</span><span class="style_10">;&nbsp;</span><span class="style_11">x&nbsp;</span><span class="style_10">&lt;&nbsp;</span><span class="style_11">getSize</span><span class="style_10">().</span><span class="style_11">width&nbsp;</span><span class="style_10">;&nbsp;</span><span class="style_11">x</span><span class="style_10">++)&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">g</span><span class="style_10">.</span><span class="style_11">drawLine</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">,&nbsp;(</span><span class="style_16">int</span><span class="style_10">)</span><span class="style_11">f2</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">),&nbsp;</span><span class="style_11">x&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_4">1</span><span class="style_10">,&nbsp;(</span><span class="style_16">int</span><span class="style_10">)</span><span class="style_11">f2</span><span class="style_10">(</span><span class="style_11">x&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_4">1</span><span class="style_10">));</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">g</span><span class="style_10">.</span><span class="style_11">setColor</span><span class="style_10">(</span><span class="style_11">Color</span><span class="style_10">.</span><span class="style_11">black</span><span class="style_10">);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">for&nbsp;</span><span class="style_10">(</span><span class="style_16">int&nbsp;</span><span class="style_11">x&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">0&nbsp;</span><span class="style_10">;&nbsp;</span><span class="style_11">x&nbsp;</span><span class="style_10">&lt;&nbsp;</span><span class="style_11">getSize</span><span class="style_10">().</span><span class="style_11">width&nbsp;</span><span class="style_10">;&nbsp;</span><span class="style_11">x</span><span class="style_10">++)&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">g</span><span class="style_10">.</span><span class="style_11">drawLine</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">,&nbsp;(</span><span class="style_16">int</span><span class="style_10">)</span><span class="style_11">f3</span><span class="style_10">(</span><span class="style_11">x</span><span class="style_10">),&nbsp;</span><span class="style_11">x&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_4">1</span><span class="style_10">,&nbsp;(</span><span class="style_16">int</span><span class="style_10">)</span><span class="style_11">f3</span><span class="style_10">(</span><span class="style_11">x&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_4">1</span><span class="style_10">));</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">System</span><span class="style_10">.</span><span class="style_11">out</span><span class="style_10">.</span><span class="style_11">println</span><span class="style_10">(</span><span class="style_6">"MJH(paint)&nbsp;&nbsp;"</span><span class="style_10">+</span><span class="style_11">paintcount</span><span class="style_10">);&nbsp;</span><span class="style_11">paintcount&nbsp;</span><span class="style_10">++&nbsp;;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">private&nbsp;</span><span class="style_16">int&nbsp;</span><span class="style_11">fqa</span><span class="style_10">,</span><span class="style_11">fqb</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">public&nbsp;</span><span class="style_16">void&nbsp;</span><span class="style_11">init</span><span class="style_10">()&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">String&nbsp;Fa&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_11">getParameter</span><span class="style_10">(</span><span class="style_6">"freqa"</span><span class="style_10">);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">String&nbsp;Fb&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_11">getParameter</span><span class="style_10">(</span><span class="style_6">"freqb"</span><span class="style_10">);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">fqa&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_11">Integer</span><span class="style_10">.</span><span class="style_11">parseInt</span><span class="style_10">(</span><span class="style_11">Fa</span><span class="style_10">);</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">fqb&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_11">Integer</span><span class="style_10">.</span><span class="style_11">parseInt</span><span class="style_10">(</span><span class="style_11">Fb</span><span class="style_10">);</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">System</span><span class="style_10">.</span><span class="style_11">out</span><span class="style_10">.</span><span class="style_11">println</span><span class="style_10">(</span><span class="style_6">"MJH(init)&nbsp;freqa=&nbsp;"</span><span class="style_10">+</span><span class="style_11">Fa</span><span class="style_10">+</span><span class="style_6">"&nbsp;freqb=&nbsp;"</span><span class="style_10">+</span><span class="style_11">Fb</span><span class="style_10">);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//&nbsp;&nbsp;&nbsp;stream_from_function();</span><br />
+&nbsp;<span class="style_2">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("MJH&nbsp;freqb=&nbsp;"+Fb);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+<br />
+&nbsp;&nbsp;<span class="style_5">public&nbsp;</span><span class="style_11">String&nbsp;getAppletInfo</span><span class="style_10">()&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">return&nbsp;</span><span class="style_6">"Draws&nbsp;a&nbsp;sin&nbsp;graph.&nbsp;Now&nbsp;using&nbsp;Lambdas&nbsp;and&nbsp;Streams&nbsp;&nbsp;-&nbsp;25-08-2015"</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;<span class="style_10">}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">public&nbsp;</span><span class="style_11">String</span><span class="style_10">[][]&nbsp;</span><span class="style_11">getParameterInfo</span><span class="style_10">()&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">String&nbsp;pinfo</span><span class="style_10">[][]&nbsp;=&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">{</span><span class="style_6">"freqa"</span><span class="style_10">,&nbsp;</span><span class="style_6">""</span><span class="style_10">,&nbsp;</span><span class="style_6">"Frequency&nbsp;A"</span><span class="style_10">},</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">{</span><span class="style_6">"freqb"</span><span class="style_10">,&nbsp;</span><span class="style_6">""</span><span class="style_10">,&nbsp;</span><span class="style_6">"Frequency&nbsp;B"</span><span class="style_10">},</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">};</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">return&nbsp;</span><span class="style_11">pinfo</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<br />
+<br />
+<br />
+<span class="style_10">}</span><br />
+<br />
+
+</p>
+</body>
+</html>
