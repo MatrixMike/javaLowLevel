@@ -83,17 +83,19 @@ public void stream_from_file() throws IOException {
 }
 
 	public static void main (String args[]) {
-	int[] numbers = { 1, -25, 2, 3, 3, 3, 4, 5, 6, 7 };
-	double[] NUMBERS = {1, 24, 45, 62, 85, 8, 91, 3, 5, 56, 9};
+	int[] numbers = { 1, -2, 2, 3, 3, 3, 4, 5, 6, 7 };
+	double[] NUMBERS = {1, 24, 45, 62, 85, 3, 3, 3, 8, 91, 3, 5, 56, 9};
+//    OptionalDouble average = Arrays.stream(NUMBERS).average();
 
     int sum = Arrays.stream(numbers)
 	.distinct()
     // .filter ( p -> (p >3 ))
  //   .average();
     .sum();
-    //                       double sum2 = Arrays.stream(NUMBERS);
-  //                                 .average();
-//	.distinct();
+    double sum2 = Arrays.stream(NUMBERS)
+                         //          .average();
+    .sum();
+	//.distinct();
     
     Stream<String> stream = Stream.of("java 8 ", "leveluplunch.com","    some messy string    ",
             "examples", "exercises");
@@ -107,7 +109,7 @@ public void stream_from_file() throws IOException {
 		System.out.println(joined);
 		System.out.println(numbers);
 		System.out.println(sum);	
-	//	System.out.println(sum2);	
+		System.out.println(sum2);	
 	}
 }
 
