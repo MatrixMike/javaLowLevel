@@ -73,7 +73,8 @@ public class MOOC1 {
 				  
 			//	  sb1.append(toUpperCase("two"));
 				list.replaceAll(String::toUpperCase);		//Z  similar structures - how to read what it means
-				list.forEach(System.out::println);			//Z print length and count of occurrence 
+			//	list.forEach(System.out::println);			//Z print length and count of occurrence 
+				list.forEach( v -> System.out.println("value is "+ v));
 				// also join all together but with designated separator 
 				System.out.println(sb1);
 	}	
