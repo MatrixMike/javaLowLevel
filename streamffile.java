@@ -83,11 +83,11 @@ public void stream_from_file() throws IOException {
 }
 
 	public static void main (String args[]) {
-		    int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
+		    int[] numbers = { 1, -25, 2, 3, 3, 3, 4, 5, 6, 7 };
 
     int sum = Arrays.stream(numbers)
-   // .unique()
-    .filter ( p -> (p >3 ))
+	.distinct()
+    // .filter ( p -> (p >3 ))
     .sum();
     
     Stream<String> stream = Stream.of("java 8 ", "leveluplunch.com","    some messy string    ",
