@@ -1,4 +1,5 @@
 //package lambdasinaction.chap13;
+// 24.08.2015 15:42:34
 
 import java.util.stream.LongStream;
 import java.util.stream.Collectors.*;
