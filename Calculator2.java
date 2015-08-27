@@ -46,7 +46,7 @@ import java.util.stream.LongStream;
 
 
 
-public class Calculator {
+public class Calculator2 {
   // 24.08.2015 15:25:35
     interface IntegerMath {
         int operation(int a, int b);   
@@ -60,36 +60,43 @@ public class Calculator {
      public double operateBinary(int a, int b, RealMath op) {
         return op.operation(a, b);
     }
-    	public static void stream_from_function() {
-		Stream.iterate(0, n -> n + 1)
+    /*
+    	public static void stream_from_function() { // Voltage constant but changing LEDs
+		Stream.iterate(0, L -> L + 1)
 		.limit(7)
 		.skip(0)
 	//	.filter(w -> (w % 5) == 0)
-		.forEach(System.out::println);
+	.forEach(L -> System.out.println("Resistor needed when V  = " + 10 + " and number of LEDs is " + L + " is " +
+            myApp.operateBinary(10, L, Ohms)));          // 10V , number of LEDs   
+		//.forEach(System.out::println);
 	}
-
-	//	stream_from_function();
+*/
 
     public static void main(String... args) {
-    
-        Calculator myApp = new Calculator();
+		int V 		= 14; 	// 14V  working car voltage
+		int LEDs	= 4; 	// number of LEDs      - works for 0 to 4
+        Calculator2 myApp = new Calculator2();
         IntegerMath addition = (a, b) -> a + b;
         IntegerMath subtraction = (a, b) -> a - b;
         IntegerMath mult = (a,b) -> a * b ; 
-        RealMath Ohms = (a,b ) -> (a - (2.0 * b))/0.02 ; // Voltage, # of LEDs
-        
-        System.out.println("40 + 2 = " +
-            myApp.operateBinary(40, 2, addition));
+        RealMath 	Ohms = (a,b ) -> (a - (2.0 * b))/0.02 ; // Voltage, # of LEDs
+      /*  hide these now that something useful is happening
+        System.out.println("40 +  2 = " +myApp.operateBinary(40, 2, addition));          
+        System.out.println("20 - 10 = " +myApp.operateBinary(20, 10, subtraction));              
+        System.out.println("20 * 10 = " +myApp.operateBinary(20, 10, mult));  
+      */     
+
+    //    System.out.println("Resistor needed when V  = " + V + " and number of LEDs is " + LEDs + " is " +
+    //        myApp.operateBinary(V, LEDs, Ohms));          // 10V , number of LEDs    
             
-        System.out.println("20 - 10 = " +
-            myApp.operateBinary(20, 10, subtraction)); 
-              
-        System.out.println("20 * 10 = " +
-            myApp.operateBinary(20, 10, mult));  
-            
- int V = 10; // 10V  
- int LEDs = 4; // number of LEDs      - works for 0 to 4
-        System.out.println("Resistor needed when V  = " + V + " and number of LEDs is " + LEDs + " is " +
-            myApp.operateBinary(V, LEDs, Ohms));          // 10V , number of LEDs           
+  //          stream_from_function();  
+                
+            Stream.iterate(0, L -> L + 1)
+				.limit(9)			// how many LEDs 
+				.skip(0)			// how many to ignore
+				//	.filter(w -> (w % 5) == 0)
+				.forEach(L -> System.out.println("Resistor needed when V  = " + V + " and number of LEDs is " + L + " is " +
+				myApp.operateBinary(V, L, Ohms) + " Ohms"));          // 10V , number of LEDs   
+		//.forEach(System.out::println); 
     }
 }
