@@ -18,22 +18,18 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toCollection;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
-import static java.util.function.Function.identity;
 import static java.util.stream.Collectors.*;
 import static java.util.function.Function.identity;
 import java.util.stream.LongStream;
 import java.util.stream.Collectors.*;
 import java.util.stream.Stream;
 
-
 public class ParallelLong1 {
 	
 	public static long rangedSum(long n) {
 		return LongStream.rangeClosed(1,n).parallel()
 			.reduce(Long::sum).getAsLong();
-}
-	
-	
+}	
 	public static void main (String args[]) {
 		System.out.println(" rangedSum " + rangedSum(6000));
 
