@@ -32,8 +32,6 @@ public static void main(String[] args)
   
   List<Integer> list2 = Arrays.asList(1,2,3,4,5,6) ; 
   
-  List<Integer> list3 = Arrays.asList(1,2,3,4,5,6) ;// ,(1,2,3); 
-   
     List<String> list = Arrays.asList(
         "The", "Quick", "BROWN", "Fox", "Jumped", "Over", "The", "LAZY", "DOG");
 
@@ -49,16 +47,20 @@ public static void main(String[] args)
     String merged = list1.stream()
         .skip(1)
         .limit(3)
-        .collect(Collectors.joining("-"));
+        .skip(1)
+      //  .limit(3)
+        .collect(Collectors.joining("=mike="));
     System.out.println(merged);
     
     
   List<Integer> newIntList = list2.stream() 
-  // in here remove odd numbers and maybe sqaure the remaining 
+  // in here remove odd numbers and maybe square the remaining 
+		.skip(2)
+		.limit(2)
 		.skip(2)
 		.limit(2)
 //		.max()
-//		.sum()
+	//	.sum()
          .collect(Collectors.toList()); 
      newIntList.forEach(System.out::println);
      
@@ -67,11 +69,11 @@ public static void main(String[] args)
   // .mapToInt()
   //   .max();
  
- //    String merged1 = list2.stream();
+  //   String merged1 = list2.stream();
   //      .skip(1)
  //       .limit(3)
 //        .collect(Collectors.joining("-"));
-    // System.out.println(merged1);
+ //    System.out.println(merged1);
   }
 }
 
