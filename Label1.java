@@ -5,22 +5,26 @@ import java.util.Date;
 // import java.util.Calendar;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.stream.Stream;	
+import java.util.stream.Collectors.*; 
 // modified 14 september 2013
 
 public class Label1 extends Applet {
 	//	   enum DayOfWeek {Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday}  ;
 	   private static void CalendarTimemethod() {
-	   Date date = Calendar.getInstance().getTime();
-	   System.out.println("Current date and time is: " + date);
+	   Date date1 = Calendar.getInstance().getTime();
+	   // deliberately changing date to date1 to prove scope
+	   System.out.println("Current date and time is: " + date1);
 	   System.out.println();
 	   }
 
 	   private static void SimpleDateFormatmethod() {
-	   Calendar date = Calendar.getInstance();
+	   Calendar date2 = Calendar.getInstance();
 	   SimpleDateFormat dateformatter = new SimpleDateFormat
 	   ("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+	   	   // deliberately changing date to date2 to prove scope and increase readability
 	   System.out.println("Current date and time in simple date format: "
-	   	+ dateformatter.format(date.getTime()));
+	   	+ dateformatter.format(date2.getTime()));
 	   System.out.println();
    }
 
@@ -60,6 +64,14 @@ public class Label1 extends Applet {
     testStr = "Electronics Club Altona";
     			       		   g.setColor(Color.blue);
             g.drawString(testStr,Xcoord,Ycoord);   Ycoord += 15;
+            
+                    Stream<Date> stream = Stream.generate(() -> {  
+			// cldr = Calendar.getInstance();
+			 return new Date();}
+         )
+         .limit(9)								
+         ;
+            
             for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  // find current first of month
 	// was n<31 above
 	// was -cldr

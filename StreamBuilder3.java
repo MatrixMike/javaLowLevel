@@ -12,12 +12,16 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Date;
+import java.util.Calendar;
 
 // this runs but in an infinite loop   use ctrl S and Q to control flow...!
 
 public class StreamBuilder3 {
      public static void main(String[] args){
-         Stream<Date> stream = Stream.generate(() -> { return new Date();}
+		 Calendar cldr = Calendar.getInstance();
+         Stream<Date> stream = Stream.generate(() -> {  
+			// cldr = Calendar.getInstance();
+			 return new Date();}
          )
          .limit(9)		// added 20.09.2015 14:21:07
 						// looked for ; and () after generate and added .limit(n)
