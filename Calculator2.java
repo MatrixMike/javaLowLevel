@@ -1,6 +1,7 @@
 
 /*
 27.08.2015 16:53:04
+* 17.09.2015 10:31:14
 Mods to an example from Oracle by mike hewitt
 This generates a stream of resistor values for a constant Voltage across a series of LEDS
 */

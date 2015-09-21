@@ -11,6 +11,11 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;	
 import java.util.stream.Collectors.*; 
 
+/*
+ * September 12 2015
+ *
+ */
+
 public class waves2 extends Applet {
 // make it read the variables from either the html or the applet self
 int cosv = 5;
@@ -56,39 +61,69 @@ int paintcount = 0;
 	
     public void paint(Graphics g) {
 // set colour for combined waves
-g.setColor(Color.white);
-g.fillRect(0,0,getSize().width, getSize().width);
+	g.setColor(Color.white);
+	g.fillRect(0,0,getSize().width, getSize().width);
 
-           g.setColor(Color.blue);
+	g.setColor(Color.blue);
 //       for (int x = 0 ; x < getSize().width ; x++) {
 //	    g.drawLine(x, (int)f(x), x + 1, (int)f(x + 1));
 //        }
 // set colour for f1
 
-           g.setColor(Color.blue);
-           Stream.iterate(0, n -> n + 3)   // was n+1
-			.limit(getSize().width)
+
+
+	g.setColor(Color.red);
+	Stream.iterate(0, n -> n + 3)   // was n+1
+		.limit(getSize().width)
+		.parallel()
 					//	.skip(2)
 					//	.filter(w -> (w % 5) == 0)
 					//	.forEach(System.out::println);
-			.forEach(	x ->    g.drawLine(x, (int)f1(x), x + 1, (int)f1(x + 1)));
+		.forEach(	x ->    g.drawLine(x, (int)f(x), x + 1, (int)f1(x + 1)));
+
+
+
+	g.setColor(Color.blue);
+	Stream.iterate(0, n -> n + 3)   // was n+1
+		.limit(getSize().width)
+		.parallel()
+					//	.skip(2)
+					//	.filter(w -> (w % 5) == 0)
+					//	.forEach(System.out::println);
+		.forEach(	x ->    g.drawLine(x, (int)f1(x), x + 1, (int)f1(x + 1)));
 		
   //r   for (int x = 0 ; x < getSize().width ; x++) {
 	//r    g.drawLine(x, (int)f1(x), x + 1, (int)f1(x + 1));
    //r     }
 
-           g.setColor(Color.green);
-        for (int x = 0 ; x < getSize().width ; x++) {
+	g.setColor(Color.green);
+	Stream.iterate(0, n -> n + 3)   // was n+1
+		.limit(getSize().width)
+		.parallel()
+					//	.skip(2)
+					//	.filter(w -> (w % 5) == 0)
+					//	.forEach(System.out::println);
+		.forEach(	x ->    g.drawLine(x, (int)f2(x), x + 1, (int)f2(x + 1)));
+
+ /*       for (int x = 0 ; x < getSize().width ; x++) {
 	    g.drawLine(x, (int)f2(x), x + 1, (int)f2(x + 1));
         }
-
-          g.setColor(Color.black);
-       for (int x = 0 ; x < getSize().width ; x++) {
+*/
+	g.setColor(Color.black);
+	Stream.iterate(0, n -> n + 2)   // was n+1
+		.limit(getSize().width)
+		.parallel()
+					//	.skip(2)
+					//	.filter(w -> (w % 5) == 0)
+					//	.forEach(System.out::println);
+		.forEach(	x ->    g.drawLine(x, (int)f3(x), x + 1, (int)f3(x + 1)));
+         
+ /*      for (int x = 0 ; x < getSize().width ; x++) {
 	    g.drawLine(x, (int)f3(x), x + 1, (int)f3(x + 1));
        }
+*/
 
-
-        System.out.println("MJH(paint)  "+paintcount); paintcount ++ ;
+	System.out.println("MJH(paint)  "+paintcount); paintcount ++ ;
     }
     private int fqa,fqb;
     public void init() {
