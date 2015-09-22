@@ -19,7 +19,7 @@ import java.util.Calendar;
 public class StreamBuilder3 {
      public static void main(String[] args){
 		 Calendar cldr = Calendar.getInstance();
-         Stream<Date> stream = Stream.generate(() -> {  
+         Stream<Date> stream = Stream.generate(   () -> {  
 			// cldr = Calendar.getInstance();
 			 return new Date();}
          )

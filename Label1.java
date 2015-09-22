@@ -65,11 +65,13 @@ public class Label1 extends Applet {
     			       		   g.setColor(Color.blue);
             g.drawString(testStr,Xcoord,Ycoord);   Ycoord += 15;
             
-                    Stream<Date> stream = Stream.generate(() -> {  
-			// cldr = Calendar.getInstance();
+            Stream<Date> stream = Stream.generate(() -> {  
+				Calendar cldrS = Calendar.getInstance(); 
+				cldrS = Calendar.getInstance();
 			 return new Date();}
          )
-         .limit(9)								
+         .limit(9)	
+      //   .filter( cldrS ->   cldrS.get(Calendar.DAY_OF_WEEK_IN_MONTH)==1                  )							
          ;
             
             for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  // find current first of month
