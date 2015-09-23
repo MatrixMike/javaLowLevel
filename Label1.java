@@ -77,11 +77,13 @@ public class Label1 extends Applet {
          ;
             
           Stream<Calendar> streamc = Stream.generate(() -> {  
-			//	Calendar cldrS = Calendar.getInstance(); 
+				Calendar cldrS = Calendar.getInstance(); 
 			//	cldrS = Calendar.getInstance();
-			 return  Calendar.getInstance();}
+			     cldrS.add(Calendar.DAY_OF_YEAR, +1);  
+			 return  Calendar.getInstance()      
+			 ;}
          )
-         .limit(9)	
+         .limit(3)	
       //   .filter( cldrS -> (cldrS.get(Calendar.DAY_OF_WEEK_IN_MONTH))==1 )							
          ;
          streamc.forEach(p -> System.out.println(p));
