@@ -113,7 +113,7 @@ public class Person1 {
             roster.add(
             new Person1(
             "Mike",
-            IsoChronology.INSTANCE.date(1955,1,11),
+            IsoChronology.INSTANCE.date(1955,11,1),
             Person1.Sex.MALE, "mike@electroteach.com"));
         
         return roster;
