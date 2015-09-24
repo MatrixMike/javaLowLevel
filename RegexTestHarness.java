@@ -1,6 +1,7 @@
 import java.io.Console;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+// 23.09.2015 17:14:09
 
 // https://docs.oracle.com/javase/tutorial/essential/regex/test_harness.html
 

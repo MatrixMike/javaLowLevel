@@ -11,6 +11,7 @@ public class SplitDemo {
     public static void main(String[] args) {
         Pattern p = Pattern.compile(REGEX);
         String[] items = p.split(INPUT);
+        System.out.println("Input string is " + INPUT);
         for(String s : items) {
             System.out.println(s);
         }
