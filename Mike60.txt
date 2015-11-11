@@ -1,0 +1,16 @@
+Difference between two dates
+  Difference between Sun Nov 01 13:47:19 AEDT 2015
+  and Fri Mar 25 09:00:00 AEDT 2005 is 3873 days.
+  and Sun Nov 01 09:00:00 AEDT 2015 is 0 days.
+  and Tue Sep 01 09:00:00 AEST 2015 is -61 days. LUV AGM
+  and Tue Nov 01 09:00:00 AEST 1955 is -21915 days. Mike's Life
+  and Sat Nov 01 09:00:00 AEST 1947 is -24837 days. Phyllis' Life
+
+Performing operations on calendar dates.
+two years ago it was    : Fri 2013.11.01 at 01:47:19 PM AEDT
+In five years it will be: Fri 2015.11.06 at 01:47:19 PM AEDT
+
+Various get methods of the calendar class:
+Year : 2015 == Month  : 10 == Day of Month  : 1 == Day of Week  : 1 == Day of Year  : 305 == Week of Year  : 45 == Week of Month  : 1 == Day of the Week in Month : 1 == 
+Hour: 1 == AM PM: 1 == Hour of the Day: 13 == Minute: 47 == Second: 19 == 
+
