@@ -20,13 +20,16 @@ public static void main (String args[]) {
 	Calendar cldr_now;
 	SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 	String testStr;	
+	long next13th = 99;
 //	testStr = "fred";
 	int daysAhead = 1000;
 	int first_time_through = 0 ;			// change to boolean 
 	int dateDiff;
 	System.out.println("Next Friday the thirteenth is on");
 	for (long n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  // n was int now long
-		// find current first of month               
+		// find current first of month       
+		// F13 -> 13, 6
+		// Monday 9 -> 9, 2        
 		if ( (cldr.get(Calendar.DAY_OF_MONTH)==13) &&
 		(cldr.get(Calendar.DAY_OF_WEEK)==6) ) 
 		{
@@ -34,9 +37,13 @@ public static void main (String args[]) {
 			System.out.print(testStr);
 			if (first_time_through == 0){
 				cldr_now = Calendar.getInstance(); 
-				dateDiff = cldr.get(Calendar.DAY_OF_YEAR) - cldr_now.get(Calendar.DAY_OF_YEAR);
+				dateDiff = -(cldr.get(Calendar.DAY_OF_YEAR) - cldr_now.get(Calendar.DAY_OF_YEAR));
 				System.out.print(" which is in "+ dateDiff + " days. ");
 	        	first_time_through++ ; 
+	        	// save n and calculate difference between n and today -> i.e. n 
+	        	// display as a 
+	        	next13th = n;
+	        	System.out.println(" next 13 is " + next13th + " DOM "+ cldr.get(Calendar.DAY_OF_MONTH));
 				}
 			System.out.println();
 		}
