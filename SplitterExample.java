@@ -25,11 +25,12 @@ public class SplitterExample
             {
                 //Get all tokens available in line
                 String[] tokens = line.split(DELIMITER);
-                for(String token : tokens)
-                {
+ //               for(String token : tokens)
+ //               {
                     //Print all tokens
-                    System.out.println(token);
-                }
+                    System.out.println(tokens[0]);
+ //               }
+                System.out.println("========");
             }
         } 
         catch (Exception e) {
