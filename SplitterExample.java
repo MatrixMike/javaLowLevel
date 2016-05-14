@@ -28,6 +28,8 @@ public class SplitterExample
  //               for(String token : tokens)
  //               {
                     //Print all tokens
+                    System.out.print(tokens[1]);
+                    System.out.print(", ");
                     System.out.println(tokens[0]);
  //               }
                 System.out.println("========");

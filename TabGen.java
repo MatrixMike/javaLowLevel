@@ -6,7 +6,7 @@
 
 import java.text.Format;
 import java.util.*;                //Note 1
-
+//import java.util.Scanner;
 
 
 public class TabGen {
@@ -24,6 +24,7 @@ public static void main (String args[]) {
 	String name;               // Declare a variable to hold the name.
 	String names[] ;
 	Scanner in = new Scanner(System.in);
+//	Scanner in = new Scanner(new File("/home/mikeh/WOW/subscribers-Marilyn.csv"));
 // DateFormat df = DateFormat.getDateInstance();
   System.out.println( "<html>") ;    //  header
  header();
@@ -38,7 +39,7 @@ System.out.println( "<TABLE BORDER ALIGN=CENTER>") ;
  // System.out.println( "<TABLE>") ;
 
 
-for ( int rows = 1; rows < 4; rows = rows +1 ) {
+for ( int rows = 1; rows < 3; rows = rows +1 ) {
   System.out.print( "<TR>") ;
 	for ( int cols = 1; cols < 3; cols=cols+1 ) {
 
