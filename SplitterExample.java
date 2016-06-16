@@ -10,7 +10,9 @@ public class SplitterExample
     {
         //Input file which needs to be parsed
         String fileToParse = "/home/mikeh/WOW/subscribers-Marilyn.csv";
+        String csvHeader = "First Name,Last Name,Display Name,Nickname,Primary Email,";
         BufferedReader fileReader = null;
+  //      System.out.println(csvHeader);
          
         //Delimiter used in CSV file
         final String DELIMITER = ",";
