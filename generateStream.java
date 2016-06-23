@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package generateStream;
+//package generatestream;
 /**
  *
  * @author MikeW7
@@ -37,7 +37,7 @@ import java.util.stream.Collectors.*;
 */
 //	private static class 4parms(int a, int b,int c,int d) {
 //	}
-public class generateStream {
+ class generateStream {
 
     public static void stream_from_function() {
         Stream.iterate(0, n -> n + 3)

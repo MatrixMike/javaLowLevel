@@ -20,12 +20,13 @@ public class PropertiesTest2 {
         p.load(propFile);
 
         // set the system properties
-        System.setProperties(p);
+//        System.setProperties(p);
         // display new properties
         System.getProperties().list(System.out);
-        System.out.println(System.getProperty("user.name"));
+        System.out.println("user.name:" + System.getProperty("user.name"));
         System.out.println(System.getProperty("java.home"));
         System.out.println(System.getProperty("java.version"));
         System.out.println(System.getProperty("file.separator"));
+                System.out.println(System.getProperty("mail.host"));
     }
 }

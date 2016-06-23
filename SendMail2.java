@@ -15,6 +15,11 @@ import java.net.*;
  server402.webhostingpad.com
  */
  
+ /*
+  * find out about PrintWriter  
+  * 
+ */
+ 
 /**
  * This program sends e-mail using a mailto: URL
  **/
@@ -24,13 +29,13 @@ public class SendMail2 {
       // If the user specified a mailhost, tell the system about it.
       System.out.println(args[0]);
       if (args.length >= 1) System.getProperties().put("mail.host", args[0]);
-
+System.out.println("debug1");
       // A Reader stream to read from the console
       BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 	System.out.println(
                   System.getProperty("user.name") + "@" + 
                   InetAddress.getLocalHost().getHostName() + ">");
-     System.out.println(
+     System.out.println("user.name "+ 
                   System.getProperty("user.name") + "@" + 
                   InetAddress.getLocalHost());
                  
@@ -44,7 +49,7 @@ public class SendMail2 {
 
       // Establish a network connection for sending mail
       URL u = new URL("mailto:" + to);      // Create a mailto: URL 
-      URLConnection c = u.openConnection(); // Create a URLConnection for it
+      URLConnection c = u.openConnection(); // Create a URLConnection for it          c 
       c.setDoInput(false);                  // Specify no input from this URL
       c.setDoOutput(true);                  // Specify we'll do output
       System.out.println("Connecting...");  // Tell the user what's happening

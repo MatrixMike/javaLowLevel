@@ -4,22 +4,19 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
  
-public class SplitterExample
+public class SplitterExample2
 {
     public static void main(String[] args)
     {
         //Input file which needs to be parsed
-        String fileToParse = "/home/mikeh/WOW/subscribers-Marilyn.csv";
-        String csvHeader = "First Name,Last Name,Display Name,Nickname,Primary Email,";
+        String fileToParse = "/home/mikeh/WOW/emailList.txt";
         BufferedReader fileReader = null;
-  //      System.out.println(csvHeader);
          
         //Delimiter used in CSV file
-        final String DELIMITER = ",";
+        final String DELIMITER = ", ";
         try
         {
             String line = "";
-            Integer count = 0;
             //Create the file reader
             fileReader = new BufferedReader(new FileReader(fileToParse));
              
@@ -28,18 +25,15 @@ public class SplitterExample
             {
                 //Get all tokens available in line
                 String[] tokens = line.split(DELIMITER);
-                count++;
  //               for(String token : tokens)
  //               {
                     //Print all tokens
-                    
-                 //    System.out.print(tokens[1]);
-                 //    System.out.print(", ");
+ //                   System.out.print(tokens[1]);
+ //                   System.out.print(", ");
                     System.out.println(tokens[0]);
  //               }
                 System.out.println("========");
             }
-            System.out.println("Lines read :" + count);
         } 
         catch (Exception e) {
             e.printStackTrace();
