@@ -36,8 +36,8 @@ public class TabGen {
         String name;               // Declare a variable to hold the name.
         String names[];
 //	Scanner in = new Scanner(System.in);
-        //       Scanner scanner = new Scanner(new File("/home/mikeh/javaLowLevel/TabGenIn.txt"));
-        Scanner scanner = new Scanner(new File("C:\\Users\\MikeW7\\Documents\\NetBeansProjects\\TabGen\\testInput\\TabGenIn.txt"));
+               Scanner scanner = new Scanner(new File("/home/mikeh/javaLowLevel/TabGenIn.txt"));
+     //   Scanner scanner = new Scanner(new File("C:\\Users\\MikeW7\\Documents\\NetBeansProjects\\TabGen\\testInput\\TabGenIn.txt"));
         // C:\Users\MikeW7\Documents\GitHub\javaLowLevel
         // C:\Users\MikeW7\Documents\NetBeansProjects\TabGen\testInput\TabGenIn.txt
 // DateFormat df = DateFormat.getDateInstance();
@@ -47,7 +47,7 @@ public class TabGen {
         System.out.println("<H1 ALIGN=CENTER>My PIC projects</H1>");
         int n = 1;
         String one = "https://electroteach.com/pics/TabGen.html";
-        String two = "Explanation here</A>";
+        String two = "Explanation here";
 
         System.out.println("<TABLE BORDER ALIGN=CENTER>");
         // System.out.println( "<TABLE>") ;
@@ -70,7 +70,7 @@ public class TabGen {
             System.out.print("</TR>");
         }
         System.out.println("</TABLE>");
-        System.out.println("<A HREF=" + one + two);
+        System.out.println("<a HREF=" + one + two +"></a>");
         System.out.println("</body></html>");
         scanner.close();
     }
