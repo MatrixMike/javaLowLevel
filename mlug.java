@@ -21,8 +21,8 @@ public static void main (String args[]) {
 	String testStr;
 	
 	for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  
-		if (( (cldr.get(Calendar.DAY_OF_WEEK_IN_MONTH)==4) &&   // mlug
-		(cldr.get(Calendar.DAY_OF_WEEK)==2) ))
+	//	if (( (cldr.get(Calendar.DAY_OF_WEEK_IN_MONTH)==4) &&   // mlug
+	//	(cldr.get(Calendar.DAY_OF_WEEK)==2) ))
 		{
 			weekCheck(cldr);
 			testStr = dateformatter.format(cldr.getTime());
@@ -35,9 +35,9 @@ public static void main (String args[]) {
  * weekCheck()
  * 
  */
-static  void weekCheck(Calendar C){
+static void weekCheck(Calendar C){
 	 
-	 if (C.get(Calendar.DAY_OF_WEEK)==2) {
+	 if (  ( (C.get(Calendar.DAY_OF_WEEK_IN_MONTH)==4) &&  (C.get(Calendar.DAY_OF_WEEK)==2) )){
 		 System.out.println("found something");
 	 }
 	 
