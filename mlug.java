@@ -24,7 +24,7 @@ public static void main (String args[]) {
 		{
 			weekCheck(cldr, dateformatter);
 		}
-	    cldr.add(Calendar.DAY_OF_YEAR, +1);
+	    cldr.add(Calendar.DAY_OF_YEAR, +1);  //  examine why cldr and Calendar 
 	 }
 }
 /**
@@ -33,17 +33,31 @@ public static void main (String args[]) {
  */
 static void weekCheck(Calendar C, SimpleDateFormat S){
 		String testStr; 
-		    Calendar now = Calendar.getInstance();
+//		    Calendar now = Calendar.getInstance();
 	 if (  ( (C.get(Calendar.DAY_OF_WEEK_IN_MONTH)==4) && (C.get(Calendar.DAY_OF_WEEK)==2) )){
 		System.out.println("found something");
 		testStr = S.format(C.getTime());
 		System.out.println(testStr);
-		int month = now.get(Calendar.MONTH); 
-    if(month == Calendar.AUGUST){
+		int month = C.get(Calendar.MONTH); 
+		/*
+		get the month of current date -> Ma
+		* add 7 days to date
+		* get the month of the new date -> Mb
+		* check if they are same
+		
+		*/
+    if(month == C.AUGUST){
       System.out.println("AUGUST");
-    }
+      C.add(C.DAY_OF_YEAR, +7);			// look ahead for the following month
+      	     System.out.println("B "+S.format(C.getTime()));	
+   //   int month2 = C.get(C.MONTH);
+         C.add(C.DAY_OF_YEAR, +7);	
+      if(C.get(C.MONTH) == C.SEPTEMBER){
+	     System.out.println("SEPTEMBER");	  
+      }
 	 }
 	 // need to get the month and save for a test
-}
+    }
 
+}
 }
