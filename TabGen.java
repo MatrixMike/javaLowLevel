@@ -41,23 +41,27 @@ public class TabGen {
         // C:\Users\MikeW7\Documents\GitHub\javaLowLevel
         // C:\Users\MikeW7\Documents\NetBeansProjects\TabGen\testInput\TabGenIn.txt
 // DateFormat df = DateFormat.getDateInstance();
+
+System.out.println("<!DOCTYPE html>");  // html5 needs this
         System.out.println("<html>");    //  header
         header();
         System.out.println("<body>");
-        System.out.println("<H1 ALIGN=CENTER>My PIC projects</H1>");
+        System.out.println("<H1>My PIC projects</H1>");   // align not allowed in html5
         int n = 1;
         String one = "https://electroteach.com/pics/TabGen.html";
-        String two = "Explanation here";
+        String two = "Explanation";   //  'here' might be keyword in html5
 
-        System.out.println("<TABLE BORDER ALIGN=CENTER>");
-        // System.out.println( "<TABLE>") ;
+  //      System.out.println("<TABLE BORDER>");   // align not allowed in html5  <td style = "text-align: center;">
+   //              System.out.println( "<TABLE>") ;
+        System.out.println("<TABLE BORDER><td style = \"text-align: center;\">"); 
+
 
         for (int rows = 1; rows < 10; rows = rows + 1) {
             System.out.print("<TR>");
             for (int cols = 1; cols < 2; cols = cols + 1) {
 
 //	if (n % 3 !=0)  {    // if n div 3 not  eq 3 then
-                System.out.println("<TH>");
+                System.out.print("<TH>");
                 name = scanner.nextLine();      // Read one line from the console.
                 System.out.println(
                         // this line is split to allow easy commenting out of unwanted parts
@@ -70,7 +74,7 @@ public class TabGen {
             System.out.print("</TR>");
         }
         System.out.println("</TABLE>");
-        System.out.println("<a HREF=" + one + two +"></a>");
+        System.out.println("<a HREF=" + one +">" +" "+ two +"</a>");
         System.out.println("</body></html>");
         scanner.close();
     }

@@ -6,7 +6,9 @@
 
 import java.io.*;
 import java.net.*;
-
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 /*
  * used by mikeh 16.09.2015 17:40:15
  * learned quite a few things - needs authentication for smtp etc 
@@ -25,6 +27,9 @@ import java.net.*;
  **/
 public class SendMail2 {
   public static void main(String[] args) {
+	          List<String> list = new ArrayList<>(Arrays.asList(
+        "From: ", "To: ", "Subject: "));
+        list.forEach(   v -> System.out.println("value is "+ v)    );
     try {
       // If the user specified a mailhost, tell the system about it.
       System.out.println(args[0]);
@@ -40,6 +45,8 @@ System.out.println("debug1");
                   InetAddress.getLocalHost());
                  
       // Ask the user for the from, to, and subject lines
+
+        
       System.out.print("From: ");
       String from = in.readLine();
       System.out.print("To: ");

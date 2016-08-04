@@ -23,7 +23,7 @@ public class MainClass extends JPanel {
     g.setColor(Color.red);  
     g.drawString("www.electroteach.com", 10, 80);
     
-    g.setColor(Color.blue);
+    g.setColor(Color.black);
     g.drawString("Mike1", 40, 20);
     
     g.setColor(Color.blue);

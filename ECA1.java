@@ -13,12 +13,12 @@
 import java.text.SimpleDateFormat;
 import java.util.*;
 public class ECA1 {
-	
+	private static int daysAhead = 365;	
 public static void main (String args[]) {
 	Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
 	SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 	String testStr;
-	int daysAhead = 365;
+
 
 	for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  
 		if (( (cldr.get(Calendar.DAY_OF_WEEK_IN_MONTH)==2) &&   // Electronics Altona
