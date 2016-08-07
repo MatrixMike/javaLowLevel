@@ -20,21 +20,26 @@
 
 
 public class CBfreqUHF {
-	
+	private static int spacing = 250;
 	public static void main (String args[]) {
 		int ch = 1;
-		for (int x = 4764250; x < 4774000+1; x=x+250) {
-			System.out.println("\nM ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
+		for (int x = 4764250; x < 4774000+1; x=x+spacing) {
+			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
 			ch = ch + 1;
 		}
-//			System.out.println("\n===M ch 28 F = 157.5MHz===");	
+	System.out.println("\n===");	
 			
-		ch = 60;
-/*		for (int x = 156025; x < 157425+1; x=x+50) {
-			System.out.println("\nM ch "+ ch + " F = " + x/1000 + "." + x%1000 +"MHz");
+		ch = 41;
+		for (int x = 4764375; x < 4769125+1; x=x+spacing) {
+			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
 			ch = ch + 1;
 		}
-		*/
+	System.out.println("\n===");
+			ch = 64;
+		for (int x = 4770125; x < 4774125+1; x=x+spacing) {
+			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
+			ch = ch + 1;
+		}	
 		
 	}
 }
