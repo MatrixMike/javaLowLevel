@@ -4,7 +4,7 @@
  * Copyright 2015 Michael Hewitt <mikeh@electroteach.com>
  * 11 November 2015
  * mod for mlug 04.08.2016 11:10:30   mlug.java
- * 
+ * http://www.java2s.com/Tutorials/Java/java.util/Calendar/Java_Calendar_get_int_field_.htm
  */
  /*
  DAY_OF_WEEK was 3 = Tuesday ; 5 =Thursday
