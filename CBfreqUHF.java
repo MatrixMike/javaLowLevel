@@ -16,6 +16,7 @@
  * program to display frequencies of CB (Marine radio) channels 
  * i.e. convert to frequencies that Amateur (and other) radio users appreciate
  * 
+ * http://uhfcb.com.au/80-Channel-UHF-Information.php
  */
 
 

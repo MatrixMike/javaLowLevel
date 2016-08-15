@@ -21,7 +21,7 @@ public static void main (String args[]) {
 
 	
 	for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  
-		{
+		{  // add here a check that month is Jan thru Nov -> so don't do weekCheck for December 
 			weekCheck(cldr, dateformatter);
 		}
 	    cldr.add(Calendar.DAY_OF_YEAR, +1);  //  examine why cldr and Calendar 
@@ -29,9 +29,13 @@ public static void main (String args[]) {
 }
 /**
  * weekCheck()
- * 
+ * @author  (Mike Hewitt)
+ * @version (15 August 2017)
+ * @param C supply instance(?) of Calendar
+ * @param S supply previously organised display format
+ * @return nothing but checking annotations
  */
-static void weekCheck(Calendar C, SimpleDateFormat S){
+public static void weekCheck(Calendar C, SimpleDateFormat S){
 		String testStr; 
 //		    Calendar now = Calendar.getInstance();
 	 if (  ( (C.get(Calendar.DAY_OF_WEEK_IN_MONTH)==4) && (C.get(Calendar.DAY_OF_WEEK)==2) )){
