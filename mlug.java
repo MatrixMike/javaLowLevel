@@ -15,6 +15,12 @@ import java.util.*;
 
 public class mlug {
 private static int daysAhead = 365;	
+
+/**
+ * main()
+ * @author  (Mike Hewitt)
+ * @version (1.1)
+ */
 public static void main (String args[]) {
 	Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
 	SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
@@ -30,10 +36,9 @@ public static void main (String args[]) {
 /**
  * weekCheck()
  * @author  (Mike Hewitt)
- * @version (15 August 2017)
+ * @version (1.1)
  * @param C supply instance(?) of Calendar
  * @param S supply previously organised display format
- * @return nothing but checking annotations
  */
 public static void weekCheck(Calendar C, SimpleDateFormat S){
 		String testStr; 

@@ -65,15 +65,25 @@ public class Person1 {
     public void printPerson() {
       System.out.println(name + ", " + this.getAge());
     }
-    
+/*
+  * 
+  * @return gender
+  */
     public Sex getGender() {
         return gender;
     }
-    
+/*
+  * 
+  * @return name
+  */  
     public String getName() {
         return name;
     }
-    
+/*
+  * 
+  * @return emailAddress
+  */  
+  
     public String getEmailAddress() {
         return emailAddress;
     }

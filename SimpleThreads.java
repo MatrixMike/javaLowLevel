@@ -1,3 +1,6 @@
+// looks like a candidate to document
+// 15.08.2016
+
 public class SimpleThreads {
 
     // Display a message, preceded by
