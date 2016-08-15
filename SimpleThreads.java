@@ -1,6 +1,12 @@
 // looks like a candidate to document
 // 15.08.2016
-
+/**
+ * weekCheck()
+ * @author  (Mike Hewitt)
+ * @version (1.1)
+ * @param C supply instance(?) of Calendar
+ * @param S supply previously organised display format
+ */
 public class SimpleThreads {
 
     // Display a message, preceded by
@@ -12,7 +18,11 @@ public class SimpleThreads {
                           threadName,
                           message);
     }
-
+/**
+ * MessageLoop()
+ * @author  (Mike Hewitt)
+ * @version (1.1)
+ */
     private static class MessageLoop
         implements Runnable {
         public void run() {
@@ -20,7 +30,8 @@ public class SimpleThreads {
                 "Mares eat oats",
                 "Does eat oats",
                 "Little lambs eat ivy",
-                "A kid will eat ivy too"
+                "A kid will eat ivy too",
+                "extra line from Mike"
             };
             try {
                 for (int i = 0;
@@ -36,7 +47,12 @@ public class SimpleThreads {
             }
         }
     }
-
+/**
+ * main()
+ * @author  (Mike Hewitt)
+ * @version (1.1)
+ * @param C supply args for main program
+ */
     public static void main(String args[])
         throws InterruptedException {
 
