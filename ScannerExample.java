@@ -9,7 +9,7 @@ public class ScannerExample
     public static void main(String[] args) throws FileNotFoundException
     {
         //Get scanner instance
-        Scanner scanner = new Scanner(new File("/home/mikeh/WOW/subscribers-Marilyn.csv"));
+        Scanner scanner = new Scanner(new File("/home/mike/NigelISIS/CSVData(4).csv"));
          
         //Set the delimiter used in file
         scanner.useDelimiter(",");
