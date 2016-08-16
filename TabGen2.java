@@ -21,11 +21,12 @@
  * 25.09.2015 10:04:49
  */
 
- package mike1;
+package mike1;
 
 import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.*;                //Note 1
+
 /**
  * 
  * @author Mike Hewitt
@@ -33,7 +34,6 @@ import java.util.*;                //Note 1
  * 
  * 
  */
-
 public class TabGen2 {
 
 // on Tony IBM testing Java 7 ?
@@ -57,7 +57,7 @@ public static void main(String[] args) {
   // Monday, 9 January 2012   - ctrl shift right click
 
 	int n = 1;
-	String one = "http://www.electroteach.com/pics/TabGen.html";
+	String one = "https://www.electroteach.com/pics/TabGen.html";
 	String two = "Explanation here</A>";
 
 	System.out.println( "<TABLE BORDER ALIGN=CENTER>") ;
@@ -97,8 +97,9 @@ public static void main(String[] args) {
 	System.out.println( "</TR>") ;
 	}
 	System.out.println( "</TABLE>") ;
-	System.out.println("<A HREF=" + one +" "+ two);
-	System.out.println( "</body></html>") ;
+	footer();
+
+
 	in.close();
 }	//main
 /**
@@ -121,5 +122,14 @@ public static void main(String[] args) {
 	System.out.println( "<title>" + title + "</title>") ;
 	System.out.println( "</head>") ;
 }
-
+/**
+ * print last info at bottom of page
+ *
+ */
+ public static void footer () {
+	String one = "https://www.electroteach.com/pics/TabGen.html";
+	String two = "Explanation here";
+	System.out.println("<A HREF=" + one +" "+ two +"</A>");
+	System.out.println( "</body></html>") ;
+}
 }	//class
