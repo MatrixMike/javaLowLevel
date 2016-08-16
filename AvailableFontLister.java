@@ -3,7 +3,7 @@
  * www.sanjaal.com/java
  * Last Modified On: 05-21-2009
  */
-package com.kushal.utils;
+// package com.kushal.utils;
  
 import java.awt.GraphicsEnvironment;
 import java.awt.Toolkit;
@@ -11,10 +11,16 @@ import java.awt.Toolkit;
 /**
  * Demonstrating  How To Get the
  * Available Font Names Using Java
- *
+ * @author Mike H
+ * @version 1.1
  */
 public class AvailableFontLister {
- 
+ /**
+  * 
+  * @author Mike H
+  * @version 1.1
+  * @param args Strings from command line
+  */
     public static void main(String args [])
     {
         System.out.println("***************************");
@@ -24,7 +30,7 @@ public class AvailableFontLister {
  
         System.out.println("****************************");
         System.out.println("**Listing Fonts Using Method From GraphicsEnvironment Class**");
-  //      listUsingGraphicsEnvironment ();
+        listUsingGraphicsEnvironment ();
  
     }
  
@@ -32,7 +38,7 @@ public class AvailableFontLister {
      * Prints a list of all available fonts from
      * the local graphics environment.
      *
-     * The output list varies from manchine to machine
+     * The output list varies from machine to machine
      */
     public static void listUsingGraphicsEnvironment ()
     {

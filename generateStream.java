@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//package generatestream;
+package generatestream;
 /**
- *
- * @author MikeW7
+ * @version 1.1
+ * @author Mike Hewitt
  */
 /**
  * @param args the command line arguments
@@ -37,17 +37,26 @@ import java.util.stream.Collectors.*;
 */
 //	private static class 4parms(int a, int b,int c,int d) {
 //	}
- class generateStream {
-
-    public static void stream_from_function() {
+ public class generateStream {  // was NOT a public class
+/**
+ * print from stream and lambda
+ * 
+ * 
+ * 
+ */
+public static void stream_from_function() {
         Stream.iterate(0, n -> n + 3)
                 .limit(35)
                 .skip(2)
                 .filter(w -> (w % 5) == 0)
                 .forEach(System.out::println);
     }
-
-    public static void main(String args[]) {
+/**
+ * 
+ * @param args info from command line
+ * 
+ */
+public static void main(String args[]) {
         stream_from_function();
     }
 }
