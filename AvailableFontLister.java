@@ -15,31 +15,31 @@ import java.awt.Toolkit;
  * @version 1.1
  */
 public class AvailableFontLister {
- /**
-  * 
-  * @author Mike H
-  * @version 1.1
-  * @param args Strings from command line
-  */
+/**
+ * 
+ * @author Mike H
+ * @version 1.1
+ * @param args Strings from command line
+ */
     public static void main(String args [])
     {
         System.out.println("***************************");
         System.out.println("**Listing Fonts Using Deprecated Method From ToolKit Class**");
   //      listUsingToolKit();    compiler error
         System.out.println();
- 
         System.out.println("****************************");
         System.out.println("**Listing Fonts Using Method From GraphicsEnvironment Class**");
         listUsingGraphicsEnvironment ();
- 
     }
  
-    /**
-     * Prints a list of all available fonts from
-     * the local graphics environment.
-     *
-     * The output list varies from machine to machine
-     */
+/**
+ * Prints a list of all available fonts from
+ * the local graphics environment.
+ *
+ * The output list varies from machine to machine
+ * @author Mike H
+ * @version 1.1
+ */
     public static void listUsingGraphicsEnvironment ()
     {
         GraphicsEnvironment ge= null;
