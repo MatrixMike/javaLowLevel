@@ -24,6 +24,7 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
+//package Kweens;		// fix error caused when this uncommented
 /**
  * generate solution to 8 Queens problem
  * @author michael.billington@gmail.com
@@ -75,7 +76,7 @@ public static void registerSolution(Board board) {
 		solutions++;
 	}
 /**
- * Place a queen in the designated place, if possible
+ * Place a queen in the designated place, if possible. RECURSIVE
  * @param size board size?
  * @param data space for a new board ??
  * @param queen_x co-ordinate of Q
@@ -84,7 +85,6 @@ public static void registerSolution(Board board) {
  */
 public static boolean plotQueen(int size, int[][] data, int queen_x, int queen_y) {
 		/* Place a queen in the designated place, if possible */
-		int x, y;
 		Board board = new Board(size, data);
 
 		if(board.box[queen_x][queen_y] != 0) {
@@ -94,11 +94,11 @@ public static boolean plotQueen(int size, int[][] data, int queen_x, int queen_y
 		}
 
 		/* Mark out all new 'deadly' squares caused by this queen */
-		for(y = 0; y < board.height; y++) {
+		for(int y = 0; y < board.height; y++) {
 			/* Vertical line */
 			board.box[queen_x][y] = 1;
 		}
-		for(x = 0; x < board.width; x++) {
+		for(int x = 0; x < board.width; x++) {
 			/* Horizontal */
 			if(board.box[x][queen_y] == 2) {
 				/* Stop if we kill another queen from across */
@@ -107,7 +107,6 @@ public static boolean plotQueen(int size, int[][] data, int queen_x, int queen_y
 				board.box[x][queen_y] = 1;
 			}
 		}
-		//int i = 1;
 		for(int i = 1; i <= board.height; i++) {
 			/* Extend diagonally in 4 directions up to n blocks */
 			/* (for each iteration, at least one of these will change a value) */
@@ -124,7 +123,7 @@ public static boolean plotQueen(int size, int[][] data, int queen_x, int queen_y
 			registerSolution(board);
 		} else {
 			/* Recurse, solving valid queen positions for next column */
-			for(y = 0; y < board.height; y++) {
+			for(int y = 0; y < board.height; y++) {
 				plotQueen(size, board.box, queen_x+1, y);
 			}
 		}

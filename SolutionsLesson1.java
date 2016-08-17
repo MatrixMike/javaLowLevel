@@ -1,8 +1,8 @@
 /**
  * Copyright © 2014, Oracle and/or its affiliates. All rights reserved.
- *
+ * mods on 17.08.2016  replacing private with 'public static' to permint compilation - research further
  */
-package lesson1;
+//package lesson1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,7 +17,12 @@ public class SolutionsLesson1 {
   /**
    * Run the exercises to ensure we got the right answers
    */
-  public void runExercises() {
+   
+   public static void main(String args[]) {
+	   runExercises();
+   }
+   
+  public static void runExercises() {
     System.out.println("JDK 8 Lambdas and Streams MOOC Lesson 1");
     System.out.println("Running exercise 1 solution...");
     exercise1();
@@ -43,7 +48,8 @@ public class SolutionsLesson1 {
    * Create a string that consists of the first letter of each word in the list
    * of Strings.
    */
-  private void exercise1() {
+  public static
+   void exercise1() {
     List<String> list = Arrays.asList(
         "alpha", "bravo", "charlie", "delta", "echo", "foxtrot");
 
@@ -58,7 +64,7 @@ public class SolutionsLesson1 {
    *
    * Remove the words that have odd lengths from the list.
    */
-  private void exercise2() {
+  public static void exercise2() {
     List<String> list = new ArrayList<>(Arrays.asList(
         "alpha", "bravo", "charlie", "delta", "echo", "foxtrot"));
 
@@ -71,7 +77,7 @@ public class SolutionsLesson1 {
    *
    * Replace every word in the list with its upper case equivalent.
    */
-  private void exercise3() {
+  public static void exercise3() {
     List<String> list = new ArrayList<>(Arrays.asList(
         "alpha", "bravo", "charlie", "delta", "echo", "foxtrot"));
     list.replaceAll(String::toUpperCase);
@@ -84,7 +90,7 @@ public class SolutionsLesson1 {
    * Convert every key-value pair of the map into a string and append them all
    * into a single string, in iteration order.
    */
-  private void exercise4() {
+  public static void exercise4() {
     Map<String, Integer> map = new TreeMap<>();
     map.put("c", 3);
     map.put("b", 2);
@@ -101,7 +107,7 @@ public class SolutionsLesson1 {
    *
    * Create a new thread that prints the numbers from the list.
    */
-  private void exercise5() {
+  public static void exercise5() {
     List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
     new Thread(() -> list.forEach(System.out::println)).start();
