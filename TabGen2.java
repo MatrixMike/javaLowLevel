@@ -21,25 +21,34 @@
  * 25.09.2015 10:04:49
  */
 
-
+package mike1;
 
 import java.text.Format;
+import java.text.SimpleDateFormat;
 import java.util.*;                //Note 1
+
+/**
+ * 
+ * @author Mike Hewitt
+ * @version 1.1
+ * 
+ * 
+ */
 public class TabGen2 {
 
 // on Tony IBM testing Java 7 ?
-
-public static void main (String args[]) {
+public static void main(String[] args) {
 	String name;               // Declare a variable to hold the name.
 //	String names[] ;
 
 	Scanner in = new Scanner(System.in);
-// DateFormat df = DateFormat.getDateInstance();
+	SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
+
+//  DateFormat df = DateFormat.getDateInstance();
 
 	System.out.println( "<html>") ;    //  header
-	System.out.println( "<head>") ;
-	System.out.println( "<title>PIC projects summary table</title>") ;
-	System.out.println( "</head>") ;
+	tabHead("test title");
+
 	System.out.println( "<body>") ;
 	System.out.println( "<H1 ALIGN=CENTER>My PIC projects</H1>") ;
 	System.out.println( "<H2 ALIGN=CENTER>Wednesday, 11 January 2012</H2>") ;
@@ -48,22 +57,23 @@ public static void main (String args[]) {
   // Monday, 9 January 2012   - ctrl shift right click
 
 	int n = 1;
-	String one = "http://www.electroteach.com/pics/TabGen.html";
+	String one = "https://www.electroteach.com/pics/TabGen.html";
 	String two = "Explanation here</A>";
 
 	System.out.println( "<TABLE BORDER ALIGN=CENTER>") ;
  // System.out.println( "<TABLE>") ;
-
-
 	for ( int rows = 0; rows < 22-1; rows = rows +1 ) {		// was 22-1
 		System.out.println( "<TR>") ;
 
-
   		//first the item number (ordinal or cardinal)
 		System.out.print( "<TH>") ;   // rows tested twice in same loop as cols thf prints twice
-		if (rows == 0) System.out.print( " " ) ;      else           System.out.print( rows ) ;
+		if (rows == 0) {
+		System.out.print( " " ) ;   
+		}  
+		 else   {
+		System.out.print( rows ) ;
 		System.out.println( "</TH>") ;
-
+		}
 		for ( int cols = 1; cols < 4; cols=cols+1 ) {     // was 3
 			// we wrap each element read from input with <TH>     25.09.2015 10:16:30 
 	//  now added a column so increase cols by 1 to cope
@@ -87,8 +97,39 @@ public static void main (String args[]) {
 	System.out.println( "</TR>") ;
 	}
 	System.out.println( "</TABLE>") ;
-	System.out.println("<A HREF=" + one +" "+ two);
-	System.out.println( "</body></html>") ;
+	footer();
+
+
 	in.close();
 }	//main
+/**
+ * print some standard data to html
+ * @param title string to use in html page
+ * 
+ */
+ public static void tabHead (String title) {
+	System.out.println( "<head>") ;
+	System.out.println( "<title>" + title + "</title>") ;
+	System.out.println( "</head>") ;
+}
+/**
+ * print some standard data to html
+ * @param title string to use in html page
+ * 
+ */
+ public static void tabHead2 (String title) {
+	System.out.println( "<head>") ;
+	System.out.println( "<title>" + title + "</title>") ;
+	System.out.println( "</head>") ;
+}
+/**
+ * print last info at bottom of page
+ *
+ */
+ public static void footer () {
+	String one = "https://www.electroteach.com/pics/TabGen.html";
+	String two = "Explanation here";
+	System.out.println("<A HREF=" + one +" "+ two +"</A>");
+	System.out.println( "</body></html>") ;
+}
 }	//class

@@ -4,16 +4,18 @@
  * Copyright 2016 Michael Hewitt <mikeh@electroteach.com>
  * 
  * 
- * 
+ * 17.08.2016  
+ * this compile and executes - check out EXIT_ON_CLOSE 
+ * used javadoc to display the inheritence tree
  */
 
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
+//import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class Check extends JFrame {
+public class CheckM1 extends JFrame {
 
     private static final long serialVersionUID = 1L;
 /**
@@ -21,7 +23,7 @@ public class Check extends JFrame {
  * 
  */
     public void makeUI() {
-        JFrame f = new JFrame();
+        JFrame f = new JFrame("Mike test text");
         f.getContentPane().setBackground(new Color(255, 255, 000));
  //           f.setColor(Color.red);  
  //   f.drawString("www.electroteach.com", 10, 80);

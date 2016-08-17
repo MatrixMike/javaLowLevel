@@ -2,30 +2,11 @@
  * lambdaTest1.java
  * 
  * Copyright 2015 Mike <mhewitt@theiet.org>
- * 
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- * 
- * 
+ * 16.08.2016
  */
 
-// package lambda1;
+ //package lambda1;
 
-//import java.utils.Arrays;
-//import java.utils.Arrays;
-//import java.utils.Arrays;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -45,11 +26,7 @@ public class lambdaTest2 {
       System.out.println("Number of lines = " + lineCount);
     }
   }
-
-
 */
-	
-
 	public static void main (String args[]) {
 	   List<String> list = Arrays.asList(
         "The", "Quick", "BROWN", "Fox", "Jumped", "Over", "The", "LAZY", "DOG");
@@ -62,23 +39,9 @@ public class lambdaTest2 {
     newList.forEach(System.out::println);
 // ========================
 
-/*
-    List<String> list1 = Arrays.asList(
-        "The", "Quick", "BROWN", "Fox", "Jumped", "Over", "The", "LAZY", "DOG");
-
-
-*/
-
-System.out.println("+++++++++++++++    spacer line");
-
-
-    List<String> newList1 = list.stream()
-        .filter(w -> w.length() % 2 == 1)
-        .map(String::toLowerCase)
-        .collect(Collectors.toList());
-
-    newList1.forEach(System.out::println);
-System.out.println("+++++++++++++++    spacer line");
+spaceLine();
+ex1();
+spaceLine();
 
     String merged = list.stream()
         .skip(1)
@@ -86,10 +49,49 @@ System.out.println("+++++++++++++++    spacer line");
         .collect(Collectors.joining("-"));
     System.out.println(merged);
 
+spaceLine();
 
-System.out.println("+++++++++++++++    spacer line");
-// exercise4();
-
+List<String> listn = Arrays.asList(
+        "The", "Quick", "BROWN", "Fox", "Jumped", "Over", "The", "LAZY", "DOG");
+ex2(listn);
+spaceLine();
 	}
+	
+/**
+ * 
+ * 
+ */
+	 public static void ex1() {
+		 	   List<String> list = Arrays.asList(
+        "The", "Quick", "BROWN", "Fox", "Jumped", "Over", "The", "LAZY", "DOG");
+        
+	     List<String> newList1 = list.stream()
+        .filter(w -> w.length() % 2 == 1)
+        .map(String::toLowerCase)
+        .collect(Collectors.toList());
+
+    newList1.forEach(System.out::println);
+}
+public static void spaceLine() {
+	System.out.println("+++++++++++++++    spacer line");
+}
+
+/**
+ * 
+ * @param list of strings
+ */
+	 public static void ex2(List<String> list) {
+		 	   List<String> lista = Arrays.asList(
+        "The", "Quick", "BROWN", "Fox", "Jumped", "Over", "The", "LAZY", "DOG");
+        
+	     List<String> newList1 = lista.stream()
+        .filter(w -> w.length() % 3 == 1)
+        .map(String::toUpperCase)
+        .collect(Collectors.toList());
+
+    newList1.forEach(System.out::println);
+}
+
+
 }
 
