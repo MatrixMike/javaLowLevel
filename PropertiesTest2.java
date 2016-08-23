@@ -36,10 +36,12 @@ public class PropertiesTest2 {
         System.out.println(System.getProperty("java.version"));
         System.out.println(System.getProperty("file.separator"));
                 System.out.println(System.getProperty("mail.host"));
+// todo put the above strings into a stream and iterate over stream doing a getProperty                
+        Stream<String> stream1 = Stream.of("java 8 ", "leveluplunch.com","    some messy string    ", "examples", "exercises");
 
            System.out.println( Stream.of("Hi","JVM","Devs"));
-               Stream<String> stream = Stream.of("Hi","JVM","Devs");
-               String joined = stream.map(String::trim).collect(
+               Stream<String> stream2 = Stream.of("Hi","JVM","Devs");
+               String joined = stream1.map(String::trim).collect(
             Collectors.joining("%"));
             		System.out.println(joined);
     }

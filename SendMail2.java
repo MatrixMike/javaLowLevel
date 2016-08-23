@@ -42,17 +42,12 @@ System.out.println("debug1");
                   InetAddress.getLocalHost().getHostName() + ">");
      System.out.println("user.name "+ 
                   System.getProperty("user.name") + "@" + 
-                  InetAddress.getLocalHost());
-                 
+                  InetAddress.getLocalHost());               
       // Ask the user for the from, to, and subject lines
-
-        
-      System.out.print("From: ");
-      String from = in.readLine();
-      System.out.print("To: ");
-      String to = in.readLine();
-      System.out.print("Subject: ");
-      String subject = in.readLine();
+      
+      System.out.print("From: ");		String from = in.readLine();
+      System.out.print("To: ");			String to = in.readLine();
+      System.out.print("Subject: ");	String subject = in.readLine();
 
       // Establish a network connection for sending mail
       URL u = new URL("mailto:" + to);      // Create a mailto: URL 
@@ -68,7 +63,6 @@ System.out.println("debug1");
         
       System.out.flush();                   // Tell them right now
       c.connect();                          // Connect to mail host
-
 
       // Write out mail headers.  Don't let users fake the From address
       out.println("From: \"" + from + "\" <" +

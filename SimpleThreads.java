@@ -23,7 +23,7 @@ public class SimpleThreads {
  * @author  (Mike Hewitt)
  * @version (1.1)
  */
-    private static class MessageLoop
+    public static class MessageLoop
         implements Runnable {
         public void run() {
             String importantInfo[] = {
@@ -35,7 +35,7 @@ public class SimpleThreads {
             };
             try {
                 for (int i = 0;
-                     i < importantInfo.length;
+                     i < importantInfo.length;  // number of strings in array
                      i++) {
                     // Pause for 4 seconds
                     Thread.sleep(4000);
