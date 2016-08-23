@@ -21,26 +21,40 @@ public class waves2 extends Applet {
 int cosv = 5;
 int sinv = 19;
 int paintcount = 0;
-
+/**
+ * @param x double input value
+ * @return double this value gets plotted against x
+ */
     double f(double x) {
 // nearly original	return (Math.cos(x/cosv) + Math.sin(x/sinv) + 2) * getSize().height / 4;
 // use sin and cos to change phase
 	return (Math.sin(x/fqa) + Math.sin(x/fqb) + 2) * getSize().height / 4;
 
     }
+    /**
+ * @param x double input value
+ * @return double this value gets plotted against x
+ */
     double f1(double x) {
 // nearly original	return (Math.cos(x/cosv) + Math.sin(x/sinv) + 2) * getSize().height / 4;
 // use sin and cos to change phase
 	return (Math.sin(x/fqa) + 2) * getSize().height / 4;
 
     }
-
+/**
+ * @param x double input value
+ * @return double this value gets plotted against x
+ */
     double f2(double x) {
 // nearly original	return (Math.cos(x/cosv) + Math.sin(x/sinv) + 2) * getSize().height / 4;
 // use sin and cos to change phase
 	return (Math.sin(x/fqb) + 2) * getSize().height / 4;
 
     }
+    /**
+ * @param x double input value
+ * @return double this value gets plotted against x
+ */
     double f3(double x) {
 // nearly original	return (Math.cos(x/cosv) + Math.sin(x/sinv) + 2) * getSize().height / 4;
 // use sin and cos to change phase
@@ -58,7 +72,10 @@ int paintcount = 0;
 		    // 				list.forEach( v -> System.out.println("value is "+ v));
 	}
 	* */
-	
+/**
+ * @param g Graphics to render image upon
+ * @return double this value gets plotted against x
+ */	
     public void paint(Graphics g) {
 // set colour for combined waves
 	g.setColor(Color.white);
@@ -137,10 +154,17 @@ int paintcount = 0;
      //   stream_from_function();
  //       System.out.println("MJH freqb= "+Fb);
     }
-
+/**
+ * @param 
+ * @return 
+ */
   public String getAppletInfo() {
     return "Draws a sin graph. Now using Lambdas and Streams  - 25-08-2015";
   }
+  /**
+ * @param 
+ * @return 
+ */
     public String[][] getParameterInfo() {
         String pinfo[][] = {
             {"freqa", "", "Frequency A"},
@@ -148,8 +172,22 @@ int paintcount = 0;
         };
         return pinfo;
     }
-    
+/**
+ * @param color function
+ * @return 
+ */    
+/*public void plotFunction() {
+// pass in the color and the function 
+	g.setColor(Color.red);
+	Stream.iterate(0, n -> n + 3)   // was n+1
+		.limit(getSize().width)
+		.parallel()
+					//	.skip(2)
+					//	.filter(w -> (w % 5) == 0)
+					//	.forEach(System.out::println);
+		.forEach(	x ->    g.drawLine(x, (int)f(x), x + 1, (int)f1(x + 1)));
 
-
+}
+*/
 }
 
