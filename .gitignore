@@ -1,3 +1,6 @@
 # compiled source #
 *.class
+*.html
+*.css
+*.js
 
