@@ -28,6 +28,8 @@ public class Dates1 {
 	Date startDate4 = new GregorianCalendar(1955,  10,  1, 9, 00).getTime();
 	Date startDate5 = new GregorianCalendar(1947,  10,  1, 9, 00).getTime();
 	Date startDate6 = new GregorianCalendar(2015, 11, 25,  9, 00).getTime();
+	Date startDate7 = new GregorianCalendar(2012, 10, 28,  9, 00).getTime();  // changed to November as I don't believe it was Dec
+	Date startDate8 = new GregorianCalendar(1972, 5, 17,  9, 00).getTime();  //  Richard's birthdate
 	Date endDate1   = new Date();
 
    long diff1 = endDate1.getTime() - startDate1.getTime();
@@ -36,7 +38,9 @@ public class Dates1 {
    long diff4 =   startDate4.getTime() - endDate1.getTime();
    long diff5 =   startDate5.getTime() - endDate1.getTime();
    long diff6 =   startDate6.getTime() - endDate1.getTime()  ;
-         
+   long diff7 =   startDate7.getTime() - endDate1.getTime()  ;
+   long diff8 =   startDate8.getTime() - endDate1.getTime()  ;
+            
 	System.out.println("  Difference between " + endDate1);
 	System.out.println("  and " + startDate1 + " is "  + (diff1 / (1000L*60L*60L*24L)) + " days.");
 	System.out.println("  and " + startDate2 + " is "  + (diff2 / (1000L*60L*60L*24L)) + " days.");
@@ -44,6 +48,8 @@ public class Dates1 {
 	System.out.println("  and " + startDate4 + " is "  + (diff4 / (1000L*60L*60L*24L)) + " days. Mike's Life");
 	System.out.println("  and " + startDate5 + " is "  + (diff5 / (1000L*60L*60L*24L)) + " days. Phyllis' Life");
 	System.out.println("  and " + startDate6 + " is "  + (diff6 / (1000L*60L*60L*24L)) + " days. Christmas");
+	System.out.println("  and " + startDate7 + " is "  + (diff7 / (1000L*60L*60L*24L)) + " days. Current Address");
+	System.out.println("  and " + startDate8 + " is "  + (diff8 / (1000L*60L*60L*24L)) + " days. Richard's birthdate");
 	System.out.println();
    }
 	  private static void Adddates() {
