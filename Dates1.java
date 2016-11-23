@@ -29,7 +29,7 @@ public class Dates1 {
 	Date startDate5 = new GregorianCalendar(1947,  10,  1, 9, 00).getTime();
 	Date startDate6 = new GregorianCalendar(2015, 11, 25,  9, 00).getTime();
 	Date startDate7 = new GregorianCalendar(2012, 10, 28,  9, 00).getTime();  // changed to November as I don't believe it was Dec
-	Date startDate8 = new GregorianCalendar(1972, 5, 17,  9, 00).getTime();  //  Richard's birthdate
+	Date startDate8 = new GregorianCalendar(1972, 5, 17,  9, 00).getTime();  //  Richard's birthdate  17.05.72 
 	Date endDate1   = new Date();
 
    long diff1 = endDate1.getTime() - startDate1.getTime();
