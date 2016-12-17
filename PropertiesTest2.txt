@@ -1,62 +1,59 @@
 -- listing properties --
 java.runtime.name=Java(TM) SE Runtime Environment
-sun.boot.library.path=C:\Program Files\Java\jre1.8.0_60\bin
-java.vm.version=25.60-b23
+sun.boot.library.path=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-h...
+java.vm.version=25.65-b01
 java.vm.vendor=Oracle Corporation
 java.vendor.url=http://java.oracle.com/
-path.separator=;
+path.separator=:
 java.vm.name=Java HotSpot(TM) Client VM
 file.encoding.pkg=sun.io
-user.script=
 user.country=AU
 sun.java.launcher=SUN_STANDARD
-sun.os.patch.level=Service Pack 3
+sun.os.patch.level=unknown
 java.vm.specification.name=Java Virtual Machine Specification
-user.dir=D:\JavaLowLevel\javaLowLevel-master
-java.runtime.version=1.8.0_60-b27
-java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
-java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_60\lib...
-os.arch=x86
-java.io.tmpdir=C:\DOCUME~1\Mike1\LOCALS~1\Temp\
+user.dir=/home/pi/javaLowLevel
+java.runtime.version=1.8.0_65-b17
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.endorsed.dirs=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-h...
+os.arch=arm
+java.io.tmpdir=/tmp
 line.separator=
 
 java.vm.specification.vendor=Oracle Corporation
-user.variant=
-os.name=Windows XP
-sun.jnu.encoding=Cp1252
-java.library.path=C:\Documents and Settings\All Users\A...
+os.name=Linux
+sun.jnu.encoding=UTF-8
+java.library.path=/usr/java/packages/lib/arm:/lib:/usr/lib
 java.specification.name=Java Platform API Specification
 java.class.version=52.0
-"java.version"=
 sun.management.compiler=HotSpot Client Compiler
-os.version=5.1
-user.home=C:\Documents and Settings\Mike1
+os.version=4.4.13+
+user.home=/home/pi
+sun.arch.abi=gnueabihf
 user.timezone=
-java.awt.printerjob=sun.awt.windows.WPrinterJob
-file.encoding=Cp1252
+java.awt.printerjob=sun.print.PSPrinterJob
+file.encoding=UTF-8
 java.specification.version=1.8
-user.name=Mike1
-java.class.path=.;C:\Program Files\Java\jre7\lib\ext\...
+user.name=pi
+java.class.path=.
 java.vm.specification.version=1.8
 sun.arch.data.model=32
-java.home=C:\Program Files\Java\jre1.8.0_60
-sun.java.command=PropertiesTest
+java.home=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-h...
+sun.java.command=PropertiesTest2
 java.specification.vendor=Oracle Corporation
 user.language=en
-awt.toolkit=sun.awt.windows.WToolkit
-java.vm.info=mixed mode, sharing
-java.version=1.8.0_60
-java.ext.dirs=C:\Program Files\Java\jre1.8.0_60\lib...
-sun.boot.class.path=C:\Program Files\Java\jre1.8.0_60\lib...
-sun.stderr.encoding=cp850
+awt.toolkit=sun.awt.X11.XToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_65
+java.ext.dirs=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-h...
+sun.boot.class.path=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-h...
 java.vendor=Oracle Corporation
-file.separator=\
+file.separator=/
 java.vendor.url.bug=http://bugreport.sun.com/bugreport/
 sun.cpu.endian=little
 sun.io.unicode.encoding=UnicodeLittle
-sun.desktop=windows
 sun.cpu.isalist=
-Mike1
-C:\Program Files\Java\jre1.8.0_60
-1.8.0_60
-\
+user.name:pi
+/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre
+1.8.0_65
+/
+null
