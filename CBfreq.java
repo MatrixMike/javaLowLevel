@@ -23,6 +23,14 @@ public class CBfreq {
 	
 	public static void main (String args[]) {
 		int ch = 1;
+		
+		String palindrome = "Dot saw I was Tod";
+         
+        StringBuilder sb = new StringBuilder(palindrome);
+
+		sb.append("Greetings");
+		System.out.println(" length = " + sb.length() + " "+  sb.reverse() + sb);
+		
 		for (int x = 156050; x < 157350+1; x=x+50) {
 			System.out.println("\nM ch "+ ch + " F = " + x/1000 + "." + x%1000 +"MHz");
 			ch = ch + 1;
