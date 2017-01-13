@@ -43,7 +43,7 @@ public class CBfreq {
 			System.out.println(sb);
 			// System.out.println("\nM ch "+ ch + " F = " + x/1000 + "." + x%1000 +"MHz");
 			// now reset to blank
-			System.out.println(strCreate.make1(ch));
+			System.out.println(strCreate.make1(ch,x));
 			ch = ch + 1;
 		}
 			System.out.println("\n===M ch 28 F = 157.5MHz===");	
@@ -55,16 +55,16 @@ public class CBfreq {
 		}
 	}
 	static class strCreate  {
-		static String make1 (int chn){
-			String message1 = "abc";
-			int x = 156025;
+		static String make1 (int chn, int f ){
+			String message1 = "";
+			//int f = 156025;
 			StringBuilder sb1 = new StringBuilder(message1);
 			sb1.append("M ch ");
 			sb1.append(chn);
 			sb1.append(" F = ");
-			sb1.append(x/1000);
+			sb1.append(f/1000);
 			sb1.append(".");
-			sb1.append(x%1000);
+			sb1.append(f%1000);
 			sb1.append("MHz\n");
 			//return message1; // return sb1;   work done to create sb1  
 			return sb1.toString();
