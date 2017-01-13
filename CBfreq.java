@@ -45,7 +45,7 @@ public class CBfreq {
 			// now reset to blank 
 			* */
 			System.out.println(strCreate.make1(ch,x));
-			ch = ch + 1;
+			ch += 1;
 		}
 			System.out.println("\n===M ch 28 F = 157.5MHz===");	
 			
