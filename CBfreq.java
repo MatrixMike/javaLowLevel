@@ -32,7 +32,7 @@ public class CBfreq {
 		//System.out.println(" length = " + sb.length() + " "+  sb.reverse() + sb);
 		System.out.println("\nStarting\n");
 		for (int x = 156050; x < 157350+1; x=x+50) {
-			StringBuilder sb = new StringBuilder();
+			/* StringBuilder sb = new StringBuilder();
 			sb.append("\nM ch ");
 			sb.append(ch);
 			sb.append(" F = ");
@@ -42,7 +42,8 @@ public class CBfreq {
 			sb.append("MHz");
 			System.out.println(sb);
 			// System.out.println("\nM ch "+ ch + " F = " + x/1000 + "." + x%1000 +"MHz");
-			// now reset to blank
+			// now reset to blank 
+			* */
 			System.out.println(strCreate.make1(ch,x));
 			ch = ch + 1;
 		}
