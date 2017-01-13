@@ -32,7 +32,16 @@ public class CBfreq {
 		System.out.println(" length = " + sb.length() + " "+  sb.reverse() + sb);
 		
 		for (int x = 156050; x < 157350+1; x=x+50) {
-			System.out.println("\nM ch "+ ch + " F = " + x/1000 + "." + x%1000 +"MHz");
+			sb.append("\nM ch ");
+			sb.append(ch);
+			sb.append(" F = ");
+			sb.append(x/1000);
+			sb.append(".");
+			sb.append(x%1000);
+			sb.append("MHz");
+			System.out.println(sb);
+			// System.out.println("\nM ch "+ ch + " F = " + x/1000 + "." + x%1000 +"MHz");
+			// now reset to blank
 			ch = ch + 1;
 		}
 			System.out.println("\n===M ch 28 F = 157.5MHz===");	
