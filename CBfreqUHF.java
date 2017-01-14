@@ -25,23 +25,43 @@ public class CBfreqUHF {
 	public static void main (String args[]) {
 		int ch = 1;
 		for (int x = 4764250; x < 4774000+1; x=x+spacing) {
-			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
+//			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
+			System.out.println(strCreate.make1(ch,x));
 			ch = ch + 1;
 		}
 	System.out.println("\n===");	
 			
 		ch = 41;
 		for (int x = 4764375; x < 4769125+1; x=x+spacing) {
-			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
+//			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
+			System.out.println(strCreate.make1(ch,x));
 			ch = ch + 1;
 		}
 	System.out.println("\n===");
 			ch = 64;
 		for (int x = 4770125; x < 4774125+1; x=x+spacing) {
-			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
+//			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
+			System.out.println(strCreate.make1(ch,x));
 			ch = ch + 1;
 		}	
 		
 	}
+		static class strCreate  {
+		static String make1 (int chn, int f ){
+			String message1 = "";
+			//int f = 156025;
+			StringBuilder sb1 = new StringBuilder(message1);
+			sb1.append("M ch ");
+			sb1.append(chn);
+			sb1.append(" F = ");
+			sb1.append(f/10000);
+			sb1.append(".");
+			sb1.append(f%10000);
+			sb1.append("MHz\n");
+			//return message1; // return sb1;   work done to create sb1  
+			return sb1.toString();
+		}
+	}
+	
 }
 

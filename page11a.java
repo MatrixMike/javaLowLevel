@@ -14,7 +14,7 @@ public class page11a{
 		if (args.length > 0) // safety feature
 		System.out.println("Hello, " + args[0]);
 		else
-		System.out.println("Hello, someone - you didm't give me your name");
+		System.out.println("Hello, someone - you didn't give me your name");
 		
 	}
 }

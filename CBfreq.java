@@ -18,7 +18,6 @@
  * 
  */
 
-
 public class CBfreq {
 	
 	public static void main (String args[]) {
@@ -55,7 +54,7 @@ public class CBfreq {
 			ch = ch + 1;
 		}
 	}
-	static class strCreate  {
+/*	static class strCreate  {
 		static String make1 (int chn, int f ){
 			String message1 = "";
 			//int f = 156025;
@@ -71,5 +70,6 @@ public class CBfreq {
 			return sb1.toString();
 		}
 	}
+	*/
 }
 
