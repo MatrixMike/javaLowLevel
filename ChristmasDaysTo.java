@@ -37,7 +37,7 @@ public static void main (String args[]) {
 			System.out.print(testStr);
 			if (first_time_through == 0){
 				cldr_now = Calendar.getInstance(); 
-				dateDiff = -(cldr.get(Calendar.DAY_OF_YEAR) - cldr_now.get(Calendar.DAY_OF_YEAR));
+				dateDiff = (cldr.get(Calendar.DAY_OF_YEAR) - cldr_now.get(Calendar.DAY_OF_YEAR));
 				System.out.print(" which is in "+ dateDiff + " days. ");
 	        	first_time_through++ ; 
 	        	// save n and calculate difference between n and today -> i.e. n 
