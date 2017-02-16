@@ -38,7 +38,11 @@ public class LongestCommonSubsequence {
     }
 
     public static void main(String[] args) {
-        String lcs = lcs(args[0], args[1]);
+        String	lcs = lcs("tania", "tonight");
+		System.out.println(lcs);
+				lcs = lcs(args[0], args[1]);
+		System.out.println(lcs);
+				lcs = lcs("anaconda", "banana");
         System.out.println(lcs);
     }
 }

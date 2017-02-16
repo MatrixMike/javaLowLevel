@@ -3,7 +3,6 @@
  * 
  * 2017 Michael Hewitt <mikeh@electroteach.com>
  * 
- * 
  *
 	http://introcs.cs.princeton.edu/java/23recursion/Factorial.java.html
  */
