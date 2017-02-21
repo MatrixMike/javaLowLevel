@@ -4,6 +4,8 @@
  * Copyright 2015 Michael Hewitt <mikeh@electroteach.com>
  * 11 November 2015
  * mod for mlug 04.08.2016 11:10:30   mlug.java
+ * dermpav  - call it second Saturday of Month
+ * 15.02.2017
  * http://www.java2s.com/Tutorials/Java/java.util/Calendar/Java_Calendar_get_int_field_.htm
  */
  /*
@@ -22,7 +24,7 @@ public static void main (String args[]) {
 
 	for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  
 		{
-			System.out.println(weekCheck(cldr, dateformatter));		
+			weekCheck(cldr, dateformatter);		
 		}
 	    cldr.add(Calendar.DAY_OF_YEAR, +1);  //  examine why cldr and Calendar 
 	 }
@@ -37,13 +39,15 @@ public static void main (String args[]) {
  * @return String 
  * @see mlug.java 
  */
-   static String weekCheck(Calendar C, SimpleDateFormat S){
+   static void weekCheck(Calendar C, SimpleDateFormat S){
 		String testStr; 
 //		    Calendar now = Calendar.getInstance();
-	 if (  ( (C.get(Calendar.DAY_OF_WEEK_IN_MONTH)==1) && (C.get(Calendar.DAY_OF_WEEK)==7) )){
+	 if (  ( (C.get(Calendar.DAY_OF_WEEK_IN_MONTH)==2) && (C.get(Calendar.DAY_OF_WEEK)==7) )){
 		
-		int monthA = C.get(Calendar.MONTH); 
-		C.add(C.DAY_OF_YEAR, +7);	
+//		int monthA = C.get(Calendar.MONTH); 
+//		C.add(C.DAY_OF_YEAR, +7);	
+					System.out.println(S.format(C.getTime()));
+/*
 		int monthB = C.get(Calendar.MONTH); 
 		if (monthA == monthB) {
 		}
@@ -51,11 +55,12 @@ public static void main (String args[]) {
 		C.add(C.DAY_OF_YEAR, -7);	
 		}
 		return S.format(C.getTime());
+		*/
 
 
 	 // now that I am returning a value I need to refactor to only return the desired dates
 	 // called from a FOR loop so this demands that a return happens each loop
     }
-	return S.format(C.getTime());
+//	return S.format(C.getTime());
 }
 }

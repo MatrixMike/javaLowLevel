@@ -1,0 +1,18 @@
+warning: [options] bootstrap class path not set in conjunction with -source 1.3
+warning: [options] source value 1.3 is obsolete and will be removed in a future release
+warning: [options] target value 1.3 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+ArrayTest1.java:18: error: generics are not supported in -source 1.3
+	ArrayList<Integer> values = new ArrayList<>();
+	         ^
+  (use -source 5 or higher to enable generics)
+ArrayTest1.java:18: error: diamond operator is not supported in -source 1.3
+	ArrayList<Integer> values = new ArrayList<>();
+	                                          ^
+  (use -source 7 or higher to enable diamond operator)
+ArrayTest1.java:25: error: enhanced for loops are not supported in -source 1.3
+	for (int value : values) {
+	               ^
+  (use -source 5 or higher to enable for-each loops)
+3 errors
+4 warnings
