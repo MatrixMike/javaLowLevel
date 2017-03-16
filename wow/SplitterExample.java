@@ -1,5 +1,5 @@
 // package com.howtodoinjava.csv.demoSplit;
- 
+package wow;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ public class SplitterExample
     public static void main(String[] args)
     {
         //Input file which needs to be parsed
-        String fileToParse = "/home/mikeh/WOW/subscribers-Marilyn.csv";
+        String fileToParse = "/home/mikeh/WOW/emailList.txt";
         String csvHeader = "First Name,Last Name,Display Name,Nickname,Primary Email,";
         BufferedReader fileReader = null;
   //      System.out.println(csvHeader);
@@ -35,6 +35,8 @@ public class SplitterExample
                     
                  //    System.out.print(tokens[1]);
                  //    System.out.print(", ");
+             //robin       System.out.print(tokens[8]+" ");
+            //robin        System.out.print(tokens[10]+" ");
                     System.out.println(tokens[0]);
  //               }
                 System.out.println("========");
