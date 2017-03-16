@@ -24,7 +24,7 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-//package Kweens;		// fix error caused when this uncommented
+package queens;		// fix error caused when this uncommented
 /**
  * generate solution to 8 Queens problem
  * @author michael.billington@gmail.com
