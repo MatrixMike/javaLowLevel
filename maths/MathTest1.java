@@ -21,7 +21,7 @@
  * 
  */
 
-
+package maths;
 public class MathTest1 {
 
    public static void main(String args[]) {

@@ -23,7 +23,7 @@
 
 
 // package com.tutorialspoint;
-
+package maths;
 import java.lang.*;
 
 public class MathDemo {
