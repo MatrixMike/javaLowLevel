@@ -44,6 +44,8 @@ public class LongestCommonSubsequence {
 		System.out.println(lcs);
 				lcs = lcs("anaconda", "banana");
         System.out.println(lcs);
+        		lcs = lcs("psychologist", "psychiatrist");
+        System.out.println(lcs);
     }
 }
 
