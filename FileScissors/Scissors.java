@@ -3,6 +3,7 @@
  * 
  * Michael Hewitt <mikeh@electroteach.com>
  */
+package FileScissors;
 import java.util.*;
 
 class Scissors {
