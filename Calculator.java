@@ -1,5 +1,4 @@
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -9,42 +8,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;	
 import java.util.stream.Collectors.*; 
-
-
-import java.util.stream.Stream;	
-import java.util.stream.Collectors.*; 
-import java.util.List;
-import java.util.Arrays;
-import java.util.Map;
 import java.util.Date;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
 import java.util.stream.LongStream;
-
-
 
 public class Calculator {
   // 24.08.2015 15:25:35
@@ -64,13 +33,13 @@ public class Calculator {
 		Stream.iterate(0, n -> n + 1)
 		.limit(7)
 		.skip(0)
-	//	.filter(w -> (w % 5) == 0)
+		.filter(w -> (w % 5) > 0)		// try removing this line or replacing > with ==
 		.forEach(System.out::println);
 	}
 
 	//	stream_from_function();
 
-    public static void main(String... args) {
+public static void main(String... args) {
     
         Calculator myApp = new Calculator();
         IntegerMath addition = (a, b) -> a + b;
@@ -87,9 +56,12 @@ public class Calculator {
         System.out.println("20 * 10 = " +
             myApp.operateBinary(20, 10, mult));  
             
- int V = 10; // 10V  
- int LEDs = 4; // number of LEDs      - works for 0 to 4
+		int V = 10; // 10V  
+		int LEDs = 4; // number of LEDs      - works for 0 to 4
         System.out.println("Resistor needed when V  = " + V + " and number of LEDs is " + LEDs + " is " +
-            myApp.operateBinary(V, LEDs, Ohms));          // 10V , number of LEDs           
+            myApp.operateBinary(V, LEDs, Ohms));          // 10V , number of LEDs    
+         
+         
+         stream_from_function();          
     }
 }
