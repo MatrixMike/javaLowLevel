@@ -19,6 +19,7 @@
  * the stuff learned.  Line 58 has a hard coded 22 - need to read until EOF
  * 
  * 25.09.2015 10:04:49
+ * 04.05.2017    - to test - it reads a small number of words from console
  */
 
 package mike1;
@@ -62,7 +63,7 @@ public static void main(String[] args) {
 
 	System.out.println( "<TABLE BORDER ALIGN=CENTER>") ;
  // System.out.println( "<TABLE>") ;
-	for ( int rows = 0; rows < 22-1; rows = rows +1 ) {		// was 22-1
+	for ( int rows = 0; rows < 3-1; rows = rows +1 ) {		// was 22-1 // new test 3
 		System.out.println( "<TR>") ;
 
   		//first the item number (ordinal or cardinal)
