@@ -2,6 +2,7 @@
 /*
 27.08.2015 16:53:04
 * 17.09.2015 10:31:14
+* 04.05.2017
 Mods to an example from Oracle by mike hewitt
 This generates a stream of resistor values for a constant Voltage across a series of LEDS
 */
@@ -13,14 +14,13 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Collectors.*; 
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 import java.util.TreeMap;
-
 
 public class Calculator2 {
   // 24.08.2015 15:25:35
@@ -57,12 +57,13 @@ public class Calculator2 {
         System.out.println("20 * 10 = " +myApp.operateBinary(20, 10, mult));  
       */     
                          
-            Stream.iterate(0, LEDs -> LEDs + 1)
-				.limit(10)			// how many LEDs to try 
-				.skip(0)			// how many to ignore
-				//	.filter(w -> (w % 5) == 0)
-				.forEach(LEDs -> System.out.println("Resistor needed when V  = " + V + " and number of LEDs is " + LEDs + " is " +
-				myApp.operateBinary(V, LEDs, Ohms) + " Ohms"));          // 14V , number of LEDs   
+		Stream.iterate(0, LEDs -> LEDs + 1)
+		.limit(11)			// how many LEDs to try 
+		.skip(0)			// how many to ignore
+		//	.filter(w -> (w % 5) == 0)
+		.forEach(LEDs -> System.out.println("Resistor needed when V  = " + 
+			V + " and number of LEDs is " + LEDs + " is " +
+		myApp.operateBinary(V, LEDs, Ohms) + " Ohms"));          // 14V , number of LEDs   
 		//.forEach(System.out::println); 
     }
 }
