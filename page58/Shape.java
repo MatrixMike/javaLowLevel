@@ -1,8 +1,8 @@
-package COM.Bluehorse.Shapes;
+package com.electroteach.shapes;
 
 import java.awt.*;
 public abstract class Shape {
-	Point loc;
+	public Point loc;
 	public abstract void draw(Graphics g);
 	}
 	

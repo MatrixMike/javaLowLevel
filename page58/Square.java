@@ -1,4 +1,4 @@
-package COM.Bluehorse.Shapes;
+package com.electroteach.shapes;
 
 import java.awt.*;
 public class Square extends Shape {
