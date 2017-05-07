@@ -1,4 +1,4 @@
-package com.electroteach.shapes;
+package shapes;
 
 import java.awt.*;
 public class Square extends Shape {

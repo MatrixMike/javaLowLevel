@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import java.applet.Applet;
-import com.electroteach.shapes;
+import utils.demo;
 
 import java.util.*;
 public class DrawApplet extends Applet {
