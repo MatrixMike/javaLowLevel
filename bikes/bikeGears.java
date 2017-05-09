@@ -3,7 +3,8 @@
  * 28.02.2017
 
  * aim was to create a program that has a main calling a class.method that returns a List
- * 
+ * 09.05.2017  execute with java from one directory level outside (above) 
+ * java java bikes.bikeGears 
  */
 package bikes;
 import java.util.List;
