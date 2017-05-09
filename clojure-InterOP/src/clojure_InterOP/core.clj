@@ -3,10 +3,9 @@
        	(:gen-class ))
 
 (defn -main [& args]
-(println "clj-test")
-(println [utils.demo 4      ])
   ;; compiles but error on execution
  ;; (let [d (utils.demo. )]     (.twice  d))
  ;;(println (utils.demo. 4 ) )
- (println (. demo twice 4 ))
+  (println (. demo twice 5 ))
+  (doseq [j (range 2 20 ) ] (println (. demo twice j)))
 )
