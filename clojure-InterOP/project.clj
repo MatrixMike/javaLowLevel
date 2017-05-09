@@ -4,5 +4,7 @@
   
   
     :main clojure-InterOP.core
+    :aot 
+    :all
   )
   
