@@ -7,5 +7,5 @@
  ;; (let [d (utils.demo. )]     (.twice  d))
  ;;(println (utils.demo. 4 ) )
   (println (. demo twice 5 ))
-  (doseq [j (range 2 20 ) ] (println (. demo twice j)))
+  (doseq [j (range 2 20 3) ] (println (. demo twice j)))
 )
