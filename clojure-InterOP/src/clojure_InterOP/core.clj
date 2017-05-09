@@ -4,5 +4,9 @@
 
 (defn -main [& args]
 (println "clj-test")
-(println [utils.demo 4      ])  ;; compiles but error on execution
+(println [utils.demo 4      ])
+  ;; compiles but error on execution
+ ;; (let [d (utils.demo. )]     (.twice  d))
+ ;;(println (utils.demo. 4 ) )
+ (println (. demo twice 4 ))
 )
