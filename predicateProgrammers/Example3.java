@@ -61,11 +61,12 @@ public class Example3 {
             }
         };
         
- //      Predicate<Person> printNames = (p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName());	
+ //      Predicate<Person> printNames = (( ( (p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName() )) || 1 ) == 1)  ;	
               // Define some filters  creates error so keep
  
-//		Predicate <Person> salaryLimit = (p1, p2) -> (p1.getSalary() - p2.getSalary());
-        // forEach examples       
+//		Predicate <Person> salaryLimit = (p1, p2) -> (p1.getSalary() - p2.getSalary())   > 0   ;
+//		Predicate mTI = (x) -> x ;   // not a proper filter
+        // forEach examples        
         // Print programmers name
         System.out.println("Print programmers names:");
         javaProgrammers.forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
@@ -88,14 +89,15 @@ public class Example3 {
                 .forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
 
         // Define some filters
-        Predicate<Person> ageFilter = (p) -> (p.getAge() > 25);	        // Define some filters
+        Predicate<Person> ageFilter    = (p) -> (p.getAge() > 25);	        // Define some filters
         Predicate<Person> salaryFilter = (p) -> (p.getSalary() > 1400);
         Predicate<Person> genderFilter = (p) -> ("female".equals(p.getGender()));
 
         System.out.println("\n\nFemale PHP programmers that earn more than $1,400 and are older than 24 years:");
         phpProgrammers.stream()
                 .filter(ageFilter)
-                .filter(salaryFilter)
+                .filter(salaryFilter)					// this and following line identical
+				.filter((p) -> (p.getSalary() > 1400))
                 .filter(genderFilter)
                 .forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
 
