@@ -83,7 +83,7 @@ public class Example3 {
                 .forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
 
         // Define some filters
-        Predicate<Person> ageFilter = (p) -> (p.getAge() > 25);
+        Predicate<Person> ageFilter = (p) -> (p.getAge() > 25);	        // Define some filters
         Predicate<Person> salaryFilter = (p) -> (p.getSalary() > 1400);
         Predicate<Person> genderFilter = (p) -> ("female".equals(p.getGender()));
 
