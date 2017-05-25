@@ -9,7 +9,7 @@
 
  */
 //import java.awt.*;
-import utils.*;
+import utils.demo;
 public
  //abstract
   class Shape {

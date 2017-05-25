@@ -6,6 +6,7 @@ public class demo {
 	}
 
 	public static double half (int a){
+		System.out.println("from half");
 	return a/2;
 	}
 	
