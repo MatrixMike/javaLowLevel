@@ -37,7 +37,8 @@ public class SplitterExample
                  //    System.out.print(", ");
              //robin       System.out.print(tokens[8]+" ");
             //robin        System.out.print(tokens[10]+" ");
-                    System.out.println(tokens[0]);
+                    System.out.print(tokens[3]);
+                                        System.out.println(tokens[0]);
  //               }
                 System.out.println("========");
             }

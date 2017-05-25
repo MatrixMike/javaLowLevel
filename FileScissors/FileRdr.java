@@ -15,15 +15,15 @@ public class FileRdr {
 		String fcontents = null;
 		
 		FileNameReader fnrObj = new FileNameReader();
-		fname = fnrObj.getFileName();
+		fname = fnrObj.getFileName();						// step 1 
 		
 		FileInputReader firObj = new FileInputReader();
-		fcontents = firObj.readFile(fname);
+		fcontents = firObj.readFile(fname);					// step 2 
 		
 		// System.in.read();  // optional wait for return 
 		// keypress to keep window open		
 		Scissors sciObj = new Scissors();
-		sciObj.cutUp(fcontents);
+		sciObj.cutUp(fcontents);							
 	}
 }
 /**

@@ -1,6 +1,12 @@
 # clojure-InterOP
+Tue 09 May 2017 18:58:42 AEST 
 
 FIXME: write description
+This is a demo of how a clojure program can access a java routine with static variables.
+The process was to work in Java and create a main program that included an :import of a 'library' routine.
+See the example 'page58'.
+The utils section was copied to the src branch of leiningen tree. 
+
 
 ## Usage
 
