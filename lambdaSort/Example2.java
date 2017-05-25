@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 import java.util.Comparator;
-
+import java.util.function.Predicate;
 /**
  *
  * @author Alin
@@ -13,7 +13,6 @@ public class Example2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
         String[] players = {"Rafael Nadal", "Novak Djokovic", "Stanislas Wawrinka", "David Ferrer", "Roger Federer", "Andy Murray", "Tomas Berdych", "Juan Martin Del Potro", "Richard Gasquet", "John Isner"};
 
         // Show the list of players
@@ -27,7 +26,9 @@ public class Example2 {
                 return (s1.compareTo(s2));
             }
         });
-
+ //       Predicate<players> printPlayer = (player) -> System.out.println(player);	        // Define some filters
+        
+        
         // Sort players by name using lambda expression
         Comparator<String> sortByName = (String s1, String s2) -> (s1.compareTo(s2));
         Arrays.sort(players, sortByName);
@@ -88,5 +89,4 @@ public class Example2 {
         System.out.print("\nShow the list of players after sorting by last letter:\n");
         Arrays.asList(players).forEach((player) -> System.out.println(player));
     }
-
 }

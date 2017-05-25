@@ -4,6 +4,7 @@
  * to compile in the Geany v 1.23 IDE I de-activated the 'package' 
  * javac *.java
  * 17.09.2015 14:02:28  - ran OK - a good example for me
+ * 25.05.2017 15:24:07  - geany 1.30.1
  */
 
 import java.util.ArrayList;
@@ -59,12 +60,16 @@ public class Example3 {
                 add(new Person("Evonne", "Shari", "PHP programmer", "female", 40, 1800));
             }
         };
-
-        // forEach examples
+        
+ //      Predicate<Person> printNames = (p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName());	
+              // Define some filters  creates error so keep
+ 
+//		Predicate <Person> salaryLimit = (p1, p2) -> (p1.getSalary() - p2.getSalary());
+        // forEach examples       
         // Print programmers name
         System.out.println("Print programmers names:");
         javaProgrammers.forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
-        phpProgrammers.forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
+         phpProgrammers.forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
 
         // Increase salary by 5% to programmers
         System.out.println("\n\nIncrease salary by 5% to programmers:");
@@ -73,7 +78,7 @@ public class Example3 {
         javaProgrammers.forEach(giveRaise);
         phpProgrammers.forEach(giveRaise);
         javaProgrammers.forEach((p) -> System.out.printf("%s earns now $%,d.%n", p.getFirstName(), p.getSalary()));
-        phpProgrammers.forEach((p) -> System.out.printf("%s earns now $%,d.%n", p.getFirstName(), p.getSalary()));
+         phpProgrammers.forEach((p) -> System.out.printf("%s earns now $%,d.%n", p.getFirstName(), p.getSalary()));
 
         // filter examples
         // Print PHP programmers that earn more than $1,400
@@ -153,7 +158,7 @@ public class Example3 {
         String phpDevelopers = phpProgrammers
                 .stream()
                 .map(Person::getFirstName)
-                .collect(joining(" ; "));    // this can be use as a token in further operations
+                .collect(joining(" ; "));    // this can be used as a token in further operations
 
         System.out.println(phpDevelopers);
 
@@ -176,7 +181,7 @@ public class Example3 {
         int numProcessorsOrCores = Runtime.getRuntime().availableProcessors();
         System.out.printf("\n\nParallel version on %s-core machine:", numProcessorsOrCores);
 
-        // parallel stream, sum examples
+        // parallel stream, sum examples {a.o.t. some examples}
         System.out.println("\nCalculate total money spent for paying Java programmers:");
         int totalSalary = javaProgrammers
                 .parallelStream()
