@@ -28,16 +28,17 @@
  * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */ 
-package  PersonSorter;
+ */
+//package  PersonSorter;
 
-import java.util.ArrayList; 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.function.Predicate;
 
 import java.util.function.*;
 import java.lang.Double;
@@ -45,13 +46,13 @@ import java.lang.Double;
 public class ReductionExamples {
 
     public static void main(String... args) {
-        
+
         // Create sample data
 
         List<Person1> roster = Person1.createRoster();
-    
+
         System.out.println("Contents of roster:");
-        
+
         roster
             .stream()
         //    .sorted()    // with zero arguments causes crash
@@ -60,102 +61,102 @@ public class ReductionExamples {
         System.out.println();
 
         // 1. Average age of male members, average operation
-        
+        Predicate <Person1> GenderMale = p -> p.getGender() == Person1.Sex.MALE;
         double average = roster
             .stream()
-            .filter(p -> p.getGender() == Person1.Sex.MALE)
+            .filter(GenderMale)
             .mapToInt(Person1::getAge)
             .average()
             .getAsDouble();
-            
+
         System.out.println("Average age (bulk data operations): " +
             average);
-        
+
         // 2. Sum of ages with sum operation
-        
+
         Integer totalAge = roster
             .stream()
             .mapToInt(Person1::getAge)
             .sum();
-            
+
         System.out.println("Sum of ages (sum operation): " +
             totalAge);
-        
+
         // 3. Sum of ages with reduce(identity, accumulator)
-        
+
         Integer totalAgeReduce = roster
             .stream()
             .map(Person1::getAge)
             .reduce(
                 0,
                 (a, b) -> a + b);
-            
+
         System.out.println(
             "Sum of ages with reduce(identity, accumulator): " +
             totalAgeReduce);
-         
+
         // 4. Average of male members with collect operation
- /* mike        
-        Averager averageCollect = roster.stream()
+
+/*        Averager averageCollect = roster.stream()
             .filter(p -> p.getGender() == Person1.Sex.MALE)
             .map(Person1::getAge)
             .collect(Averager::new, Averager::accept, Averager::combine);
-   */                
+*/
  /* mike       System.out.println("Average age of male members: " +
             averageCollect.average());
- */        
+ */
         // 5. Names of male members with collect operation
 
-        System.out.println("Names of male members with collect operation: ");         
+        System.out.println("Names of male members with collect operation: ");
         List<String> namesOfMaleMembersCollect = roster
             .stream()
-            .filter(p -> p.getGender() == Person1.Sex.MALE)
+            .filter(GenderMale)
             .map(p -> p.getName())
-            .collect(Collectors.toList());         
+            .collect(Collectors.toList());
 
         namesOfMaleMembersCollect
             .stream()
             .forEach(p -> System.out.println(p));
-             
+
         // 6. Group members by gender
-         
+
         System.out.println("Members by gender:");
         Map<Person1.Sex, List<Person1>> byGender =
             roster
                 .stream()
                 .collect(
                     Collectors.groupingBy(Person1::getGender));
-                
+
         List<Map.Entry<Person1.Sex, List<Person1>>>
-            byGenderList = 
+            byGenderList =
             new ArrayList<>(byGender.entrySet());
-            
+
         byGenderList
             .stream()
             .forEach(e -> {
-                System.out.println("\nGender: " + e.getKey());
+                System.out.println("\nGender1: " + e.getKey());
                 e.getValue()
                     .stream()
                     .map(Person1::getName)
                     .forEach(f -> System.out.println(f)); });
-         
+
         // 7. Group names by gender
-         
+
         System.out.println("\nNames by gender:");
         Map<Person1.Sex, List<String>> namesByGender =
             roster
                 .stream()
                 .collect(
                      Collectors.groupingBy(
-                         Person1::getGender,                      
+                         Person1::getGender,
                          Collectors.mapping(
                              Person1::getName,
                              Collectors.toList())));
-                     
+
         List<Map.Entry<Person1.Sex, List<String>>>
-            namesByGenderList = 
+            namesByGenderList =
                 new ArrayList<>(namesByGender.entrySet());
-                     
+
         namesByGenderList
             .stream()
             .forEach(e -> {
@@ -163,42 +164,42 @@ public class ReductionExamples {
                 e.getValue()
                     .stream()
                     .forEach(f -> System.out.println(f)); });
-         
+
         // 8. Total age by gender
-        
+
         System.out.println("\nTotal age by gender:");
         Map<Person1.Sex, Integer> totalAgeByGender =
             roster
                 .stream()
                 .collect(
                      Collectors.groupingBy(
-                         Person1::getGender,                      
+                         Person1::getGender,
                          Collectors.reducing(
                              0,
                              Person1::getAge,
                              Integer::sum)));
-                
+
         List<Map.Entry<Person1.Sex, Integer>>
-            totalAgeByGenderList = 
+            totalAgeByGenderList =
             new ArrayList<>(totalAgeByGender.entrySet());
-                     
+
         totalAgeByGenderList
             .stream()
-            .forEach(e -> 
+            .forEach(e ->
                 System.out.println("Gender: " + e.getKey() +
                     ", Total Age: " + e.getValue()));
-             
+
         // 9. Average age by gender
-         
+
         System.out.println("Average age by gender:");
         Map<Person1.Sex, Double> averageAgeByGender =
             roster
                 .stream()
                 .collect(
                      Collectors.groupingBy(
-                         Person1::getGender,                      
+                         Person1::getGender,
                          Collectors.averagingInt(Person1::getAge)));
-                 
+
         for (Map.Entry<Person1.Sex, Double> e : averageAgeByGender.entrySet()) {
             System.out.println(e.getKey() + ": " + e.getValue());
         }

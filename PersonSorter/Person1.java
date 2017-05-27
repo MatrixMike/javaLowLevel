@@ -28,10 +28,10 @@
  * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */ 
-package  PersonSorter;
- 
- 
+ */
+//package  PersonSorter;
+
+
 import java.util.List;
 import java.util.ArrayList;
 import java.time.chrono.IsoChronology;
@@ -40,23 +40,23 @@ import java.time.temporal.ChronoUnit;
 import java.time.Period;
 
 public class Person1 {
-  
+
     public enum Sex {
         MALE, FEMALE
     }
-  
-    String name; 
+
+    String name;
     LocalDate birthday;
     Sex gender;
     String emailAddress;
-  
+
     Person1(String nameArg, LocalDate birthdayArg,
         Sex genderArg, String emailArg) {
         name = nameArg;
         birthday = birthdayArg;
         gender = genderArg;
         emailAddress = emailArg;
-    }  
+    }
 
     public int getAge() {
         return birthday
@@ -68,38 +68,38 @@ public class Person1 {
       System.out.println(name + ", " + this.getAge());
     }
 /*
-  * 
+  *
   * @return gender
   */
     public Sex getGender() {
         return gender;
     }
 /*
-  * 
+  *
   * @return name
-  */  
+  */
     public String getName() {
         return name;
     }
 /*
-  * 
+  *
   * @return emailAddress
-  */  
-  
+  */
+
     public String getEmailAddress() {
         return emailAddress;
     }
-    
+
     public LocalDate getBirthday() {
         return birthday;
     }
-    
+
     public static int compareByAge(Person1 a, Person1 b) {
         return a.birthday.compareTo(b.birthday);
     }
 
     public static List<Person1> createRoster() {
-        
+
         List<Person1> roster = new ArrayList<>();
         roster.add(
             new Person1(
@@ -127,8 +127,8 @@ public class Person1 {
             "Mike",
             IsoChronology.INSTANCE.date(1955,11,1),
             Person1.Sex.MALE, "mike@electroteach.com"));
-        
+
         return roster;
     }
-    
+
 }
