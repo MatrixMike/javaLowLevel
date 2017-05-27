@@ -1,7 +1,7 @@
 // package example3;
 /*
  * mod by MJH 14-August-2015
- * to compile in the Geany v 1.23 IDE I de-activated the 'package' 
+ * to compile in the Geany v 1.23 IDE I de-activated the 'package'
  * javac *.java
  * 17.09.2015 14:02:28  - ran OK - a good example for me
  * 25.05.2017 15:24:07  - geany 1.30.1
@@ -60,13 +60,14 @@ public class Example3 {
                 add(new Person("Evonne", "Shari", "PHP programmer", "female", 40, 1800));
             }
         };
-        
- //      Predicate<Person> printNames = (( ( (p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName() )) || 1 ) == 1)  ;	
+
+//       Predicate<Person> printName = (( ( (p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName() )) || 1 ) == 1)  ;
+//  Predicate<Person> printName =  (p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()) ;
               // Define some filters  creates error so keep
- 
+
 //		Predicate <Person> salaryLimit = (p1, p2) -> (p1.getSalary() - p2.getSalary())   > 0   ;
 //		Predicate mTI = (x) -> x ;   // not a proper filter
-        // forEach examples        
+        // forEach examples
         // Print programmers name
         System.out.println("Print programmers names:");
         javaProgrammers.forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
@@ -121,6 +122,7 @@ public class Example3 {
                 .forEach((p) -> System.out.printf("%s %s; ", p.getFirstName(), p.getLastName()));
 
         // sorted, collect, limit, min, max examples
+  //      Predicate<Person><Person> = (p, p2) -> (p.getFirstName().compareTo(p2.getFirstName()));
         System.out.println("\n\nSort and print first 5 Java programmers by name:");
         List<Person> sortedJavaProgrammers = javaProgrammers
                 .stream()

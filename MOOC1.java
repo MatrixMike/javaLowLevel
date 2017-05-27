@@ -55,8 +55,9 @@ public class MOOC1 {
   }
 
 
- Predicate <String> gr99 = 	s -> (s.length() > 99);
+
 		  private static void exercise3() {
+			   Predicate <String> gr99 = 	s -> (s.length() > 99);
     List<String> list = new ArrayList<>(Arrays.asList(
         "alpha", "bravo", "charlie", "delta", "echo", "foxtrot","a","bb","ccc"));
  // want to capitalise the first letter of word
@@ -65,7 +66,7 @@ public class MOOC1 {
 				StringBuilder sb = new StringBuilder();
 				StringBuilder sb1 = new StringBuilder();
 //				list.removeIf(s -> (s.length() & 1) == 0);  // odd or even
-				list.removeIf(s -> (s.length() > 99));	// change 99
+				list.removeIf(gr99);	// change 99
                 list.forEach(s -> sb.append(s.charAt(0)));  // select a char() from word - can still get error null
 //	list.removeIf(s -> (s.length() & 1) == 1);
                 String result = sb.toString();
