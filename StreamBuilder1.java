@@ -1,16 +1,16 @@
 /*
  * StreamBuilder1.java
- * 
+ *
  * Copyright 2015 Michael Hewitt <mikeh@electroteach.com>
- * 
+ *
  * 24.08.2015 15:57:26
  * 24.08.2015 22:52:49
- * 
+ *
  */
- 
+
 // import static java.util.stream.Collectors.*;
-import java.util.stream.Stream;	
-import java.util.stream.Collectors.*; 
+import java.util.stream.Stream;
+import java.util.stream.Collectors.*;
 import java.util.List;
 import java.util.Arrays;
 // import java.
@@ -22,12 +22,12 @@ public class StreamBuilder1 {
 	//	.skip(2)
 	//	.filter(w -> (w % 5) == 0)
 	//	.forEach(System.out::println);
-				.forEach(System.out::print);
+				.forEach(System.out::println);
 	}
      public static void main(String[] args){
 		 /*
 		 List<String> memberNames = new ArrayList<>();
-		 
+
 memberNames.add("Amitabh");
 memberNames.add("Shekhar");
 memberNames.add("Aman");
@@ -36,7 +36,7 @@ memberNames.add("Shahrukh");
 memberNames.add("Salman");
 memberNames.add("Yana");
 memberNames.add("Lokesh");
-	*/	 
+	*/
 	//         List<Integer> list = new ArrayList<Integer>();
     /*     for(int i = 1; i< 10; i++){
              lista.add(i);
@@ -47,20 +47,18 @@ memberNames.add("Lokesh");
          Stream<Integer> stream = Stream.of(1,2,3,4,5,6,7,8,9,14,13,12,11);
       //   Stream<Integer> stream2 = IntStream.rangeClosed(1,14);
      //
-     
-         stream.forEach(p -> System.out.println(" "+ p + " " + p*p));
-         stream_from_function();
-         // want for filter out the odd numbers 
-      //   stream.forEach(p -> System.out.println(p));
-     }
-}
-/*
-Count is a terminal operation returning the number of elements in the stream as a long.
-long totalMatched = memberNames.stream()
-                    .filter((s) -> s.startsWith("A"))
+
+         stream.forEach(p -> System.out.println("%3d "+ p + " " + p*p));
+         stream_from_function(); // want for filter out the odd numbers //
+  //  is stream already exhausted?       stream.forEach(p -> System.out.println(p));
+         }
+         }
+         /* Count
+		 is a terminal operation returning the number of elements in the stream as a long.
+		 long totalMatched = memberNames.stream() .filter((s) -> s.startsWith("A"))
                     .count();
- 
-System.out.println(totalMatched);
- 
-Output: 2
+
+		System.out.println(totalMatched);
+
+		Output: 2
 */
