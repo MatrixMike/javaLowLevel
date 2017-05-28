@@ -13,10 +13,14 @@ import java.util.stream.Collectors.*;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 import java.util.TreeMap;
+import java.util.function.Predicate;
 
 
 public class Calculator {
   // 24.08.2015 15:25:35
+  // 28.05.2017 15:50:46
+  // PredicateTest1 	   semi auto generated
+
     interface IntegerMath {
         int operation(int a, int b);   
     }
@@ -29,11 +33,12 @@ public class Calculator {
      public double operateBinary(int a, int b, RealMath op) {
         return op.operation(a, b);
     }
-    	public static void stream_from_function() {
+	public static void stream_from_function() {
+	Predicate <Integer> multip5 = w -> (w % 5) > 0;
 		Stream.iterate(0, n -> n + 1)
-		.limit(7)
-		.skip(0)
-		.filter(w -> (w % 5) > 0)		// try removing this line or replacing > with ==
+		.limit(16)
+		.skip(2)
+		.filter(multip5)		// try removing this line or replacing > with ==
 		.forEach(System.out::println);
 	}
 
