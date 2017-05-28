@@ -32,6 +32,7 @@ import java.util.TreeMap;
 import java.util.stream.Collectors;
 */
 import java.util.stream.Stream;
+import java.util.function.Predicate;
 /*
 import java.util.stream.Collectors.*;
 */
@@ -40,15 +41,13 @@ import java.util.stream.Collectors.*;
  public class generateStream {  // was NOT a public class
 /**
  * print from stream and lambda
- * 
- * 
- * 
  */
 public static void stream_from_function() {
+		Predicate <Integer> multip5 = w -> (w % 5) > 0;
         Stream.iterate(0, n -> n + 3)
                 .limit(35)
                 .skip(2)
-                .filter(w -> (w % 5) == 0)
+                .filter(multip5)
                 .forEach(System.out::println);
     }
 /**
