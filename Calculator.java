@@ -1,18 +1,18 @@
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Collectors.*; 
-import java.util.stream.LongStream;
+//import java.io.BufferedReader;
+//import java.io.IOException;
+//import java.nio.charset.StandardCharsets;
+//import java.nio.file.Files;
+//import java.nio.file.Paths;
+//import java.util.ArrayList;
+//import java.util.Arrays;
+//import java.util.List;
+//import java.util.Map;
+//import java.util.stream.Collectors;
+//import java.util.stream.Collectors.*; 
+//import java.util.stream.LongStream;
 import java.util.stream.Stream;
-import java.util.TreeMap;
+//import java.util.TreeMap;
 import java.util.function.Predicate;
 
 
@@ -42,8 +42,6 @@ public class Calculator {
 		.forEach(System.out::println);
 	}
 
-	//	stream_from_function();
-
 public static void main(String... args) {
     
         Calculator myApp = new Calculator();
@@ -64,9 +62,7 @@ public static void main(String... args) {
 		int V = 10; // 10V  
 		int LEDs = 4; // number of LEDs      - works for 0 to 4
         System.out.println("Resistor needed when V  = " + V + " and number of LEDs is " + LEDs + " is " +
-            myApp.operateBinary(V, LEDs, Ohms));          // 10V , number of LEDs    
-         
-         
+            myApp.operateBinary(V, LEDs, Ohms));          // 10V , number of LEDs            
          stream_from_function();          
     }
 }
