@@ -21,9 +21,12 @@ public class CalculatorWiki {
     public static void main(String... args) {
         IntegerMath addition = (a, b) -> a + b;
         IntegerMath subtraction = (a, b) -> a - b;
+        IntegerMath extrafun = (a, b) -> a * 2 - b;
         System.out.println("40 + 2 = " + apply(40, 2, addition));
         System.out.println("20 - 10 = " + apply(20, 10, subtraction));
-        System.out.println("10 - 20 = " + apply(20, 10, subtraction.swap()));    
+        System.out.println("10 - 20 = " + apply(20, 10, subtraction.swap())); 
+        System.out.println("10 - 20 = !" + apply(20, 10, extrafun));   
+        System.out.println("10 - 20 = !" + apply(20, 10, extrafun.swap()));  
     }
 }
 
