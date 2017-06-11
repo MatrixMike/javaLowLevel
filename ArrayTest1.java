@@ -29,7 +29,7 @@ public class ArrayTest1 {
 	System.out.println();
 
 	// Add more elements.
-	Collections.addAll(values, 15, 40, 50);
+	Collections.addAll(values, 15, 40, 50, -10);
 	Collections.sort(values);
 	// Display.
 	for (int value : values) {
