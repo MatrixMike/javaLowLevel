@@ -24,7 +24,9 @@ public static void main (String args[]) {
 //	testStr = "fred";
 	int daysAhead = 1000;
 	int first_time_through = 0 ;			// change to boolean 
+	boolean first_time = true;
 	int dateDiff;
+	System.out.println(" " +EventsWithStreams(100));		// means what ? check reduce
 	System.out.println("Next Friday the thirteenth is on");
 	for (long n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  // n was int now long
 		// find current first of month       
@@ -35,11 +37,11 @@ public static void main (String args[]) {
 		{
 			testStr = dateformatter.format(cldr.getTime());
 			System.out.print(testStr);
-			if (first_time_through == 0){
+			if (first_time){
 				cldr_now = Calendar.getInstance(); 
 				dateDiff = -(cldr.get(Calendar.DAY_OF_YEAR) - cldr_now.get(Calendar.DAY_OF_YEAR));
 				System.out.print(" which is in "+ dateDiff + " days. ");
-	        	first_time_through++ ; 
+	        	first_time = false ; 
 	        	// save n and calculate difference between n and today -> i.e. n 
 	        	// display as a 
 	        	next13th = n;
