@@ -33,6 +33,7 @@ import java.util.stream.Collectors;
 */
 import java.util.stream.Stream;
 import java.util.function.Predicate;
+import java.util.function.LongPredicate;
 /*
 import java.util.stream.Collectors.*;
 */
