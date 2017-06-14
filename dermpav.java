@@ -57,7 +57,6 @@ public static void main (String args[]) {
 		return S.format(C.getTime());
 		*/
 
-
 	 // now that I am returning a value I need to refactor to only return the desired dates
 	 // called from a FOR loop so this demands that a return happens each loop
     }

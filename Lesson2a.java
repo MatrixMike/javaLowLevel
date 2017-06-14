@@ -14,6 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.util.function.Predicate;
 
 /**
  * @author Speakjava (simon.ritter@oracle.com)
@@ -26,7 +27,7 @@ public static void main(String[] args)
 {
   //  Lesson2a lesson = new Lesson2a();
  //   lesson.runExercises();
-  
+  Predicate<Integer> multip3 = w -> (w % 3) > 0;
   
   //  exercise1() {
   
@@ -37,6 +38,7 @@ public static void main(String[] args)
 
     List<String> newList = list.stream()
         .map(String::toLowerCase)
+      //  .filter()   // want 2nd letter to be a vowel
         .collect(Collectors.toList());
 
     newList.forEach(System.out::println);
@@ -55,10 +57,11 @@ public static void main(String[] args)
     
   List<Integer> newIntList = list2.stream() 
   // in here remove odd numbers and maybe square the remaining 
-		.skip(2)
-		.limit(2)
-		.skip(2)
-		.limit(2)
+	//	.skip(2)
+	//	.limit(2)
+	//	.skip(2)
+		.filter(multip3)
+	//	.limit(2)
 //		.max()
 	//	.sum()
          .collect(Collectors.toList()); 
