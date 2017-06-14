@@ -7,20 +7,20 @@ Mods to an example from Oracle by mike hewitt
 This generates a stream of resistor values for a constant Voltage across a series of LEDS
 */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Collectors.*; 
-import java.util.stream.LongStream;
+//import java.io.BufferedReader;
+//import java.io.IOException;
+//import java.nio.charset.StandardCharsets;
+//import java.nio.file.Files;
+//import java.nio.file.Paths;
+//import java.util.ArrayList;
+//import java.util.Arrays;
+//import java.util.List;
+//import java.util.Map;
+//import java.util.stream.Collectors;
+//import java.util.stream.Collectors.*; 
+//import java.util.stream.LongStream;
 import java.util.stream.Stream;
-import java.util.TreeMap;
+//import java.util.TreeMap;
 
 public class Calculator2 {
   // 24.08.2015 15:25:35
