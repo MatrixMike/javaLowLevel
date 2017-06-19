@@ -29,7 +29,10 @@ public class MainLocaleMap {
 
     // print the results
     System.out.printf("Whole list:%n%s%n", navMap);  // sorted alphabetically
-    
+    /* Whole list:
+{Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4}
+ */
+
   }
 }
 
