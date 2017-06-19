@@ -28,7 +28,8 @@ public class MainLocaleMap {
         representations);
 
     // print the results
-    System.out.printf("Whole list:%n%s%n", navMap);
+    System.out.printf("Whole list:%n%s%n", navMap);  // sorted alphabetically
+    
   }
 }
 

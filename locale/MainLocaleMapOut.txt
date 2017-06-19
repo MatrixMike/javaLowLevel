@@ -1,0 +1,2 @@
+Whole list:
+{Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4}
