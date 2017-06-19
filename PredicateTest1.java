@@ -21,12 +21,10 @@ public class PredicateTest1 {
     // PredicateTest1 	   semi auto generated
 
     interface IntegerMath {
-
         int operation(int a, int b);
     }
 
     interface RealMath {
-
         double operation(int a, int b);
     }
 
