@@ -32,7 +32,7 @@ import java.util.*;
 
 public class Freq {
     public static void main(String[] args) {
-        Map<String, Integer> m = new LinkedHashMap<String, Integer>();
+        Map<String, Integer> m = new HashMap<String, Integer>();
 
         // Initialize frequency table from command line
         for (String a : args) {
