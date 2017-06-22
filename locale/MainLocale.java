@@ -22,7 +22,7 @@ public class MainLocale {
 
       // print the results
       //System.out.println( Locale[].size());
-      for (int i = 0; i < 30; i++) {
+      for (int i = 0; i < 45; i++) {
          System.out.println(array[i].getISO3Country());
          System.out.println(array[i].getDisplayLanguage());
       }

@@ -17,21 +17,28 @@ public class MainLocaleMap {
   public static void main(String[] args) {
 
     Calendar now = Calendar.getInstance();
-    Locale locale = Locale.getDefault();
-	//String here = Locale.getDisplayCountry();
-	
-    // call the getDisplayNames method
-    Map<String, Integer> representations = now.getDisplayNames(
-        Calendar.DAY_OF_WEEK, Calendar.LONG, locale);
+// create an object of locale class 
+    Locale[] array = Locale.getAvailableLocales();
     
-    NavigableMap<String, Integer> navMap = new TreeMap<String, Integer>(
-        representations);
+    Locale locale = Locale.getDefault();
+
+	//String here = Locale.getDisplayCountry();
+	for (int i = 1; i < 55; i ++) {  
+		locale = array[i];
+    // call the getDisplayNames method
+         Map<String, Integer> representations = now.getDisplayNames(
+               Calendar.DAY_OF_WEEK, Calendar.LONG, locale);
+    
+         NavigableMap<String, Integer> navMap = new TreeMap<String, Integer>(
+             representations);
 
     // print the results
+    System.out.print("<"+i+ "> ");
     System.out.printf("Whole list:%n%s%n", navMap);  // sorted alphabetically
     /* Whole list:
 {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4}
  */
+}
 
   }
 }
