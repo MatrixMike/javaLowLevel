@@ -19,10 +19,10 @@ public class MainLocale {
 
       // create an object of locale class 
       Locale[] array = Locale.getAvailableLocales();
-		System.out.println("size = " + array.size());
+//		System.out.println("size = " + array.size());   // how to access size
       // print the results
       //System.out.println( Locale[].size());
-      for (int i = 0; i < 45; i++) {
+      for (int i = 0; i < 159; i++) {
          System.out.println(array[i].getISO3Country());
          System.out.println(array[i].getDisplayLanguage());
       }

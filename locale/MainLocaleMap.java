@@ -11,6 +11,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.NavigableMap;
 import java.util.TreeMap;
+import java.util.*;
 
 public class MainLocaleMap {
 
@@ -29,12 +30,13 @@ public class MainLocaleMap {
          Map<String, Integer> representations = now.getDisplayNames(
                Calendar.DAY_OF_WEEK, Calendar.LONG, locale);
     
-         NavigableMap<String, Integer> navMap = new TreeMap<String, Integer>(
+         NavigableMap<String, Integer> navMap = new TreeMap<String, Integer>(   // TreeMap
              representations);
 
     // print the results
+
+    System.out.printf("%n%s%n", navMap, i);  // sorted alphabetically
     System.out.print("<"+i+ "> ");
-    System.out.printf("Whole list:%n%s%n", navMap);  // sorted alphabetically
     /* Whole list:
 {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4}
  */
