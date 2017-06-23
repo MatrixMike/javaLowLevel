@@ -44,7 +44,8 @@ import java.util.stream.Collectors.*;
  * print from stream and lambda
  */
 public static void stream_from_function() {
-			Predicate <Integer> badPrint = bp -> !((bp == 10) | (bp == 12) | (bp == 43)) ;
+			Predicate <Integer> badPrint = bp -> !((bp == 10) | (bp == 12) | (bp == 43)) ; // add 1,2,3
+			// add 62,78,83,139,145,146,153
 
         Stream.iterate(1, n -> n + 1)
                // .limit(35)
