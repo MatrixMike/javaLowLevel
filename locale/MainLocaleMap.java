@@ -23,7 +23,7 @@ public class MainLocaleMap {
     Locale locale = Locale.getDefault();
 
 	//String here = Locale.getDisplayCountry();
-	for (int i = 1; i < 55; i ++) {  
+	for (int i = 1; i < 159; i ++) {    // changed to max before exception, until I fix for max / size of array
 		locale = array[i];
     // call the getDisplayNames method
          Map<String, Integer> representations = now.getDisplayNames(

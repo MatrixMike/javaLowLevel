@@ -13,8 +13,10 @@
 import java.util.stream.LongStream;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.function.LongPredicate;
+
 public class Friday13 {
-	
+//	Predicate<Integer> multip5 = w -> (w % 5) > 0;	
 public static void main (String args[]) {
 	Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
 	Calendar cldr_now;
@@ -62,7 +64,7 @@ public static void main (String args[]) {
      
 	//	.filter( w -> (w % 2) ==1  )  // filter out those numbers from the modulus 
 		.filter( w -> (w % 3) ==0  )  // pass through  Fizz 3
-		.filter( w -> (w % 5) ==0  )  // pass through  Buzz 5  thus together finds FizzBuzz
+		.filter( w -> (w % 5) > 0 )  // pass through  Buzz 5  thus together finds FizzBuzz
 //		.collect(Collector.toList());
         //.skip(3)
         .reduce(0, (long a, long b) -> a + b);
@@ -70,12 +72,13 @@ public static void main (String args[]) {
     }
 
     public static long EventsWithStreams(long n){
+		LongPredicate<long> multip5 = w -> (w % 5) > 0;
 	//	StringBuilder sb = new StringBuilder;
         return LongStream.rangeClosed(1, n)   //  was (1,31)
      
 	//	.filter( w -> (w % 2) ==1  )  // filter out those numbers from the modulus 
 		.filter( w -> (w % 3) ==0  )  // pass through  Fizz 3
-		.filter( w -> (w % 5) ==0  )  // pass through  Buzz 5  thus together finds FizzBuzz
+		.filter( multip5  )  // pass through  Buzz 5  thus together finds FizzBuzz
 //		.collect(Collector.toList());
         //.skip(3)
         .reduce(0, (long a, long b) -> a + b);

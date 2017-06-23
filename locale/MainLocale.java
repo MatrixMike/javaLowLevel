@@ -19,7 +19,7 @@ public class MainLocale {
 
       // create an object of locale class 
       Locale[] array = Locale.getAvailableLocales();
-
+		System.out.println("size = " + array.size());
       // print the results
       //System.out.println( Locale[].size());
       for (int i = 0; i < 45; i++) {
