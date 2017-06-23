@@ -9,10 +9,17 @@ import java.util.Map;
 import java.util.List;
 import java.util.Arrays;
 import java.util.stream.Stream;
+import java.util.function.Predicate;
+
 
 public class Streams1 {
 	
 	public static void main (String[] args) {
+		Predicate<Integer> multip5 = w -> (w % 5) > 0;
+		Predicate<Integer> pred2 = s -> {
+        System.out.println("filter: " + s);
+        return true;
+    };
 	List<String> myList =
     Arrays.asList("a1", "a2", "b1", "c2", "c1");
 
