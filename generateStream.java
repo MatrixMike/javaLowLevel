@@ -44,11 +44,13 @@ import java.util.stream.Collectors.*;
  * print from stream and lambda
  */
 public static void stream_from_function() {
+			Predicate <Integer> badPrint = bp -> ((bp == 10) | (bp == 12) | (bp == 43)) ;
 		Predicate <Integer> multip5 = w -> (w % 5) > 0;
-        Stream.iterate(0, n -> n + 3)
-                .limit(35)
-                .skip(2)
-                .filter(multip5)
+        Stream.iterate(0, n -> n + 1)
+               // .limit(35)
+              //  .skip(2)
+              //  .filter(multip5)
+                .filter(badPrint)
                 .forEach(System.out::println);
     }
 /**
