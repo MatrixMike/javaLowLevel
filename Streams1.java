@@ -15,6 +15,7 @@ import java.util.function.Predicate;
 public class Streams1 {
 	
 	public static void main (String[] args) {
+		Predicate<String> strc = s -> s.startsWith("c");
 		Predicate<Integer> multip5 = w -> (w % 5) > 0;
 		Predicate<Integer> pred2 = s -> {
         System.out.println("filter: " + s);
@@ -25,7 +26,7 @@ public class Streams1 {
 
 myList
     .stream()
-    .filter(s -> s.startsWith("c"))
+    .filter(strc)
     .map(String::toUpperCase)
     .sorted()
     .forEach(System.out::println);
