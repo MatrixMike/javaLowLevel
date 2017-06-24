@@ -30,15 +30,21 @@ public class MainLocaleMap {
 	for (int i = 1; i < 160; i ++) {    // changed to max before exception, until I fix for max / size of array
 		locale = array[i];
     // call the getDisplayNames method
-         Map<String, Integer> representations = now.getDisplayNames(
+         Map<String, Integer> representations1 = now.getDisplayNames(
                Calendar.DAY_OF_WEEK, Calendar.LONG, locale);
-    
-         NavigableMap<String, Integer> navMap = new TreeMap<String, Integer>(   // TreeMap
-             representations);
 
-    // print the results
-    System.out.print("<"+i+ "> ");
-    System.out.printf("%n%s %n", navMap);  // sorted alphabetically
+         Map<String, Integer> representations2 = now.getDisplayNames(
+               Calendar.MONTH, Calendar.LONG, locale);
+    
+         NavigableMap<String, Integer> navMap1 = new TreeMap<String, Integer>(   // TreeMap
+             representations1);
+         NavigableMap<String, Integer> navMap2 = new TreeMap<String, Integer>(   // TreeMap
+             representations2);
+         // print the results
+         System.out.print("<"+i+ "> ");
+         System.out.printf("%n%s %n%n%s %n", navMap1, navMap2);  // sorted alphabetically
+//         System.out.printf("%n%s %n", navMap2);  // sorted alphabetically
+  //  System.out.printf("%n%s %n", navMap);  // sorted alphabetically
 
     /* Whole list:
 {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4}

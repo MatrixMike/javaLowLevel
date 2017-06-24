@@ -12,6 +12,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.util.function.Predicate;
+
 /**
  *
  */
@@ -21,7 +23,8 @@ public class Example1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+//Predicate <String> playerP = (player) -> System.out.print(player + ";PB "); 
+// oops it is a lambda expression a.o.t. filter
 
 
    List<String> list = Arrays.asList(
