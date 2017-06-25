@@ -20,7 +20,7 @@ public class NumberF {
 	public static void main (String args[]) {
 // Print out a number using the localized number, integer, currency,
 // and percent format for each locale</strong>
- Locale[] locales = NumberFormat.getAvailableLocales();
+ Locale[] localesN = NumberFormat.getAvailableLocales();
  double myNumber = -1234.56;
  NumberFormat form;
  
@@ -33,22 +33,22 @@ public class NumberF {
  
  for (int j = 0; j < 4; ++j) {
      System.out.println("<<<<< FORMAT >>>>>");
-     for (int i = 0; i < locales.length; ++i) {
+     for (int i = 0; i < localesN.length; ++i) {
 		 /*
-         if (locales[i].getCountry().length() == 0) {
+         if (localesN[i].getCountry().length() == 0) {
             continue; // Skip language-only locales
          }
          */
-         System.out.print("<"+i+"> "+ locales[i].getDisplayName());
+         System.out.print("<"+i+"> "+ localesN[i].getDisplayName());
          switch (j) {
          case 0:
-             form = NumberFormat.getInstance(locales[i]); break;
+             form = NumberFormat.getInstance(localesN[i]); break;
          case 1:
-             form = NumberFormat.getIntegerInstance(locales[i]); break;
+             form = NumberFormat.getIntegerInstance(localesN[i]); break;
          case 2:
-             form = NumberFormat.getCurrencyInstance(locales[i]); break;
+             form = NumberFormat.getCurrencyInstance(localesN[i]); break;
          default:
-             form = NumberFormat.getPercentInstance(locales[i]); break;
+             form = NumberFormat.getPercentInstance(localesN[i]); break;
          }
          if (form instanceof DecimalFormat) {
              System.out.print(": " + ((DecimalFormat) form).toPattern());

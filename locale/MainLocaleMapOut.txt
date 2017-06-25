@@ -1,316 +1,316 @@
-<1> <ARE> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<1> Arabic (United Arab Emirates)<ARE> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<2> <JOR> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<2> Arabic (Jordan)<JOR> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {آب=7, آذار=2, أيلول=8, تشرين الأول=9, تشرين الثاني=10, تموز=6, حزيران=5, شباط=1, كانون الأول=11, كانون الثاني=0, نوار=4, نيسان=3} 
-<3> <SYR> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<3> Arabic (Syria)<SYR> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {آب=7, آذار=2, أيلول=8, تشرين الأول=9, تشرين الثاني=10, تموز=6, حزير=5, شباط=1, كانون الأول=11, كانون الثاني=0, نواران=4, نيسان=3} 
-<4> <HRV> Croatian {nedjelja=1, petak=6, ponedjeljak=2, srijeda=4, subota=7, utorak=3, četvrtak=5} 
+<4> Croatian (Croatia)<HRV> Croatian {nedjelja=1, petak=6, ponedjeljak=2, srijeda=4, subota=7, utorak=3, četvrtak=5} 
 {kolovoza=7, lipnja=5, listopada=9, ožujka=2, prosinca=11, rujna=8, siječnja=0, srpnja=6, studenoga=10, svibnja=4, travnja=3, veljače=1} 
-<5> <BEL> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
+<5> French (Belgium)<BEL> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
 {août=7, avril=3, décembre=11, février=1, janvier=0, juillet=6, juin=5, mai=4, mars=2, novembre=10, octobre=9, septembre=8} 
-<6> <PAN> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<6> Spanish (Panama)<PAN> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<7> <MLT> Maltese {Il-Ġimgħa=6, Il-Ħadd=1, Il-Ħamis=5, Is-Sibt=7, It-Tlieta=3, It-Tnejn=2, L-Erbgħa=4} 
+<7> Spanish (Venezuela)<MLT> Maltese {Il-Ġimgħa=6, Il-Ħadd=1, Il-Ħamis=5, Is-Sibt=7, It-Tlieta=3, It-Tnejn=2, L-Erbgħa=4} 
 {April=3, Awwissu=7, Diċembru=11, Frar=1, Jannar=0, Lulju=6, Marzu=2, Mejju=4, Novembru=10, Ottubru=9, Settembru=8, Ġunju=5} 
-<8> <VEN> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<8> Maltese (Malta)<VEN> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<9> <> Bulgarian {Вторник=3, Неделя=1, Петък=6, Понеделник=2, Сряда=4, Събота=7, Четвъртък=5} 
+<9> Bulgarian<> Bulgarian {Вторник=3, Неделя=1, Петък=6, Понеделник=2, Сряда=4, Събота=7, Четвъртък=5} 
 {Август=7, Април=3, Декември=11, Май=4, Март=2, Ноември=10, Октомври=9, Септември=8, Февруари=1, Юли=6, Юни=5, Януари=0} 
-<10> <TWN> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
+<10> Chinese (Taiwan)<TWN> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
 {一月=0, 七月=6, 三月=2, 九月=8, 二月=1, 五月=4, 八月=7, 六月=5, 十一月=10, 十二月=11, 十月=9, 四月=3} 
-<11> <> Italian {domenica=1, giovedì=5, lunedì=2, martedì=3, mercoledì=4, sabato=7, venerdì=6} 
+<11> Italian<> Italian {domenica=1, giovedì=5, lunedì=2, martedì=3, mercoledì=4, sabato=7, venerdì=6} 
 {agosto=7, aprile=3, dicembre=11, febbraio=1, gennaio=0, giugno=5, luglio=6, maggio=4, marzo=2, novembre=10, ottobre=9, settembre=8} 
-<12> <> Korean {금요일=6, 목요일=5, 수요일=4, 월요일=2, 일요일=1, 토요일=7, 화요일=3} 
+<12> Korean<> Korean {금요일=6, 목요일=5, 수요일=4, 월요일=2, 일요일=1, 토요일=7, 화요일=3} 
 {10월=9, 11월=10, 12월=11, 1월=0, 2월=1, 3월=2, 4월=3, 5월=4, 6월=5, 7월=6, 8월=7, 9월=8} 
-<13> <> Ukrainian {вівторок=3, неділя=1, п'ятниця=6, понеділок=2, середа=4, субота=7, четвер=5} 
+<13> Ukrainian<> Ukrainian {вівторок=3, неділя=1, п'ятниця=6, понеділок=2, середа=4, субота=7, четвер=5} 
 {березня=2, вересня=8, грудня=11, жовтня=9, квітня=3, липня=6, листопада=10, лютого=1, серпня=7, січня=0, травня=4, червня=5} 
-<14> <> Latvian {ceturtdiena=5, otrdiena=3, piektdiena=6, pirmdiena=2, sestdiena=7, svētdiena=1, trešdiena=4} 
+<14> Latvian<> Latvian {ceturtdiena=5, otrdiena=3, piektdiena=6, pirmdiena=2, sestdiena=7, svētdiena=1, trešdiena=4} 
 {aprīlis=3, augusts=7, decembris=11, februāris=1, janvāris=0, jūlijs=6, jūnijs=5, maijs=4, marts=2, novembris=10, oktobris=9, septembris=8} 
-<15> <DNK> Danish {fredag=6, lørdag=7, mandag=2, onsdag=4, søndag=1, tirsdag=3, torsdag=5} 
+<15> Danish (Denmark)<DNK> Danish {fredag=6, lørdag=7, mandag=2, onsdag=4, søndag=1, tirsdag=3, torsdag=5} 
 {april=3, august=7, december=11, februar=1, januar=0, juli=6, juni=5, maj=4, marts=2, november=10, oktober=9, september=8} 
-<16> <PRI> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<16> Spanish (Puerto Rico)<PRI> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<17> <VNM> Vietnamese {Chủ nhật=1, Thứ ba=3, Thứ bảy=7, Thứ hai=2, Thứ năm=5, Thứ sáu=6, Thứ tư=4} 
+<17> Vietnamese (Vietnam)<VNM> Vietnamese {Chủ nhật=1, Thứ ba=3, Thứ bảy=7, Thứ hai=2, Thứ năm=5, Thứ sáu=6, Thứ tư=4} 
 {tháng ba=2, tháng bảy=6, tháng chín=8, tháng hai=1, tháng mười=9, tháng mười hai=11, tháng mười một=10, tháng một=0, tháng năm=4, tháng sáu=5, tháng tám=7, tháng tư=3} 
-<18> <USA> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<18> English (United States)<USA> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<19> <MNE> Serbian {недеља=1, петак=6, понедељак=2, среда=4, субота=7, уторак=3, четвртак=5} 
+<19> Serbian (Montenegro)<MNE> Serbian {недеља=1, петак=6, понедељак=2, среда=4, субота=7, уторак=3, четвртак=5} 
 {август=7, април=3, децембар=11, март=2, мај=4, новембар=10, октобар=9, септембар=8, фебруар=1, јануар=0, јул=6, јун=5} 
-<20> <SWE> Swedish {fredag=6, lördag=7, måndag=2, onsdag=4, söndag=1, tisdag=3, torsdag=5} 
+<20> Swedish (Sweden)<SWE> Swedish {fredag=6, lördag=7, måndag=2, onsdag=4, söndag=1, tisdag=3, torsdag=5} 
 {april=3, augusti=7, december=11, februari=1, januari=0, juli=6, juni=5, maj=4, mars=2, november=10, oktober=9, september=8} 
-<21> <BOL> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<21> English (Singapore)<BOL> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<22> <SGP> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<22> Spanish (Bolivia)<SGP> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<23> <BHR> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<23> Arabic (Bahrain)<BHR> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<24> <> Portuguese {Domingo=1, Quarta-feira=4, Quinta-feira=5, Segunda-feira=2, Sexta-feira=6, Sábado=7, Terça-feira=3} 
+<24> Portuguese<> Portuguese {Domingo=1, Quarta-feira=4, Quinta-feira=5, Segunda-feira=2, Sexta-feira=6, Sábado=7, Terça-feira=3} 
 {Abril=3, Agosto=7, Dezembro=11, Fevereiro=1, Janeiro=0, Julho=6, Junho=5, Maio=4, Março=2, Novembro=10, Outubro=9, Setembro=8} 
-<25> <SAU> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<25> Arabic (Saudi Arabia)<SAU> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<26> <> Slovak {Nedeľa=1, Piatok=6, Pondelok=2, Sobota=7, Streda=4, Utorok=3, Štvrtok=5} 
+<26> Slovak<> Slovak {Nedeľa=1, Piatok=6, Pondelok=2, Sobota=7, Streda=4, Utorok=3, Štvrtok=5} 
 {apríla=3, augusta=7, decembra=11, februára=1, januára=0, júla=6, júna=5, marca=2, mája=4, novembra=10, októbra=9, septembra=8} 
-<27> <YEM> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<27> Arabic (Yemen)<YEM> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<28> <IND> Hindi {गुरुवार=5, बुधवार=4, मंगलवार=3, रविवार=1, शनिवार=7, शुक्रवार=6, सोमवार=2} 
+<28> Hindi (India)<IND> Hindi {गुरुवार=5, बुधवार=4, मंगलवार=3, रविवार=1, शनिवार=7, शुक्रवार=6, सोमवार=2} 
 {अक्‍तूबर=9, अगस्त=7, अप्रैल=3, जनवरी=0, जुलाई=6, जून=5, दिसंबर=11, नवंबर=10, फ़रवरी=1, मई=4, मार्च=2, सितंबर=8} 
-<29> <> Irish {Dé Céadaoin=4, Dé Domhnaigh=1, Dé Luain=2, Dé Máirt=3, Dé Sathairn=7, Dé hAoine=6, Déardaoin=5} 
+<29> Irish<> Irish {Dé Céadaoin=4, Dé Domhnaigh=1, Dé Luain=2, Dé Máirt=3, Dé Sathairn=7, Dé hAoine=6, Déardaoin=5} 
 {Aibreán=3, Bealtaine=4, Deireadh Fómhair=9, Eanáir=0, Feabhra=1, Iúil=6, Lúnasa=7, Meitheamh=5, Meán Fómhair=8, Márta=2, Nollaig=11, Samhain=10} 
-<30> <MLT> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<30> English (Malta)<MLT> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<31> <FIN> Finnish {keskiviikko=4, lauantai=7, maanantai=2, perjantai=6, sunnuntai=1, tiistai=3, torstai=5} 
+<31> Finnish (Finland)<FIN> Finnish {keskiviikko=4, lauantai=7, maanantai=2, perjantai=6, sunnuntai=1, tiistai=3, torstai=5} 
 {elokuuta=7, heinäkuuta=6, helmikuuta=1, huhtikuuta=3, joulukuuta=11, kesäkuuta=5, lokakuuta=9, maaliskuuta=2, marraskuuta=10, syyskuuta=8, tammikuuta=0, toukokuuta=4} 
-<32> <> Estonian {esmaspäev=2, kolmapäev=4, laupäev=7, neljapäev=5, pühapäev=1, reede=6, teisipäev=3} 
+<32> Estonian<> Estonian {esmaspäev=2, kolmapäev=4, laupäev=7, neljapäev=5, pühapäev=1, reede=6, teisipäev=3} 
 {aprill=3, august=7, detsember=11, jaanuar=0, juuli=6, juuni=5, mai=4, märts=2, november=10, oktoober=9, september=8, veebruar=1} 
-<33> <> Swedish {fredag=6, lördag=7, måndag=2, onsdag=4, söndag=1, tisdag=3, torsdag=5} 
+<33> Czech<> Swedish {fredag=6, lördag=7, måndag=2, onsdag=4, söndag=1, tisdag=3, torsdag=5} 
 {april=3, augusti=7, december=11, februari=1, januari=0, juli=6, juni=5, maj=4, mars=2, november=10, oktober=9, september=8} 
-<34> <> Czech {Neděle=1, Pondělí=2, Pátek=6, Sobota=7, Středa=4, Úterý=3, Čtvrtek=5} 
+<34> Serbian (Latin,Bosnia and Herzegovina)<> Czech {Neděle=1, Pondělí=2, Pátek=6, Sobota=7, Středa=4, Úterý=3, Čtvrtek=5} 
 {března=2, dubna=3, května=4, ledna=0, listopadu=10, prosince=11, srpna=7, září=8, února=1, července=6, června=5, října=9} 
-<35> <BIH> Serbian {nedelja=1, petak=6, ponedeljak=2, sreda=4, subota=7, utorak=3, četvrtak=5} 
+<35> Swedish<BIH> Serbian {nedelja=1, petak=6, ponedeljak=2, sreda=4, subota=7, utorak=3, četvrtak=5} 
 {april=3, avgust=7, decembar=11, februar=1, januar=0, jul=6, jun=5, maj=4, mart=2, novembar=10, oktobar=9, septembar=8} 
-<36> <> Greek {Δευτέρα=2, Κυριακή=1, Πέμπτη=5, Παρασκευή=6, Σάββατο=7, Τετάρτη=4, Τρίτη=3} 
+<36> Greek<> Greek {Δευτέρα=2, Κυριακή=1, Πέμπτη=5, Παρασκευή=6, Σάββατο=7, Τετάρτη=4, Τρίτη=3} 
 {Απριλίου=3, Αυγούστου=7, Δεκεμβρίου=11, Ιανουαρίου=0, Ιουλίου=6, Ιουνίου=5, Μαΐου=4, Μαρτίου=2, Νοεμβρίου=10, Οκτωβρίου=9, Σεπτεμβρίου=8, Φεβρουαρίου=1} 
-<37> <UKR> Ukrainian {вівторок=3, неділя=1, п'ятниця=6, понеділок=2, середа=4, субота=7, четвер=5} 
+<37> Ukrainian (Ukraine)<UKR> Ukrainian {вівторок=3, неділя=1, п'ятниця=6, понеділок=2, середа=4, субота=7, четвер=5} 
 {березня=2, вересня=8, грудня=11, жовтня=9, квітня=3, липня=6, листопада=10, лютого=1, серпня=7, січня=0, травня=4, червня=5} 
-<38> <> Hungarian {csütörtök=5, hétfő=2, kedd=3, péntek=6, szerda=4, szombat=7, vasárnap=1} 
+<38> French (Switzerland)<> Hungarian {csütörtök=5, hétfő=2, kedd=3, péntek=6, szerda=4, szombat=7, vasárnap=1} 
 {augusztus=7, december=11, február=1, január=0, július=6, június=5, május=4, március=2, november=10, október=9, szeptember=8, április=3} 
-<39> <CHE> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
+<39> Hungarian<CHE> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
 {août=7, avril=3, décembre=11, février=1, janvier=0, juillet=6, juin=5, mai=4, mars=2, novembre=10, octobre=9, septembre=8} 
-<40> <> Indonesian {Jumat=6, Kamis=5, Minggu=1, Rabu=4, Sabtu=7, Selasa=3, Senin=2} 
+<40> Indonesian<> Indonesian {Jumat=6, Kamis=5, Minggu=1, Rabu=4, Sabtu=7, Selasa=3, Senin=2} 
 {Agustus=7, April=3, Desember=11, Februari=1, Januari=0, Juli=6, Juni=5, Maret=2, Mei=4, November=10, Oktober=9, September=8} 
-<41> <ARG> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<41> Spanish (Argentina)<ARG> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<42> <EGY> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<42> Arabic (Egypt)<EGY> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<43> <JPN> Japanese {土曜日=7, 日曜日=1, 月曜日=2, 木曜日=5, 水曜日=4, 火曜日=3, 金曜日=6} 
+<43> Japanese (Japan,JP)<JPN> Japanese {土曜日=7, 日曜日=1, 月曜日=2, 木曜日=5, 水曜日=4, 火曜日=3, 金曜日=6} 
 {10月=9, 11月=10, 12月=11, 1月=0, 2月=1, 3月=2, 4月=3, 5月=4, 6月=5, 7月=6, 8月=7, 9月=8} 
-<44> <SLV> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<44> Spanish (El Salvador)<SLV> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<45> <BRA> Portuguese {Domingo=1, Quarta-feira=4, Quinta-feira=5, Segunda-feira=2, Sexta-feira=6, Sábado=7, Terça-feira=3} 
+<45> Portuguese (Brazil)<BRA> Portuguese {Domingo=1, Quarta-feira=4, Quinta-feira=5, Segunda-feira=2, Sexta-feira=6, Sábado=7, Terça-feira=3} 
 {Abril=3, Agosto=7, Dezembro=11, Fevereiro=1, Janeiro=0, Julho=6, Junho=5, Maio=4, Março=2, Novembro=10, Outubro=9, Setembro=8} 
-<46> <> Belarusian {аўторак=3, нядзеля=1, панядзелак=2, пятніца=6, серада=4, субота=7, чацвер=5} 
+<46> Belarusian<> Belarusian {аўторак=3, нядзеля=1, панядзелак=2, пятніца=6, серада=4, субота=7, чацвер=5} 
 {верасня=8, жніўня=7, кастрычніка=9, красавіка=3, лютага=1, ліпеня=6, лістапада=10, мая=4, сакавіка=2, снежня=11, студзеня=0, чрвеня=5} 
-<47> <ISL> Icelandic {fimmtudagur=5, föstudagur=6, laugardagur=7, miðvikudagur=4, mánudagur=2, sunnudagur=1, þriðjudagur=3} 
+<47> Czech (Czech Republic)<ISL> Icelandic {fimmtudagur=5, föstudagur=6, laugardagur=7, miðvikudagur=4, mánudagur=2, sunnudagur=1, þriðjudagur=3} 
 {apríl=3, desember=11, febrúar=1, janúar=0, júlí=6, júní=5, mars=2, maí=4, nóvember=10, október=9, september=8, ágúst=7} 
-<48> <CZE> Czech {Neděle=1, Pondělí=2, Pátek=6, Sobota=7, Středa=4, Úterý=3, Čtvrtek=5} 
+<48> Spanish<CZE> Czech {Neděle=1, Pondělí=2, Pátek=6, Sobota=7, Středa=4, Úterý=3, Čtvrtek=5} 
 {března=2, dubna=3, května=4, ledna=0, listopadu=10, prosince=11, srpna=7, září=8, února=1, července=6, června=5, října=9} 
-<49> <> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<49> Icelandic (Iceland)<> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<50> <POL> Polish {czwartek=5, niedziela=1, piątek=6, poniedziałek=2, sobota=7, wtorek=3, środa=4} 
+<50> Catalan (Spain)<POL> Polish {czwartek=5, niedziela=1, piątek=6, poniedziałek=2, sobota=7, wtorek=3, środa=4} 
 {czerwca=5, grudnia=11, kwietnia=3, lipca=6, listopada=10, lutego=1, maja=4, marca=2, października=9, sierpnia=7, stycznia=0, września=8} 
-<51> <> Turkish {Cuma=6, Cumartesi=7, Pazar=1, Pazartesi=2, Perşembe=5, Salı=3, Çarşamba=4} 
+<51> Polish (Poland)<> Turkish {Cuma=6, Cumartesi=7, Pazar=1, Pazartesi=2, Perşembe=5, Salı=3, Çarşamba=4} 
 {Aralık=11, Ağustos=7, Ekim=9, Eylül=8, Haziran=5, Kasım=10, Mart=2, Mayıs=4, Nisan=3, Ocak=0, Temmuz=6, Şubat=1} 
-<52> <ESP> Catalan {dijous=5, dilluns=2, dimarts=3, dimecres=4, dissabte=7, diumenge=1, divendres=6} 
+<52> Turkish<ESP> Catalan {dijous=5, dilluns=2, dimarts=3, dimecres=4, dissabte=7, diumenge=1, divendres=6} 
 {de desembre=11, de febrer=1, de gener=0, de juliol=6, de juny=5, de maig=4, de març=2, de novembre=10, de setembre=8, d’abril=3, d’agost=7, d’octubre=9} 
-<54> <MYS> Malay {Ahad=1, Isnin=2, Jumaat=6, Khamis=5, Rabu=4, Sabtu=7, Selasa=3} 
+<54> Croatian<MYS> Malay {Ahad=1, Isnin=2, Jumaat=6, Khamis=5, Rabu=4, Sabtu=7, Selasa=3} 
 {April=3, Disember=11, Februari=1, Januari=0, Julai=6, Jun=5, Mac=2, Mei=4, November=10, Ogos=7, Oktober=9, September=8} 
-<55> <> Croatian {nedjelja=1, petak=6, ponedjeljak=2, srijeda=4, subota=7, utorak=3, četvrtak=5} 
+<55> Malay (Malaysia)<> Croatian {nedjelja=1, petak=6, ponedjeljak=2, srijeda=4, subota=7, utorak=3, četvrtak=5} 
 {kolovoza=7, lipnja=5, listopada=9, ožujka=2, prosinca=11, rujna=8, siječnja=0, srpnja=6, studenoga=10, svibnja=4, travnja=3, veljače=1} 
-<56> <> Lithuanian {Antradienis=3, Ketvirtadienis=5, Penktadienis=6, Pirmadienis=2, Sekmadienis=1, Trečiadienis=4, Šeštadienis=7} 
+<56> Lithuanian<> Lithuanian {Antradienis=3, Ketvirtadienis=5, Penktadienis=6, Pirmadienis=2, Sekmadienis=1, Trečiadienis=4, Šeštadienis=7} 
 {balandis=3, birželis=5, gegužė=4, gruodis=11, kovas=2, lapkritis=10, liepa=6, rugpjūtis=7, rugsėjis=8, sausio=0, spalis=9, vasaris=1} 
-<57> <ESP> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<57> Spanish (Spain)<ESP> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<58> <COL> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<58> Bulgarian (Bulgaria)<COL> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<59> <BGR> Bulgarian {Вторник=3, Неделя=1, Петък=6, Понеделник=2, Сряда=4, Събота=7, Четвъртък=5} 
+<59> Spanish (Colombia)<BGR> Bulgarian {Вторник=3, Неделя=1, Петък=6, Понеделник=2, Сряда=4, Събота=7, Четвъртък=5} 
 {Август=7, Април=3, Декември=11, Май=4, Март=2, Ноември=10, Октомври=9, Септември=8, Февруари=1, Юли=6, Юни=5, Януари=0} 
-<60> <> Albanian {e diel=1, e enjte=5, e hënë=2, e martë=3, e mërkurë=4, e premte=6, e shtunë=7} 
+<60> French<> Albanian {e diel=1, e enjte=5, e hënë=2, e martë=3, e mërkurë=4, e premte=6, e shtunë=7} 
 {dhjetor=11, gusht=7, janar=0, korrik=6, maj=4, mars=2, nëntor=10, prill=3, qershor=5, shkurt=1, shtator=8, tetor=9} 
-<61> <> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
+<61> Albanian<> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
 {août=7, avril=3, décembre=11, février=1, janvier=0, juillet=6, juin=5, mai=4, mars=2, novembre=10, octobre=9, septembre=8} 
-<62> <> Japanese {土曜日=7, 日曜日=1, 月曜日=2, 木曜日=5, 水曜日=4, 火曜日=3, 金曜日=6} 
+<62> Japanese<> Japanese {土曜日=7, 日曜日=1, 月曜日=2, 木曜日=5, 水曜日=4, 火曜日=3, 金曜日=6} 
 {10月=9, 11月=10, 12月=11, 1月=0, 2月=1, 3月=2, 4月=3, 5月=4, 6月=5, 7月=6, 8月=7, 9月=8} 
-<63> <BIH> Serbian {недеља=1, петак=6, понедељак=2, сриједа=4, субота=7, уторак=3, четвртак=5} 
+<63> Serbian (Bosnia and Herzegovina)<BIH> Serbian {недеља=1, петак=6, понедељак=2, сриједа=4, субота=7, уторак=3, четвртак=5} 
 {август=7, април=3, децембар=11, март=2, мај=4, новембар=10, октобар=9, септембар=8, фебруар=1, јануар=0, јули=6, јуни=5} 
-<64> <> Icelandic {fimmtudagur=5, föstudagur=6, laugardagur=7, miðvikudagur=4, mánudagur=2, sunnudagur=1, þriðjudagur=3} 
+<64> Spanish (Paraguay)<> Icelandic {fimmtudagur=5, föstudagur=6, laugardagur=7, miðvikudagur=4, mánudagur=2, sunnudagur=1, þriðjudagur=3} 
 {apríl=3, desember=11, febrúar=1, janúar=0, júlí=6, júní=5, mars=2, maí=4, nóvember=10, október=9, september=8, ágúst=7} 
-<65> <PRY> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<65> Icelandic<PRY> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<66> <> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
+<66> German<> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
 {April=3, August=7, Dezember=11, Februar=1, Januar=0, Juli=6, Juni=5, Mai=4, März=2, November=10, Oktober=9, September=8} 
-<67> <ECU> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<67> Spanish (Ecuador)<ECU> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<68> <USA> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<68> Spanish (United States)<USA> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<69> <SDN> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<69> Arabic (Sudan)<SDN> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<70> <> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<70> English<> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<71> <ROU> Romanian {duminică=1, joi=5, luni=2, marţi=3, miercuri=4, sâmbătă=7, vineri=6} 
+<71> Romanian (Romania)<ROU> Romanian {duminică=1, joi=5, luni=2, marţi=3, miercuri=4, sâmbătă=7, vineri=6} 
 {aprilie=3, august=7, decembrie=11, februarie=1, ianuarie=0, iulie=6, iunie=5, mai=4, martie=2, noiembrie=10, octombrie=9, septembrie=8} 
-<72> <PHL> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<72> English (Philippines)<PHL> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<73> <> Catalan {dijous=5, dilluns=2, dimarts=3, dimecres=4, dissabte=7, diumenge=1, divendres=6} 
+<73> Catalan<> Catalan {dijous=5, dilluns=2, dimarts=3, dimecres=4, dissabte=7, diumenge=1, divendres=6} 
 {de desembre=11, de febrer=1, de gener=0, de juliol=6, de juny=5, de maig=4, de març=2, de novembre=10, de setembre=8, d’abril=3, d’agost=7, d’octubre=9} 
-<74> <TUN> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<74> Arabic (Tunisia)<TUN> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<75> <MNE> Serbian {nedelja=1, petak=6, ponedeljak=2, sreda=4, subota=7, utorak=3, četvrtak=5} 
+<75> Serbian (Latin,Montenegro)<MNE> Serbian {nedelja=1, petak=6, ponedeljak=2, sreda=4, subota=7, utorak=3, četvrtak=5} 
 {april=3, avgust=7, decembar=11, februar=1, januar=0, jul=6, jun=5, maj=4, mart=2, novembar=10, oktobar=9, septembar=8} 
-<76> <GTM> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<76> Spanish (Guatemala)<GTM> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<77> <> Slovenian {Nedelja=1, Petek=6, Ponedeljek=2, Sobota=7, Sreda=4, Torek=3, Četrtek=5} 
+<77> Greek (Cyprus)<> Slovenian {Nedelja=1, Petek=6, Ponedeljek=2, Sobota=7, Sreda=4, Torek=3, Četrtek=5} 
 {april=3, avgust=7, december=11, februar=1, januar=0, julij=6, junij=5, maj=4, marec=2, november=10, oktober=9, september=8} 
-<78> <KOR> Korean {금요일=6, 목요일=5, 수요일=4, 월요일=2, 일요일=1, 토요일=7, 화요일=3} 
+<78> Korean (South Korea)<KOR> Korean {금요일=6, 목요일=5, 수요일=4, 월요일=2, 일요일=1, 토요일=7, 화요일=3} 
 {10월=9, 11월=10, 12월=11, 1월=0, 2월=1, 3월=2, 4월=3, 5월=4, 6월=5, 7월=6, 8월=7, 9월=8} 
-<79> <CYP> Greek {Δευτέρα=2, Κυριακή=1, Πέμπτη=5, Παρασκευή=6, Σάββατο=7, Τετάρτη=4, Τρίτη=3} 
+<79> Slovenian<CYP> Greek {Δευτέρα=2, Κυριακή=1, Πέμπτη=5, Παρασκευή=6, Σάββατο=7, Τετάρτη=4, Τρίτη=3} 
 {Απρίλιος=3, Αύγουστος=7, Δεκέμβριος=11, Ιανουάριος=0, Ιούλιος=6, Ιούνιος=5, Μάιος=4, Μάρτιος=2, Νοέμβριος=10, Οκτώβριος=9, Σεπτέμβριος=8, Φεβρουάριος=1} 
-<80> <MEX> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<80> Spanish (Mexico)<MEX> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<81> <RUS> Russian {воскресенье=1, вторник=3, понедельник=2, пятница=6, среда=4, суббота=7, четверг=5} 
+<81> Russian (Russia)<RUS> Russian {воскресенье=1, вторник=3, понедельник=2, пятница=6, среда=4, суббота=7, четверг=5} 
 {августа=7, апреля=3, декабря=11, июля=6, июня=5, марта=2, мая=4, ноября=10, октября=9, сентября=8, февраля=1, января=0} 
-<82> <HND> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<82> Spanish (Honduras)<HND> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<83> <HKG> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
+<83> Norwegian (Norway,Nynorsk)<HKG> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
 {一月=0, 七月=6, 三月=2, 九月=8, 二月=1, 五月=4, 八月=7, 六月=5, 十一月=10, 十二月=11, 十月=9, 四月=3} 
-<84> <NOR> Norwegian {fredag=6, laurdag=7, måndag=2, onsdag=4, sundag=1, torsdag=5, tysdag=3} 
+<84> Chinese (Hong Kong)<NOR> Norwegian {fredag=6, laurdag=7, måndag=2, onsdag=4, sundag=1, torsdag=5, tysdag=3} 
 {april=3, august=7, desember=11, februar=1, januar=0, juli=6, juni=5, mai=4, mars=2, november=10, oktober=9, september=8} 
-<85> <HUN> Hungarian {csütörtök=5, hétfő=2, kedd=3, péntek=6, szerda=4, szombat=7, vasárnap=1} 
+<85> Hungarian (Hungary)<HUN> Hungarian {csütörtök=5, hétfő=2, kedd=3, péntek=6, szerda=4, szombat=7, vasárnap=1} 
 {augusztus=7, december=11, február=1, január=0, július=6, június=5, május=4, március=2, november=10, október=9, szeptember=8, április=3} 
-<86> <THA> Thai {วันจันทร์=2, วันพฤหัสบดี=5, วันพุธ=4, วันศุกร์=6, วันอังคาร=3, วันอาทิตย์=1, วันเสาร์=7} 
+<86> Thai (Thailand)<THA> Thai {วันจันทร์=2, วันพฤหัสบดี=5, วันพุธ=4, วันศุกร์=6, วันอังคาร=3, วันอาทิตย์=1, วันเสาร์=7} 
 {กรกฎาคม=6, กันยายน=8, กุมภาพันธ์=1, ตุลาคม=9, ธันวาคม=11, พฤศจิกายน=10, พฤษภาคม=4, มกราคม=0, มิถุนายน=5, มีนาคม=2, สิงหาคม=7, เมษายน=3} 
-<87> <IRQ> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<87> Arabic (Iraq)<IRQ> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<88> <CHL> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<88> Spanish (Chile)<CHL> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<89> <> Finnish {keskiviikko=4, lauantai=7, maanantai=2, perjantai=6, sunnuntai=1, tiistai=3, torstai=5} 
+<89> Arabic (Morocco)<> Finnish {keskiviikko=4, lauantai=7, maanantai=2, perjantai=6, sunnuntai=1, tiistai=3, torstai=5} 
 {elokuuta=7, heinäkuuta=6, helmikuuta=1, huhtikuuta=3, joulukuuta=11, kesäkuuta=5, lokakuuta=9, maaliskuuta=2, marraskuuta=10, syyskuuta=8, tammikuuta=0, toukokuuta=4} 
-<90> <MAR> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<90> Finnish<MAR> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<91> <IRL> Irish {Dé Céadaoin=4, Dé Domhnaigh=1, Dé Luain=2, Dé Máirt=3, Dé Sathairn=7, Dé hAoine=6, Déardaoin=5} 
+<91> Irish (Ireland)<IRL> Irish {Dé Céadaoin=4, Dé Domhnaigh=1, Dé Luain=2, Dé Máirt=3, Dé Sathairn=7, Dé hAoine=6, Déardaoin=5} 
 {Aibreán=3, Bealtaine=4, Deireadh Fómhair=9, Eanáir=0, Feabhra=1, Iúil=6, Lúnasa=7, Meitheamh=5, Meán Fómhair=8, Márta=2, Nollaig=11, Samhain=10} 
-<92> <> Macedonian {вторник=3, недела=1, петок=6, понеделник=2, сабота=7, среда=4, четврток=5} 
+<92> Macedonian<> Macedonian {вторник=3, недела=1, петок=6, понеделник=2, сабота=7, среда=4, четврток=5} 
 {август=7, април=3, декември=11, март=2, мај=4, ноември=10, октомври=9, септември=8, февруари=1, јануари=0, јули=6, јуни=5} 
-<93> <TUR> Turkish {Cuma=6, Cumartesi=7, Pazar=1, Pazartesi=2, Perşembe=5, Salı=3, Çarşamba=4} 
+<93> Turkish (Turkey)<TUR> Turkish {Cuma=6, Cumartesi=7, Pazar=1, Pazartesi=2, Perşembe=5, Salı=3, Çarşamba=4} 
 {Aralık=11, Ağustos=7, Ekim=9, Eylül=8, Haziran=5, Kasım=10, Mart=2, Mayıs=4, Nisan=3, Ocak=0, Temmuz=6, Şubat=1} 
-<94> <EST> Estonian {esmaspäev=2, kolmapäev=4, laupäev=7, neljapäev=5, pühapäev=1, reede=6, teisipäev=3} 
+<94> Arabic (Qatar)<EST> Estonian {esmaspäev=2, kolmapäev=4, laupäev=7, neljapäev=5, pühapäev=1, reede=6, teisipäev=3} 
 {aprill=3, august=7, detsember=11, jaanuar=0, juuli=6, juuni=5, mai=4, märts=2, november=10, oktoober=9, september=8, veebruar=1} 
-<95> <QAT> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<95> Estonian (Estonia)<QAT> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<96> <> Serbian {nedelja=1, petak=6, ponedeljak=2, sreda=4, subota=7, utorak=3, četvrtak=5} 
+<96> Serbian (Latin)<> Serbian {nedelja=1, petak=6, ponedeljak=2, sreda=4, subota=7, utorak=3, četvrtak=5} 
 {april=3, avgust=7, decembar=11, februar=1, januar=0, jul=6, jun=5, maj=4, mart=2, novembar=10, oktobar=9, septembar=8} 
-<97> <PRT> Portuguese {Domingo=1, Quarta-feira=4, Quinta-feira=5, Segunda-feira=2, Sexta-feira=6, Sábado=7, Terça-feira=3} 
+<97> Portuguese (Portugal)<PRT> Portuguese {Domingo=1, Quarta-feira=4, Quinta-feira=5, Segunda-feira=2, Sexta-feira=6, Sábado=7, Terça-feira=3} 
 {Abril=3, Agosto=7, Dezembro=11, Fevereiro=1, Janeiro=0, Julho=6, Junho=5, Maio=4, Março=2, Novembro=10, Outubro=9, Setembro=8} 
-<98> <LUX> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
+<98> French (Luxembourg)<LUX> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
 {août=7, avril=3, décembre=11, février=1, janvier=0, juillet=6, juin=5, mai=4, mars=2, novembre=10, octobre=9, septembre=8} 
-<99> <OMN> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<99> Arabic (Oman)<OMN> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<100> <> Thai {วันจันทร์=2, วันพฤหัสบดี=5, วันพุธ=4, วันศุกร์=6, วันอังคาร=3, วันอาทิตย์=1, วันเสาร์=7} 
+<100> Thai<> Thai {วันจันทร์=2, วันพฤหัสบดี=5, วันพุธ=4, วันศุกร์=6, วันอังคาร=3, วันอาทิตย์=1, วันเสาร์=7} 
 {กรกฎาคม=6, กันยายน=8, กุมภาพันธ์=1, ตุลาคม=9, ธันวาคม=11, พฤศจิกายน=10, พฤษภาคม=4, มกราคม=0, มิถุนายน=5, มีนาคม=2, สิงหาคม=7, เมษายน=3} 
-<101> <ALB> Albanian {e diel=1, e enjte=5, e hënë=2, e martë=3, e mërkurë=4, e premte=6, e shtunë=7} 
+<101> Albanian (Albania)<ALB> Albanian {e diel=1, e enjte=5, e hënë=2, e martë=3, e mërkurë=4, e premte=6, e shtunë=7} 
 {dhjetor=11, gusht=7, janar=0, korrik=6, maj=4, mars=2, nëntor=10, prill=3, qershor=5, shkurt=1, shtator=8, tetor=9} 
-<102> <DOM> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<102> Spanish (Dominican Republic)<DOM> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<103> <CUB> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<103> Spanish (Cuba)<CUB> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<104> <> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<104> Arabic<> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<105> <> Russian {воскресенье=1, вторник=3, понедельник=2, пятница=6, среда=4, суббота=7, четверг=5} 
+<105> Russian<> Russian {воскресенье=1, вторник=3, понедельник=2, пятница=6, среда=4, суббота=7, четверг=5} 
 {августа=7, апреля=3, декабря=11, июля=6, июня=5, марта=2, мая=4, ноября=10, октября=9, сентября=8, февраля=1, января=0} 
-<106> <NZL> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<106> English (New Zealand)<NZL> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<107> <SRB> Serbian {недеља=1, петак=6, понедељак=2, среда=4, субота=7, уторак=3, четвртак=5} 
+<107> Serbian (Serbia)<SRB> Serbian {недеља=1, петак=6, понедељак=2, среда=4, субота=7, уторак=3, четвртак=5} 
 {август=7, април=3, децембар=11, март=2, мај=4, новембар=10, октобар=9, септембар=8, фебруар=1, јануар=0, јул=6, јун=5} 
-<108> <CHE> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
+<108> German (Switzerland)<CHE> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
 {April=3, August=7, Dezember=11, Februar=1, Januar=0, Juli=6, Juni=5, Mai=4, März=2, November=10, Oktober=9, September=8} 
-<109> <URY> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<109> Spanish (Uruguay)<URY> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<110> <> Malay {Ahad=1, Isnin=2, Jumaat=6, Khamis=5, Rabu=4, Sabtu=7, Selasa=3} 
+<110> Malay<> Malay {Ahad=1, Isnin=2, Jumaat=6, Khamis=5, Rabu=4, Sabtu=7, Selasa=3} 
 {April=3, Disember=11, Februari=1, Januari=0, Julai=6, Jun=5, Mac=2, Mei=4, November=10, Ogos=7, Oktober=9, September=8} 
-<111> <GRC> Greek {Δευτέρα=2, Κυριακή=1, Πέμπτη=5, Παρασκευή=6, Σάββατο=7, Τετάρτη=4, Τρίτη=3} 
+<111> Greek (Greece)<GRC> Greek {Δευτέρα=2, Κυριακή=1, Πέμπτη=5, Παρασκευή=6, Σάββατο=7, Τετάρτη=4, Τρίτη=3} 
 {Απριλίου=3, Αυγούστου=7, Δεκεμβρίου=11, Ιανουαρίου=0, Ιουλίου=6, Ιουνίου=5, Μαΐου=4, Μαρτίου=2, Νοεμβρίου=10, Οκτωβρίου=9, Σεπτεμβρίου=8, Φεβρουαρίου=1} 
-<112> <ISR> Hebrew {יום חמישי=5, יום ראשון=1, יום רביעי=4, יום שישי=6, יום שלישי=3, יום שני=2, שבת=7} 
+<112> Hebrew (Israel)<ISR> Hebrew {יום חמישי=5, יום ראשון=1, יום רביעי=4, יום שישי=6, יום שלישי=3, יום שני=2, שבת=7} 
 {אוגוסט=7, אוקטובר=9, אפריל=3, דצמבר=11, יולי=6, יוני=5, ינואר=0, מאי=4, מרץ=2, נובמבר=10, ספטמבר=8, פברואר=1} 
-<113> <ZAF> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<113> English (South Africa)<ZAF> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<114> <THA> Thai {วันจันทร์=2, วันพฤหัสบดี=5, วันพุธ=4, วันศุกร์=6, วันอังคาร=3, วันอาทิตย์=1, วันเสาร์=7} 
+<114> Thai (Thailand,TH)<THA> Thai {วันจันทร์=2, วันพฤหัสบดี=5, วันพุธ=4, วันศุกร์=6, วันอังคาร=3, วันอาทิตย์=1, วันเสาร์=7} 
 {กรกฎาคม=6, กันยายน=8, กุมภาพันธ์=1, ตุลาคม=9, ธันวาคม=11, พฤศจิกายน=10, พฤษภาคม=4, มกราคม=0, มิถุนายน=5, มีนาคม=2, สิงหาคม=7, เมษายน=3} 
-<115> <> Hindi {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<115> Hindi<> Hindi {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<116> <FRA> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
+<116> French (France)<FRA> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
 {août=7, avril=3, décembre=11, février=1, janvier=0, juillet=6, juin=5, mai=4, mars=2, novembre=10, octobre=9, septembre=8} 
-<117> <AUT> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
+<117> German (Austria)<AUT> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
 {April=3, August=7, Dezember=11, Februar=1, Juli=6, Juni=5, Jänner=0, Mai=4, März=2, November=10, Oktober=9, September=8} 
-<118> <> Dutch {dinsdag=3, donderdag=5, maandag=2, vrijdag=6, woensdag=4, zaterdag=7, zondag=1} 
+<118> Dutch<> Dutch {dinsdag=3, donderdag=5, maandag=2, vrijdag=6, woensdag=4, zaterdag=7, zondag=1} 
 {april=3, augustus=7, december=11, februari=1, januari=0, juli=6, juni=5, maart=2, mei=4, november=10, oktober=9, september=8} 
-<119> <NOR> Norwegian {fredag=6, lørdag=7, mandag=2, onsdag=4, søndag=1, tirsdag=3, torsdag=5} 
+<119> Norwegian (Norway)<NOR> Norwegian {fredag=6, lørdag=7, mandag=2, onsdag=4, søndag=1, tirsdag=3, torsdag=5} 
 {april=3, august=7, desember=11, februar=1, januar=0, juli=6, juni=5, mai=4, mars=2, november=10, oktober=9, september=8} 
-<120> <AUS> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<120> English (Australia)<AUS> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<121> <> Vietnamese {Chủ nhật=1, Thứ ba=3, Thứ bảy=7, Thứ hai=2, Thứ năm=5, Thứ sáu=6, Thứ tư=4} 
+<121> Vietnamese<> Vietnamese {Chủ nhật=1, Thứ ba=3, Thứ bảy=7, Thứ hai=2, Thứ năm=5, Thứ sáu=6, Thứ tư=4} 
 {tháng ba=2, tháng bảy=6, tháng chín=8, tháng hai=1, tháng mười=9, tháng mười hai=11, tháng mười một=10, tháng một=0, tháng năm=4, tháng sáu=5, tháng tám=7, tháng tư=3} 
-<122> <NLD> Dutch {dinsdag=3, donderdag=5, maandag=2, vrijdag=6, woensdag=4, zaterdag=7, zondag=1} 
+<122> French (Canada)<NLD> Dutch {dinsdag=3, donderdag=5, maandag=2, vrijdag=6, woensdag=4, zaterdag=7, zondag=1} 
 {april=3, augustus=7, december=11, februari=1, januari=0, juli=6, juni=5, maart=2, mei=4, november=10, oktober=9, september=8} 
-<123> <CAN> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
+<123> Latvian (Latvia)<CAN> French {dimanche=1, jeudi=5, lundi=2, mardi=3, mercredi=4, samedi=7, vendredi=6} 
 {août=7, avril=3, décembre=11, février=1, janvier=0, juillet=6, juin=5, mai=4, mars=2, novembre=10, octobre=9, septembre=8} 
-<124> <LVA> Latvian {ceturtdiena=5, otrdiena=3, piektdiena=6, pirmdiena=2, sestdiena=7, svētdiena=1, trešdiena=4} 
+<124> Dutch (Netherlands)<LVA> Latvian {ceturtdiena=5, otrdiena=3, piektdiena=6, pirmdiena=2, sestdiena=7, svētdiena=1, trešdiena=4} 
 {aprīlis=3, augusts=7, decembris=11, februāris=1, janvāris=0, jūlijs=6, jūnijs=5, maijs=4, marts=2, novembris=10, oktobris=9, septembris=8} 
-<125> <LUX> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
+<125> German (Luxembourg)<LUX> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
 {April=3, August=7, Dezember=11, Februar=1, Januar=0, Juli=6, Juni=5, Mai=4, März=2, November=10, Oktober=9, September=8} 
-<126> <CRI> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<126> Spanish (Costa Rica)<CRI> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<127> <KWT> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<127> Arabic (Kuwait)<KWT> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<128> <> Serbian {недеља=1, петак=6, понедељак=2, среда=4, субота=7, уторак=3, четвртак=5} 
+<128> Arabic (Libya)<> Serbian {недеља=1, петак=6, понедељак=2, среда=4, субота=7, уторак=3, четвртак=5} 
 {август=7, април=3, децембар=11, март=2, мај=4, новембар=10, октобар=9, септембар=8, фебруар=1, јануар=0, јул=6, јун=5} 
-<129> <LBY> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<129> Serbian<LBY> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<130> <> Maltese {Il-Ġimgħa=6, Il-Ħadd=1, Il-Ħamis=5, Is-Sibt=7, It-Tlieta=3, It-Tnejn=2, L-Erbgħa=4} 
+<130> Italian (Switzerland)<> Maltese {Il-Ġimgħa=6, Il-Ħadd=1, Il-Ħamis=5, Is-Sibt=7, It-Tlieta=3, It-Tnejn=2, L-Erbgħa=4} 
 {April=3, Awwissu=7, Diċembru=11, Frar=1, Jannar=0, Lulju=6, Marzu=2, Mejju=4, Novembru=10, Ottubru=9, Settembru=8, Ġunju=5} 
-<131> <CHE> Italian {domenica=1, giovedì=5, lunedì=2, martedì=3, mercoledì=4, sabato=7, venerdì=6} 
+<131> Maltese<CHE> Italian {domenica=1, giovedì=5, lunedì=2, martedì=3, mercoledì=4, sabato=7, venerdì=6} 
 {agosto=7, aprile=3, dicembre=11, febbraio=1, gennaio=0, giugno=5, luglio=6, maggio=4, marzo=2, novembre=10, ottobre=9, settembre=8} 
-<132> <> Danish {fredag=6, lørdag=7, mandag=2, onsdag=4, søndag=1, tirsdag=3, torsdag=5} 
+<132> Danish<> Danish {fredag=6, lørdag=7, mandag=2, onsdag=4, søndag=1, tirsdag=3, torsdag=5} 
 {april=3, august=7, december=11, februar=1, januar=0, juli=6, juni=5, maj=4, marts=2, november=10, oktober=9, september=8} 
-<133> <DEU> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
+<133> German (Germany)<DEU> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
 {April=3, August=7, Dezember=11, Februar=1, Januar=0, Juli=6, Juni=5, Mai=4, März=2, November=10, Oktober=9, September=8} 
-<134> <DZA> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<134> Arabic (Algeria)<DZA> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {أبريل=3, أغسطس=7, أكتوبر=9, ديسمبر=11, سبتمبر=8, فبراير=1, مارس=2, مايو=4, نوفمبر=10, يناير=0, يوليو=6, يونيو=5} 
-<135> <SVK> Slovak {Nedeľa=1, Piatok=6, Pondelok=2, Sobota=7, Streda=4, Utorok=3, Štvrtok=5} 
+<135> Slovak (Slovakia)<SVK> Slovak {Nedeľa=1, Piatok=6, Pondelok=2, Sobota=7, Streda=4, Utorok=3, Štvrtok=5} 
 {apríla=3, augusta=7, decembra=11, februára=1, januára=0, júla=6, júna=5, marca=2, mája=4, novembra=10, októbra=9, septembra=8} 
-<136> <LTU> Lithuanian {Antradienis=3, Ketvirtadienis=5, Penktadienis=6, Pirmadienis=2, Sekmadienis=1, Trečiadienis=4, Šeštadienis=7} 
+<136> Italian (Italy)<LTU> Lithuanian {Antradienis=3, Ketvirtadienis=5, Penktadienis=6, Pirmadienis=2, Sekmadienis=1, Trečiadienis=4, Šeštadienis=7} 
 {balandis=3, birželis=5, gegužė=4, gruodis=11, kovas=2, lapkritis=10, liepa=6, rugpjūtis=7, rugsėjis=8, sausio=0, spalis=9, vasaris=1} 
-<137> <ITA> Italian {domenica=1, giovedì=5, lunedì=2, martedì=3, mercoledì=4, sabato=7, venerdì=6} 
+<137> Lithuanian (Lithuania)<ITA> Italian {domenica=1, giovedì=5, lunedì=2, martedì=3, mercoledì=4, sabato=7, venerdì=6} 
 {agosto=7, aprile=3, dicembre=11, febbraio=1, gennaio=0, giugno=5, luglio=6, maggio=4, marzo=2, novembre=10, ottobre=9, settembre=8} 
-<138> <IRL> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<138> English (Ireland)<IRL> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<139> <SGP> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
+<139> Chinese (Singapore)<SGP> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
 {一月=0, 七月=6, 三月=2, 九月=8, 二月=1, 五月=4, 八月=7, 六月=5, 十一月=10, 十二月=11, 十月=9, 四月=3} 
-<140> <> Romanian {duminică=1, joi=5, luni=2, marţi=3, miercuri=4, sâmbătă=7, vineri=6} 
+<140> English (Canada)<> Romanian {duminică=1, joi=5, luni=2, marţi=3, miercuri=4, sâmbătă=7, vineri=6} 
 {aprilie=3, august=7, decembrie=11, februarie=1, ianuarie=0, iulie=6, iunie=5, mai=4, martie=2, noiembrie=10, octombrie=9, septembrie=8} 
-<141> <CAN> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<141> Romanian<CAN> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<142> <BEL> Dutch {dinsdag=3, donderdag=5, maandag=2, vrijdag=6, woensdag=4, zaterdag=7, zondag=1} 
+<142> Dutch (Belgium)<BEL> Dutch {dinsdag=3, donderdag=5, maandag=2, vrijdag=6, woensdag=4, zaterdag=7, zondag=1} 
 {april=3, augustus=7, december=11, februari=1, januari=0, juli=6, juni=5, maart=2, mei=4, november=10, oktober=9, september=8} 
-<143> <> Norwegian {fredag=6, lørdag=7, mandag=2, onsdag=4, søndag=1, tirsdag=3, torsdag=5} 
+<143> Norwegian<> Norwegian {fredag=6, lørdag=7, mandag=2, onsdag=4, søndag=1, tirsdag=3, torsdag=5} 
 {april=3, august=7, desember=11, februar=1, januar=0, juli=6, juni=5, mai=4, mars=2, november=10, oktober=9, september=8} 
-<144> <> Polish {czwartek=5, niedziela=1, piątek=6, poniedziałek=2, sobota=7, wtorek=3, środa=4} 
+<144> Polish<> Polish {czwartek=5, niedziela=1, piątek=6, poniedziałek=2, sobota=7, wtorek=3, środa=4} 
 {czerwca=5, grudnia=11, kwietnia=3, lipca=6, listopada=10, lutego=1, maja=4, marca=2, października=9, sierpnia=7, stycznia=0, września=8} 
-<145> <CHN> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
+<145> Chinese (China)<CHN> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
 {一月=0, 七月=6, 三月=2, 九月=8, 二月=1, 五月=4, 八月=7, 六月=5, 十一月=10, 十二月=11, 十月=9, 四月=3} 
-<146> <JPN> Japanese {土曜日=7, 日曜日=1, 月曜日=2, 木曜日=5, 水曜日=4, 火曜日=3, 金曜日=6} 
+<146> Japanese (Japan)<JPN> Japanese {土曜日=7, 日曜日=1, 月曜日=2, 木曜日=5, 水曜日=4, 火曜日=3, 金曜日=6} 
 {10月=9, 11月=10, 12月=11, 1月=0, 2月=1, 3月=2, 4月=3, 5月=4, 6月=5, 7月=6, 8月=7, 9月=8} 
-<147> <GRC> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
+<147> German (Greece)<GRC> German {Dienstag=3, Donnerstag=5, Freitag=6, Mittwoch=4, Montag=2, Samstag=7, Sonntag=1} 
 {April=3, August=7, Dezember=11, Februar=1, Januar=0, Juli=6, Juni=5, Mai=4, März=2, November=10, Oktober=9, September=8} 
-<148> <SRB> Serbian {nedelja=1, petak=6, ponedeljak=2, sreda=4, subota=7, utorak=3, četvrtak=5} 
+<148> Serbian (Latin,Serbia)<SRB> Serbian {nedelja=1, petak=6, ponedeljak=2, sreda=4, subota=7, utorak=3, četvrtak=5} 
 {april=3, avgust=7, decembar=11, februar=1, januar=0, jul=6, jun=5, maj=4, mart=2, novembar=10, oktobar=9, septembar=8} 
-<149> <> Hebrew {יום חמישי=5, יום ראשון=1, יום רביעי=4, יום שישי=6, יום שלישי=3, יום שני=2, שבת=7} 
+<149> Hebrew<> Hebrew {יום חמישי=5, יום ראשון=1, יום רביעי=4, יום שישי=6, יום שלישי=3, יום שני=2, שבת=7} 
 {אוגוסט=7, אוקטובר=9, אפריל=3, דצמבר=11, יולי=6, יוני=5, ינואר=0, מאי=4, מרץ=2, נובמבר=10, ספטמבר=8, פברואר=1} 
-<150> <IND> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<150> English (India)<IND> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 
-<151> <LBN> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
+<151> Arabic (Lebanon)<LBN> Arabic {الأحد=1, الأربعاء=4, الاثنين=2, الثلاثاء=3, الجمعة=6, الخميس=5, السبت=7} 
 {آب=7, آذار=2, أيلول=8, تشرين الأول=9, تشرين الثاني=10, تموز=6, حزيران=5, شباط=1, كانون الأول=11, كانون الثاني=0, نوار=4, نيسان=3} 
-<152> <NIC> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<152> Spanish (Nicaragua)<NIC> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<153> <> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
+<153> Chinese<> Chinese {星期一=2, 星期三=4, 星期二=3, 星期五=6, 星期六=7, 星期四=5, 星期日=1} 
 {一月=0, 七月=6, 三月=2, 九月=8, 二月=1, 五月=4, 八月=7, 六月=5, 十一月=10, 十二月=11, 十月=9, 四月=3} 
-<154> <MKD> Macedonian {вторник=3, недела=1, петок=6, понеделник=2, сабота=7, среда=4, четврток=5} 
+<154> Belarusian (Belarus)<MKD> Macedonian {вторник=3, недела=1, петок=6, понеделник=2, сабота=7, среда=4, четврток=5} 
 {август=7, април=3, декември=11, март=2, мај=4, ноември=10, октомври=9, септември=8, февруари=1, јануари=0, јули=6, јуни=5} 
-<155> <BLR> Belarusian {аўторак=3, нядзеля=1, панядзелак=2, пятніца=6, серада=4, субота=7, чацвер=5} 
+<155> Macedonian (Macedonia)<BLR> Belarusian {аўторак=3, нядзеля=1, панядзелак=2, пятніца=6, серада=4, субота=7, чацвер=5} 
 {верасня=8, жніўня=7, кастрычніка=9, красавіка=3, лютага=1, ліпеня=6, лістапада=10, мая=4, сакавіка=2, снежня=11, студзеня=0, чрвеня=5} 
-<156> <SVN> Slovenian {Nedelja=1, Petek=6, Ponedeljek=2, Sobota=7, Sreda=4, Torek=3, Četrtek=5} 
+<156> Slovenian (Slovenia)<SVN> Slovenian {Nedelja=1, Petek=6, Ponedeljek=2, Sobota=7, Sreda=4, Torek=3, Četrtek=5} 
 {april=3, avgust=7, december=11, februar=1, januar=0, julij=6, junij=5, maj=4, marec=2, november=10, oktober=9, september=8} 
-<157> <PER> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
+<157> Spanish (Peru)<PER> Spanish {domingo=1, jueves=5, lunes=2, martes=3, miércoles=4, sábado=7, viernes=6} 
 {abril=3, agosto=7, diciembre=11, enero=0, febrero=1, julio=6, junio=5, marzo=2, mayo=4, noviembre=10, octubre=9, septiembre=8} 
-<158> <IDN> Indonesian {Jumat=6, Kamis=5, Minggu=1, Rabu=4, Sabtu=7, Selasa=3, Senin=2} 
+<158> Indonesian (Indonesia)<IDN> Indonesian {Jumat=6, Kamis=5, Minggu=1, Rabu=4, Sabtu=7, Selasa=3, Senin=2} 
 {Agustus=7, April=3, Desember=11, Februari=1, Januari=0, Juli=6, Juni=5, Maret=2, Mei=4, November=10, Oktober=9, September=8} 
-<159> <GBR> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
+<159> English (United Kingdom)<GBR> English {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4} 
 {April=3, August=7, December=11, February=1, January=0, July=6, June=5, March=2, May=4, November=10, October=9, September=8} 

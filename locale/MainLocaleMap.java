@@ -6,6 +6,7 @@
  * 
  */
 //package localeDemo;
+import java.text.NumberFormat;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.Map;
@@ -22,13 +23,14 @@ public class MainLocaleMap {
 			Predicate <Integer> badPrint = bp -> !((bp == 10) | (bp == 12) | (bp == 43)) ;
     Calendar now = Calendar.getInstance();
 // create an object of locale class 
-    Locale[] array = Locale.getAvailableLocales();
+    Locale[] array    =       Locale.getAvailableLocales();
+    Locale[] localesN = NumberFormat.getAvailableLocales();
     
     Locale locale = Locale.getDefault();
          locale = Locale.FRANCE;
 
 	//String here = Locale.getDisplayCountry();
-	for (int i = 1; i < 160; i ++) {    // changed to max before exception, until I fix for max / size of array
+	for (int i = 1; i < localesN.length; i ++) {    // changed to max before exception, until I fix for max / size of array
 		locale = array[i];
     // call the getDisplayNames method
     if (i != 53){
@@ -45,7 +47,7 @@ public class MainLocaleMap {
          // print the results
          //https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
          System.out.print("<"+i+ "> ");  // change to field of 3 for neater grep sorting
-                  System.out.print(locales[i].getDisplayName());
+                  System.out.print(localesN[i].getDisplayName());
          System.out.print("<"+array[i].getISO3Country()+ "> ");
          System.out.print(array[i].getDisplayLanguage());
          System.out.printf(" %s %n%s %n", navMap1, navMap2);  // sorted alphabetically
