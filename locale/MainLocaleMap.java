@@ -50,7 +50,7 @@ public class MainLocaleMap {
                   System.out.print(localesN[i].getDisplayName());
          System.out.print("<"+array[i].getISO3Country()+ "> ");
          System.out.print(array[i].getDisplayLanguage());
-         System.out.printf(" %s %n%s %n", navMap1, navMap2);  // sorted alphabetically
+         System.out.printf(" %s %s %n", navMap1, navMap2);  // sorted alphabetically
 //         System.out.printf("%n%s %n", navMap2);  // sorted alphabetically
   //  System.out.printf("%n%s %n", navMap);  // sorted alphabetically
 
