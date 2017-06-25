@@ -20,7 +20,7 @@ public class NumberF {
 	public static void main (String args[]) {
 // Print out a number using the localized number, integer, currency,
 // and percent format for each locale</strong>
- Locale[] localesN = NumberFormat.getAvailableLocales();
+ Locale[] localesN = DecimalFormat.getAvailableLocales(); // appears same as NumberFormat
  double myNumber = -1234.56;
  NumberFormat form;
  
@@ -32,7 +32,7 @@ public class NumberF {
  */
  
  for (int j = 0; j < 4; ++j) {
-     System.out.println("<<<<< FORMAT >>>>>");
+     System.out.println("<<<<< FORMAT >>>"+j+">>");
      for (int i = 0; i < localesN.length; ++i) {
 		 /*
          if (localesN[i].getCountry().length() == 0) {
@@ -50,7 +50,8 @@ public class NumberF {
          default:
              form = NumberFormat.getPercentInstance(localesN[i]); break;
          }
-         if (form instanceof DecimalFormat) {
+         if (form instanceof DecimalFormat) { 
+// see http://docs.oracle.com/cd/E26806_01/wlp.1034/e14255/com/bea/p13n/expression/operator/Instanceof.html
              System.out.print(": " + ((DecimalFormat) form).toPattern());
          }
          System.out.print(" -> " + form.format(myNumber));
