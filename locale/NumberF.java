@@ -39,7 +39,7 @@ public class NumberF {
             continue; // Skip language-only locales
          }
          */
-         System.out.print(locales[i].getDisplayName());
+         System.out.print("<"+i+"> "+ locales[i].getDisplayName());
          switch (j) {
          case 0:
              form = NumberFormat.getInstance(locales[i]); break;

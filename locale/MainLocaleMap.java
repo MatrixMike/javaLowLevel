@@ -45,6 +45,7 @@ public class MainLocaleMap {
          // print the results
          //https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
          System.out.print("<"+i+ "> ");  // change to field of 3 for neater grep sorting
+                  System.out.print(locales[i].getDisplayName());
          System.out.print("<"+array[i].getISO3Country()+ "> ");
          System.out.print(array[i].getDisplayLanguage());
          System.out.printf(" %s %n%s %n", navMap1, navMap2);  // sorted alphabetically
