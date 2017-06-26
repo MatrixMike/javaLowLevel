@@ -21,7 +21,7 @@ public class NumberF {
 // Print out a number using the localized number, integer, currency,
 // and percent format for each locale</strong>
  Locale[] localesN = DecimalFormat.getAvailableLocales(); // appears same as NumberFormat
- double myNumber = -1234.56;
+ double myNumber = -1234.56789;
  NumberFormat form;
  
  
@@ -52,7 +52,7 @@ public class NumberF {
          }
          if (form instanceof DecimalFormat) { 
 // see http://docs.oracle.com/cd/E26806_01/wlp.1034/e14255/com/bea/p13n/expression/operator/Instanceof.html
-             System.out.print(": " + ((DecimalFormat) form).toPattern());
+             System.out.print(":: " + ((DecimalFormat) form).toPattern());
          }
          System.out.print(" -> " + form.format(myNumber));
          System.out.println();
