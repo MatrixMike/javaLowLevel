@@ -25,6 +25,8 @@ public class Maps1 {
 	map.get(3);             // val33
 	map.computeIfAbsent(23, num -> "val" + num);
 	map.containsKey(23);    // true
+	map.computeIfAbsent(3, num -> "bam");
+	map.get(3); 
 	map.forEach((id, val) -> System.out.println(val));
 	}
 }
