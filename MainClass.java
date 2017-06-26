@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 public class MainClass extends JPanel {
 
   public void paint(Graphics g) {
-    Dimension d = this.getPreferredSize();
+ //   Dimension d = this.getPreferredSize();
     int fontSize = 20;
 
     g.setFont(new Font("TimesRoman", Font.PLAIN, fontSize));

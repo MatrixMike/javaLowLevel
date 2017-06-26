@@ -10,8 +10,11 @@
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import java.awt.Font;
+import java.awt.Graphics;
 
 public class Check extends JFrame {
 
@@ -21,14 +24,24 @@ public class Check extends JFrame {
  * 
  */
     public void makeUI() {
-        JFrame f = new JFrame();
-        f.getContentPane().setBackground(new Color(255, 255, 000));
- //           f.setColor(Color.red);  
- //   f.drawString("www.electroteach.com", 10, 80);
+		    int fontSize = 20;
+//		        Dimension d = this.getPreferredSize();
+//       JFrame f = new JFrame();
+        JFrame frame = new JFrame("myanmar text");
+        frame.getContentPane().setBackground(new Color(255, 255, 000));
+    //        f.setColor(255, 000, 255);  
+		String s = "www.electroteach.com";
+		JLabel label = new JLabel(s);
+		    label.setFont(new Font("TimesRoman", Font.PLAIN, fontSize));
+//		        frame.setColor(Color.black);
+//		label.setFont(new java.awt.Font("Myanmar3", 0, 20));// font insert here, Myanmar Text, Padauk, Myanmar3, Tharlon
+		frame.getContentPane().add(label);
+		frame.pack();
+ //  f.drawString(s, 10, 80);
 
-        f.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        f.setSize(new Dimension(300, 200));
-        f.setVisible(true);
+        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        frame.setSize(new Dimension(300, 200));
+        frame.setVisible(true);
     }
 /**
  * 
