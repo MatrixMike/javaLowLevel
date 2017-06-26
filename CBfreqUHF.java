@@ -20,6 +20,8 @@
  * http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html
  */
 import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
 
 public class CBfreqUHF {
 	private static int spacing = 250;
@@ -27,8 +29,19 @@ public class CBfreqUHF {
 		int ch = 1;
 		 Stream.iterate(4764250, n -> n + spacing)
 		 .limit(160)
-		 .forEach(System.out::println); 
+		 .forEach(System.out::println); // but maybe a map works better here
 		 
+		Map<Integer, String> map = new HashMap<>();
+//		for (int i = 4764250; i < 4774000+1; i=i+spacing) {
+//		map.putIfAbsent(i, "M ch  F = " + i);
+//		}
+		for (int i = 4764250; i < 4774000+1; i=i+spacing) {
+		map.putIfAbsent(i, "M ch " + "x" + " F = " + i );
+		}
+	 	map.forEach((id1, val) -> System.out.println(val));
+	 	
+	 	
+	 	
 		for (int x = 4764250; x < 4774000+1; x=x+spacing) {
 //			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
 			System.out.println(strCreate.make1(ch,x));
