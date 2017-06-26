@@ -17,6 +17,7 @@
  * i.e. convert to frequencies that Amateur (and other) radio users appreciate
  * 
  * http://uhfcb.com.au/80-Channel-UHF-Information.php
+ * http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html
  */
 import java.util.stream.Stream;
 
