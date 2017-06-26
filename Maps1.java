@@ -28,8 +28,9 @@ public class Maps1 {
 	map.computeIfAbsent(3, num -> "bam");
 	map.get(3); 
 	map.merge(9, "VAL9", (value, newValue) -> value.concat(newValue));
+	map.merge(9, "VAL9", (value, newValue) -> value.concat(newValue));
 	map.get(9); 
-	map.forEach((id, val) -> System.out.println(val));
+	map.forEach((id1, val) -> System.out.println(val));
 	}
 }
 
