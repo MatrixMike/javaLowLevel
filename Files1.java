@@ -3,7 +3,7 @@
  * 
  *  2017 mikeh <mikeh@mikeh-desktop>
  * 
- * 
+ * https://www.javacodegeeks.com/2014/05/playing-with-java-8-lambdas-paths-and-files.html
  */
 import java.io.IOException;
 import java.util.stream.Collectors;
@@ -24,6 +24,7 @@ public class Files1 {
         .filter(path -> !path.startsWith("."))
         .filter(path -> !path.endsWith(".txt"))
         .filter(path -> !path.endsWith(".BAT"))
+        .filter(path -> !path.endsWith(".class"))        
         .sorted()
         .collect(Collectors.joining("; "));
 		System.out.println("List: " + joined);
