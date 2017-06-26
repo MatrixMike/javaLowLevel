@@ -18,12 +18,16 @@
  * 
  * http://uhfcb.com.au/80-Channel-UHF-Information.php
  */
-
+import java.util.stream.Stream;
 
 public class CBfreqUHF {
 	private static int spacing = 250;
 	public static void main (String args[]) {
 		int ch = 1;
+		 Stream.iterate(4764250, n -> n + spacing)
+		 .limit(160)
+		 .forEach(System.out::println); 
+		 
 		for (int x = 4764250; x < 4774000+1; x=x+spacing) {
 //			System.out.println("M ch "+ ch + " F = " + x/10000 + "." + x%10000 +"MHz");
 			System.out.println(strCreate.make1(ch,x));

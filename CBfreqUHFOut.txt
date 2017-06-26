@@ -1,0 +1,158 @@
+M ch 1 F = 476.4250MHz
+
+M ch 2 F = 476.4500MHz
+
+M ch 3 F = 476.4750MHz
+
+M ch 4 F = 476.5000MHz
+
+M ch 5 F = 476.5250MHz
+
+M ch 6 F = 476.5500MHz
+
+M ch 7 F = 476.5750MHz
+
+M ch 8 F = 476.6000MHz
+
+M ch 9 F = 476.6250MHz
+
+M ch 10 F = 476.6500MHz
+
+M ch 11 F = 476.6750MHz
+
+M ch 12 F = 476.7000MHz
+
+M ch 13 F = 476.7250MHz
+
+M ch 14 F = 476.7500MHz
+
+M ch 15 F = 476.7750MHz
+
+M ch 16 F = 476.8000MHz
+
+M ch 17 F = 476.8250MHz
+
+M ch 18 F = 476.8500MHz
+
+M ch 19 F = 476.8750MHz
+
+M ch 20 F = 476.9000MHz
+
+M ch 21 F = 476.9250MHz
+
+M ch 22 F = 476.9500MHz
+
+M ch 23 F = 476.9750MHz
+
+M ch 24 F = 477.0MHz
+
+M ch 25 F = 477.250MHz
+
+M ch 26 F = 477.500MHz
+
+M ch 27 F = 477.750MHz
+
+M ch 28 F = 477.1000MHz
+
+M ch 29 F = 477.1250MHz
+
+M ch 30 F = 477.1500MHz
+
+M ch 31 F = 477.1750MHz
+
+M ch 32 F = 477.2000MHz
+
+M ch 33 F = 477.2250MHz
+
+M ch 34 F = 477.2500MHz
+
+M ch 35 F = 477.2750MHz
+
+M ch 36 F = 477.3000MHz
+
+M ch 37 F = 477.3250MHz
+
+M ch 38 F = 477.3500MHz
+
+M ch 39 F = 477.3750MHz
+
+M ch 40 F = 477.4000MHz
+
+
+===
+M ch 41 F = 476.4375MHz
+
+M ch 42 F = 476.4625MHz
+
+M ch 43 F = 476.4875MHz
+
+M ch 44 F = 476.5125MHz
+
+M ch 45 F = 476.5375MHz
+
+M ch 46 F = 476.5625MHz
+
+M ch 47 F = 476.5875MHz
+
+M ch 48 F = 476.6125MHz
+
+M ch 49 F = 476.6375MHz
+
+M ch 50 F = 476.6625MHz
+
+M ch 51 F = 476.6875MHz
+
+M ch 52 F = 476.7125MHz
+
+M ch 53 F = 476.7375MHz
+
+M ch 54 F = 476.7625MHz
+
+M ch 55 F = 476.7875MHz
+
+M ch 56 F = 476.8125MHz
+
+M ch 57 F = 476.8375MHz
+
+M ch 58 F = 476.8625MHz
+
+M ch 59 F = 476.8875MHz
+
+M ch 60 F = 476.9125MHz
+
+
+===
+M ch 64 F = 477.125MHz
+
+M ch 65 F = 477.375MHz
+
+M ch 66 F = 477.625MHz
+
+M ch 67 F = 477.875MHz
+
+M ch 68 F = 477.1125MHz
+
+M ch 69 F = 477.1375MHz
+
+M ch 70 F = 477.1625MHz
+
+M ch 71 F = 477.1875MHz
+
+M ch 72 F = 477.2125MHz
+
+M ch 73 F = 477.2375MHz
+
+M ch 74 F = 477.2625MHz
+
+M ch 75 F = 477.2875MHz
+
+M ch 76 F = 477.3125MHz
+
+M ch 77 F = 477.3375MHz
+
+M ch 78 F = 477.3625MHz
+
+M ch 79 F = 477.3875MHz
+
+M ch 80 F = 477.4125MHz
+
