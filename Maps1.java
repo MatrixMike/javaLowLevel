@@ -23,7 +23,8 @@ public class Maps1 {
 	map.getOrDefault(42, "not found");  // not found
 	map.computeIfPresent(3, (num, val) -> val + num);
 	map.get(3);             // val33
-	
+	map.computeIfAbsent(23, num -> "val" + num);
+	map.containsKey(23);    // true
 	map.forEach((id, val) -> System.out.println(val));
 	}
 }
