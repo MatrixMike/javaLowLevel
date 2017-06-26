@@ -27,6 +27,8 @@ public class Maps1 {
 	map.containsKey(23);    // true
 	map.computeIfAbsent(3, num -> "bam");
 	map.get(3); 
+	map.merge(9, "VAL9", (value, newValue) -> value.concat(newValue));
+	map.get(9); 
 	map.forEach((id, val) -> System.out.println(val));
 	}
 }
