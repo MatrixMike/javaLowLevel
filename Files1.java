@@ -25,6 +25,8 @@ public class Files1 {
         .filter(path -> !path.endsWith(".txt"))
         .filter(path -> !path.endsWith(".BAT"))
         .filter(path -> !path.endsWith(".class"))        
+        .filter(path -> !path.endsWith(".old"))
+        .filter(path -> !path.endsWith(".html")) 
         .sorted()
         .collect(Collectors.joining("; "));
 		System.out.println("List: " + joined);
