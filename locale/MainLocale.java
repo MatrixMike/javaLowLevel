@@ -25,7 +25,7 @@ public class MainLocale {
 //		System.out.println("size = " + array.size());   // how to access size
       // print the results
       //System.out.println( Locale[].size());
-      for (int i = 55; i < 159; i++) {
+      for (int i = 55; i < array.length; i++) {
 		  System.out.print("<" + i + ">");
          System.out.print(array[i].getISO3Country());
          System.out.print(" ");
