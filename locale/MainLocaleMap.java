@@ -47,7 +47,7 @@ public class MainLocaleMap {
              representations2);
          // print the results
          //https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
-         System.out.print("<"+i+ "> ");  // change to field of 3 for neater grep sorting
+         System.out.printf("<%3d> ",i);  // change to field of 3 for neater grep sorting
          System.out.print(localesN[i].getDisplayName());
          System.out.print("<"+array[i].getISO3Country()+ "> ");
          System.out.print("<"+array[i].getISO3Language()+ "> ");

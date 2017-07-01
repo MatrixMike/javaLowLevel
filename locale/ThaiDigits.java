@@ -93,7 +93,7 @@ public class ThaiDigits extends JPanel {
 
     SimpleAttributeSet attrs = new SimpleAttributeSet();
     StyleConstants.setFontFamily(attrs, "SansSerif");
-    StyleConstants.setFontSize(attrs, 24);
+    StyleConstants.setFontSize(attrs, 30);
 
     try {
       doc.insertString(doc.getLength(), outputString, attrs);
