@@ -2,9 +2,6 @@
  * Check.java
  * http://stackoverflow.com/questions/9698359/setbackgroundnew-color-in-java-does-not-understand-the-given-rgb-value
  * Copyright 2016 Michael Hewitt <mikeh@electroteach.com>
- * 
- * 
- * 
  */
 
 import java.awt.Color;

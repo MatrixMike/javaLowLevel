@@ -30,7 +30,7 @@ public class MainLocaleMap {
          locale = Locale.FRANCE;
 
 	//String here = Locale.getDisplayCountry();
-	for (int i = 0; i < localesN.length; i ++) {    // changed to max before exception, until I fix for max / size of array
+	for (int i = 0; i < localesN.length; i ++) {  
 		locale = array[i];
     // call the getDisplayNames method
     if (i != 53){// (i != 53)
@@ -51,11 +51,12 @@ public class MainLocaleMap {
          System.out.print(localesN[i].getDisplayName());
          System.out.print("<"+array[i].getISO3Country()+ "> ");
          System.out.print("<"+array[i].getISO3Language()+ "> ");
-         System.out.print(array[i].getDisplayLanguage());
-         System.out.printf(" %s %s %n", navMap1, navMap2);  // sorted alphabetically
+   //mx      System.out.print(array[i].getDisplayLanguage());
+         System.out.print(localesN[i].getDisplayLanguage());
+   //m     System.out.printf(" %s %s %n", navMap1, navMap2);  // sorted alphabetically
 //         System.out.printf("%n%s %n", navMap2);  // sorted alphabetically
   //  System.out.printf("%n%s %n", navMap);  // sorted alphabetically
-
+		System.out.println();
     /* Whole list:
 {Friday=6, Monday=2, Saturday=7, Sunday=1, Thursday=5, Tuesday=3, Wednesday=4}
  */}
