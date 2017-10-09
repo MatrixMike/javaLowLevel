@@ -46,17 +46,18 @@ public static void main (String args[]) {
 //			weekCheck(cldr, dateformatter);
 			//System.out.println(NewstartCredit(cldr, dateformatter));
 			if (NewstartCredit(cldr, dateformatter)) {
-				balance = balance + newstartFunds;
-				System.out.println("balance N= " + balance);
+				balance += newstartFunds;
+				System.out.format(" balance N= %.2f" , balance);
 				printBalance = true;
 			}
 			if (RentDebit(cldr, dateformatter)) {
-				balance = balance - rentMonthly;
-				System.out.println("balance R= " + balance);
+				balance -= rentMonthly;
+				System.out.format(" balance R= %.2f" , balance);
 				printBalance = true;
 			}
 			if (printBalance) {
 				balanceCheck(cldr, dateformatter);
+				System.out.format(" %n");
 				printBalance = false;
 			}
 		}
@@ -134,6 +135,6 @@ public static void balanceCheck(Calendar C, SimpleDateFormat S){
 //		    Calendar now = Calendar.getInstance();
 
 	//	System.out.println("found something");
-		System.out.println(S.format(C.getTime()));
+		System.out.print(" "+ S.format(C.getTime()));
 }
 }
