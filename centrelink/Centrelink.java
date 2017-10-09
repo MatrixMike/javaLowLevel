@@ -19,7 +19,7 @@
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class centrelink {
+public class Centrelink {
 private static int daysAhead = 365;	
 
 /**
@@ -62,7 +62,7 @@ public static void main (String args[]) {
  */
  public static boolean NewstartCredit(Calendar C, SimpleDateFormat S){	 
 	 // calculate the recurring Newstart dates 
-	 return    C.get(Calendar.DAY_OF_MONTH)  ==   31 ;
+	 return    C.get(Calendar.DAY_OF_YEAR)  ==   50  ;
 	 //&& (C.get(Calendar.DAY_OF_WEEK)==2) ))
 	 
  }
