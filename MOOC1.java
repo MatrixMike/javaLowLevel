@@ -72,7 +72,7 @@ public class MOOC1 {
                 String result = sb.toString();
 				System.out.println("Exercise 1 result = " + result);
 				  //      list.removeIf(s -> (s.length() & 1) == 1);
-				  sb1.append("one");
+				sb1.append("one");
 
 			//	  sb1.append(toUpperCase("two"));
 				list.replaceAll(String::toUpperCase);		//Z  similar structures - how to read what it means

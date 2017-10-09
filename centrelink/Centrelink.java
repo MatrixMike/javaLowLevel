@@ -21,7 +21,6 @@ import java.util.*;
 
 public class Centrelink {
 private static int daysAhead = 365;	
-
 /**
  * main()
  * @author  (Mike Hewitt)
@@ -136,5 +135,5 @@ public static void balanceCheck(Calendar C, SimpleDateFormat S){
 
 	//	System.out.println("found something");
 		System.out.print(" "+ S.format(C.getTime()));
-}
+	}
 }
