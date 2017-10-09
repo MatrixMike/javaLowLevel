@@ -6,8 +6,11 @@
  * Aim here is to show a list of dates for Newstart payments merged with a list of Rent dates
  * preferrably do this with streams and maybe lambdas
  * Rent is per calendar month on 28th day and Newstart payment (a.o.t. reporting) is per fortnight
- * 
+ * Newstart = $ 718.20
+ * Rent     = $1173.00
+ * start date set at 19Feb2017 -> Newstart credit of $ 718.20 (=day 50)
  * http://www.java2s.com/Tutorials/Java/java.util/Calendar/Java_Calendar_get_int_field_.htm
+ * http://javatutorialhq.com/java/util/calendar-class-tutorial/set-method-example/
  */
  /*
  DAY_OF_WEEK was 3 = Tuesday ; 5 =Thursday
@@ -25,14 +28,29 @@ private static int daysAhead = 365;
  * @version (1.1)
  */
 public static void main (String args[]) {
+	Double balance = 0.0;
+	Double newstartFunds = 718.20;
+	Double rentMonthly = 1173.00;
 	Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
 	SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
-	
+		cldr.set(Calendar.YEAR, 2017); // set the year
+		cldr.set(Calendar.MONTH, 1); // set the month
+		cldr.set(Calendar.DAY_OF_MONTH, 19); // set the
+
+//	Calendar cldr = Calendar.set(2017, 1);
 	for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  
 		{  // add here a check that month is Jan thru Nov -> so don't do weekCheck for December 
 			weekCheck(cldr, dateformatter);
-			System.out.println(NewstartCredit(cldr, dateformatter));
+			//System.out.println(NewstartCredit(cldr, dateformatter));
+			if (NewstartCredit(cldr, dateformatter)) {
+				balance = balance + newstartFunds;
+				System.out.println("balance N= " + balance);
+			}
+			if (RentDebit(cldr, dateformatter)) {
+				balance = balance - rentMonthly;
+				System.out.println("balance R= " + balance);
+			}
 		}
 	    cldr.add(Calendar.DAY_OF_YEAR, +1);  //  examine why cldr and Calendar 
 	 }
@@ -41,29 +59,17 @@ public static void main (String args[]) {
 /**
  * consider a function to return bool if Rent date and another one to return bool if Newstart payment
  * 
- * 
- * 
  */
- public static boolean NewstartCredit(Calendar C, SimpleDateFormat S){
-	 
-	 return    C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
+ public static boolean NewstartCredit(Calendar C, SimpleDateFormat S){	 
+	 // calculate the recurring Newstart dates 
+	 return    C.get(Calendar.DAY_OF_MONTH)  ==   31 ;
 	 //&& (C.get(Calendar.DAY_OF_WEEK)==2) ))
 	 
-
-			
- // return true;
  }
- 
 
  public static boolean RentDebit(Calendar C, SimpleDateFormat S){
-	 return  true
-	// C.get(Calendar.DAY_OF_MONTH)  ==   28 
-	 ;
+	 return    C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
  }
-
-
-
-
 
 /**
  * weekCheck()
