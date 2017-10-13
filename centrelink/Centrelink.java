@@ -18,6 +18,10 @@
 // package Friday13;   removed to make compile and run 
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.text.Format;
+import java.text.NumberFormat;
+import java.text.DecimalFormat;
+import java.util.Locale;
 
 public class Centrelink {
 private static int daysAhead = 365;	
@@ -31,7 +35,16 @@ public static void main (String args[]) {
 	Double newstartFunds = 718.20;
 	Double rentMonthly = 1173.00;
 	boolean printBalance = false;
-	
+	int i = 120;
+
+ Locale[] localesN = DecimalFormat.getAvailableLocales(); // appears same as NumberFormat
+// double myNumber = -1234.56789;
+ NumberFormat form;
+NumberFormat nf = NumberFormat.getInstance();
+
+             form = NumberFormat.getCurrencyInstance(localesN[i]);
+             
+             	
 	Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
 	SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
@@ -58,8 +71,11 @@ public static void main (String args[]) {
 				balanceCheck(cldr, dateformatter);
 				System.out.format(" %n");
 				printBalance = false;
+				System.out.print(" -> " + form.format(balance));
 			}
+
 		}
+
 	    cldr.add(Calendar.DAY_OF_YEAR, +1);  //  examine why cldr and Calendar 
 	 }
 }
