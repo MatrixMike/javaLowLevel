@@ -8,6 +8,7 @@
  * Rent is per calendar month on 28th day and Newstart payment (a.o.t. reporting) is per fortnight
  * Newstart = $ 718.20
  * Rent     = $1173.00
+ * Rent changes to $1217.00 on 28 November 2017 
  * start date set at 19Feb2017 -> Newstart credit of $ 718.20 (=day 50)
  * http://www.java2s.com/Tutorials/Java/java.util/Calendar/Java_Calendar_get_int_field_.htm
  * http://javatutorialhq.com/java/util/calendar-class-tutorial/set-method-example/
