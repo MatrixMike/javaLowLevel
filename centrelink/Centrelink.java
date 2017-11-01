@@ -80,8 +80,11 @@ public static void main (String args[]) {
 
 			if (printBalance) {
 				balanceCheck(cldr, dateformatter);
+				/* swapping to new system
 				if (rent     == true) System.out.print("R");
 				if (newstart == true) System.out.print("N");
+				*/
+				printNR();
 //				System.out.format(" balance N= %8.2f%n" , balance);
 				printBalance = false;
 				System.out.printf(" balance T= $%8.2f%n" , balance);
@@ -105,7 +108,7 @@ public static void balanceCheck(Calendar C, SimpleDateFormat S){
 //		Calendar now = Calendar.getInstance();
 
 	//	System.out.println("found something");
-		System.out.print(" "+ S.format(C.getTime()));
+		System.out.print(" "+ S.format(C.getTime())+" ");
 	}
 /**
  * consider a function to return bool if Rent date and another one to return bool if Newstart payment
@@ -120,8 +123,9 @@ public static void balanceCheck(Calendar C, SimpleDateFormat S){
 	 //&& (C.get(Calendar.DAY_OF_WEEK)==2) ))	 
  }
 public static void printNR (){
-				if (rent     == true) System.out.print("R");
-				if (newstart == true) System.out.print("N");
+				if (rent     == true) System.out.print("R"); else System.out.print(" ");
+				if (newstart == true) System.out.print("N"); else System.out.print(" ");
+				
 }
 
 
