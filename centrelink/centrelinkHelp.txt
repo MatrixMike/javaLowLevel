@@ -1,0 +1,10 @@
+Thu Nov 02 10:49:35 AEDT 2017 
+
+to compile from folder above the code use :  javac centrelink/Centrelink.java 
+
+to execute code                           :  java -cp centrelink/  Centrelink 
+
+// -cp centrelink/ gives the location of the class file
+// Centrelink is the name of the class file
+
+
