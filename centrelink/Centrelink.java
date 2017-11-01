@@ -1,5 +1,4 @@
 /*
- * Friday13.java
  * 
  * Copyright 2015 Michael Hewitt <mikeh@electroteach.com>
  * 11 November 2015
@@ -41,38 +40,39 @@ public static void main (String args[]) {
  Locale[] localesN = DecimalFormat.getAvailableLocales(); // appears same as NumberFormat
 // double myNumber = -1234.56789;
  NumberFormat form;
-NumberFormat nf = NumberFormat.getInstance();
+ NumberFormat nf = NumberFormat.getInstance();
 
-             form = NumberFormat.getCurrencyInstance(localesN[i]);
-             
-             	
+    form = NumberFormat.getCurrencyInstance(localesN[i]);
+                          	
 	Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
 	SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
 		cldr.set(Calendar.YEAR, 2017); // set the year
 		cldr.set(Calendar.MONTH, 1); // set the month
-		cldr.set(Calendar.DAY_OF_MONTH, 19); // set the
+		cldr.set(Calendar.DAY_OF_MONTH, 17); // set the
 
 //	Calendar cldr = Calendar.set(2017, 1);
 	for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  
 		{  // add here a check that month is Jan thru Nov -> so don't do weekCheck for December 
 //			weekCheck(cldr, dateformatter);
 			//System.out.println(NewstartCredit(cldr, dateformatter));
+//			balanceCheck(cldr, dateformatter);
 			if (NewstartCredit(cldr, dateformatter)) {
 				balance += newstartFunds;
-				System.out.format(" balance N= %.2f" , balance);
+				System.out.format(" balance N= %8.2f%n" , balance);
 				printBalance = true;
 			}
 			if (RentDebit(cldr, dateformatter)) {
 				balance -= rentMonthly;
-				System.out.format(" balance R= %.2f" , balance);
+				System.out.format(" balance R= %8.2f%n" , balance);
 				printBalance = true;
 			}
+
 			if (printBalance) {
 				balanceCheck(cldr, dateformatter);
-				System.out.format(" %n");
+//				System.out.format(" balance N= %8.2f%n" , balance);
 				printBalance = false;
-				System.out.print(" -> " + form.format(balance));
+//				System.out.print(" -> " + form.format(balance));
 			}
 
 		}
@@ -80,7 +80,20 @@ NumberFormat nf = NumberFormat.getInstance();
 	    cldr.add(Calendar.DAY_OF_YEAR, +1);  //  examine why cldr and Calendar 
 	 }
 }
+/**
+ * weekCheck()
+ * @author  (Mike Hewitt)
+ * @version (1.1)
+ * @param C supply instance(?) of Calendar
+ * @param S supply previously organised display format
+ */
+public static void balanceCheck(Calendar C, SimpleDateFormat S){
+		String testStr; 
+//		Calendar now = Calendar.getInstance();
 
+	//	System.out.println("found something");
+		System.out.print(" "+ S.format(C.getTime()));
+	}
 /**
  * consider a function to return bool if Rent date and another one to return bool if Newstart payment
  * 
@@ -138,19 +151,6 @@ public static void weekCheck(Calendar C, SimpleDateFormat S){
 	 // need to get the month and save for a test
     }
 }
-
-/**
- * weekCheck()
- * @author  (Mike Hewitt)
- * @version (1.1)
- * @param C supply instance(?) of Calendar
- * @param S supply previously organised display format
- */
-public static void balanceCheck(Calendar C, SimpleDateFormat S){
-		String testStr; 
-//		    Calendar now = Calendar.getInstance();
-
-	//	System.out.println("found something");
-		System.out.print(" "+ S.format(C.getTime()));
-	}
 }
+
+
