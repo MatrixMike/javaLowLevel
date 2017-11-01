@@ -34,7 +34,7 @@ public static void main (String args[]) {
 	Double balance = 0.0;
 	Double newstartFunds = 718.20;
 	Double rentMonthly = 1173.00;
-	boolean printBalance = false;
+	boolean printBalance = true;
 	int i = 120;
 
  Locale[] localesN = DecimalFormat.getAvailableLocales(); // appears same as NumberFormat
@@ -72,7 +72,7 @@ public static void main (String args[]) {
 				balanceCheck(cldr, dateformatter);
 //				System.out.format(" balance N= %8.2f%n" , balance);
 				printBalance = false;
-//				System.out.print(" -> " + form.format(balance));
+				System.out.print(" -> " + form.format(balance));
 			}
 
 		}
