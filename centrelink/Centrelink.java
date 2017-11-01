@@ -30,11 +30,14 @@ private static int daysAhead = 365;
  * @author  (Mike Hewitt)
  * @version (1.1)
  */
+public static boolean newstart, rent = false;
+
 public static void main (String args[]) {
 	Double balance = 0.0;
 	Double newstartFunds = 718.20;
 	Double rentMonthly = 1173.00;
 	boolean printBalance = true;
+
 	int i = 120;
 
  Locale[] localesN = DecimalFormat.getAvailableLocales(); // appears same as NumberFormat
@@ -52,27 +55,37 @@ public static void main (String args[]) {
 		cldr.set(Calendar.DAY_OF_MONTH, 17); // set the
 
 //	Calendar cldr = Calendar.set(2017, 1);
-	for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  
+	for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {
+		  newstart = false;
+		  rent     = false;
 		{  // add here a check that month is Jan thru Nov -> so don't do weekCheck for December 
 //			weekCheck(cldr, dateformatter);
 			//System.out.println(NewstartCredit(cldr, dateformatter));
 //			balanceCheck(cldr, dateformatter);
 			if (NewstartCredit(cldr, dateformatter)) {
+				newstart = true;
 				balance += newstartFunds;
-				System.out.format(" balance N= %8.2f%n" , balance);
+//				System.out.format(" balance R= $%8.2f" , balance);
+//				System.out.print("N=");
 				printBalance = true;
 			}
 			if (RentDebit(cldr, dateformatter)) {
+				rent = true;
 				balance -= rentMonthly;
-				System.out.format(" balance R= %8.2f%n" , balance);
+//				System.out.format(" balance R= %8.2f%n" , balance);
+//				System.out.printf(" balance R= $%8.2f" , balance);
+//				System.out.print("R=");
 				printBalance = true;
 			}
 
 			if (printBalance) {
 				balanceCheck(cldr, dateformatter);
+				if (rent     == true) System.out.print("R");
+				if (newstart == true) System.out.print("N");
 //				System.out.format(" balance N= %8.2f%n" , balance);
 				printBalance = false;
-				System.out.print(" -> " + form.format(balance));
+				System.out.printf(" balance T= $%8.2f%n" , balance);
+//				System.out.print(" -> " + form.format(balance));
 			}
 
 		}
@@ -106,6 +119,11 @@ public static void balanceCheck(Calendar C, SimpleDateFormat S){
 	 	  ;
 	 //&& (C.get(Calendar.DAY_OF_WEEK)==2) ))	 
  }
+public static void printNR (){
+				if (rent     == true) System.out.print("R");
+				if (newstart == true) System.out.print("N");
+}
+
 
  public static boolean RentDebit(Calendar C, SimpleDateFormat S){
 	 return    C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
