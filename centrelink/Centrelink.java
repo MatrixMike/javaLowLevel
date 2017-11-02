@@ -88,6 +88,7 @@ public class Centrelink {
                     //				System.out.format(" balance N= %8.2f%n" , balance);
                     printBalance = false;
                     System.out.printf(" balance T= $%8.2f%n" , balance);
+// https://stackoverflow.com/questions/13791409/java-format-double-value-as-dollar-amount
                     //				System.out.print(" -> " + form.format(balance));
                 }
 
