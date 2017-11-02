@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\n\ main()\n\ @author\ \ (Mike\ Hewitt)\n\ @version\ (1.1)\n
+comment1.params=C\ S
+comment1.target=void\ weekCheck(java.util.Calendar,\ java.text.SimpleDateFormat)
+comment1.text=\n\ weekCheck()\n\ @author\ \ (Mike\ Hewitt)\n\ @version\ (1.1)\n\ @param\ C\ supply\ instance(?)\ of\ Calendar\n\ @param\ S\ supply\ previously\ organised\ display\ format\n
+numComments=2
