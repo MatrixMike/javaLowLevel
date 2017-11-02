@@ -1,0 +1,46 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-8-oracle/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/usr/share/bluej/userlib/pi4j-service.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-device.jar:/media/mikeh/mikeSpace/javaLowLevel/mlug
+-d
+/media/mikeh/mikeSpace/javaLowLevel/mlug/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/media/mikeh/mikeSpace/javaLowLevel/mlug/mlug.java
+<---- end of javadoc command ---->
+Loading source file /media/mikeh/mikeSpace/javaLowLevel/mlug/mlug.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_144
+Building tree for all the packages and classes...
+Generating /media/mikeh/mikeSpace/javaLowLevel/mlug/doc/mlug.html...
+/media/mikeh/mikeSpace/javaLowLevel/mlug/mlug.java:24: warning - Tag @author cannot be used in method documentation.  It can only be used in the following types of documentation: overview, package, class/interface.
+/media/mikeh/mikeSpace/javaLowLevel/mlug/mlug.java:24: warning - Tag @version cannot be used in method documentation.  It can only be used in the following types of documentation: overview, package, class/interface.
+/media/mikeh/mikeSpace/javaLowLevel/mlug/mlug.java:47: warning - Tag @author cannot be used in method documentation.  It can only be used in the following types of documentation: overview, package, class/interface.
+/media/mikeh/mikeSpace/javaLowLevel/mlug/mlug.java:47: warning - Tag @version cannot be used in method documentation.  It can only be used in the following types of documentation: overview, package, class/interface.
+Generating /media/mikeh/mikeSpace/javaLowLevel/mlug/doc/package-frame.html...
+Generating /media/mikeh/mikeSpace/javaLowLevel/mlug/doc/package-summary.html...
+Generating /media/mikeh/mikeSpace/javaLowLevel/mlug/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /media/mikeh/mikeSpace/javaLowLevel/mlug/doc/allclasses-frame.html...
+Generating /media/mikeh/mikeSpace/javaLowLevel/mlug/doc/allclasses-noframe.html...
+Generating /media/mikeh/mikeSpace/javaLowLevel/mlug/doc/index.html...
+Generating /media/mikeh/mikeSpace/javaLowLevel/mlug/doc/stylesheet.css...
+4 warnings

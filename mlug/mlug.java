@@ -26,8 +26,12 @@ public class mlug {
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
         for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  
-            {  // add here a check that month is Jan thru Nov -> so don't do weekCheck for December 
-                weekCheck(cldr, dateformatter);
+            {  
+                int monthA = cldr.get(Calendar.MONTH);
+                if (monthA != 11) {
+                    // add here a check that month is Jan thru Nov -> so don't do weekCheck for December 
+                    weekCheck(cldr, dateformatter);
+                }
             }
             cldr.add(Calendar.DAY_OF_YEAR, +1);  //  examine why cldr and Calendar 
         }
