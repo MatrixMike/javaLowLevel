@@ -32,14 +32,14 @@ public class Dates1 {
 	Date startDate8 = new GregorianCalendar(1972, 5, 17,  9, 00).getTime();  //  Richard's birthdate  17.05.72 
 	Date endDate1   = new Date();
 
-   long diff1 = endDate1.getTime() - startDate1.getTime();
+   long diff1 =   endDate1.getTime()   - startDate1.getTime();
    long diff2 =   startDate2.getTime() - endDate1.getTime();
    long diff3 =   startDate3.getTime() - endDate1.getTime();
    long diff4 =   startDate4.getTime() - endDate1.getTime();
    long diff5 =   startDate5.getTime() - endDate1.getTime();
-   long diff6 =   startDate6.getTime() - endDate1.getTime()  ;
-   long diff7 =   startDate7.getTime() - endDate1.getTime()  ;
-   long diff8 =   startDate8.getTime() - endDate1.getTime()  ;
+   long diff6 =   startDate6.getTime() - endDate1.getTime();
+   long diff7 =   startDate7.getTime() - endDate1.getTime();
+   long diff8 =   startDate8.getTime() - endDate1.getTime();
             
 	System.out.println("  Difference between " + endDate1);
 	System.out.println("  and " + startDate1 + " is "  + (diff1 / (1000L*60L*60L*24L)) + " days.");

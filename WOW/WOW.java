@@ -12,7 +12,7 @@ DAY_OF_WEEK was 3 = Tuesday ; 5 =Thursday
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class lumo {
+public class WOW {
     private static int daysAhead = 365;	
 
     /**
@@ -22,18 +22,19 @@ public class lumo {
      */
     public static void main (String args[]) {
         Double LumoInstallments = 75.00;
-        Integer Installments = 14;
+        Integer Installments = 5;
         Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
         cldr.set(Calendar.YEAR, 2017);			// set the year (start date for repayment) 11/09/2017
         cldr.set(Calendar.MONTH, 10);			// set the month September
-        cldr.set(Calendar.DAY_OF_MONTH, 3);	// set the date
-        System.out.printf("Lumo Bill payment scheme%n%n");
+        cldr.set(Calendar.DAY_OF_MONTH, 1);	// set the date - today - a Friday
+        System.out.printf("WOW Food Days%n%n");
         for (int n= 1; n<Installments;  n=n+1) {  
             {
                 balanceCheck(cldr, dateformatter);
-                System.out.printf("Installment "+ n + "%n");
+ //               System.out.printf("Installment "+ n + "%n");
+				System.out.printf("%n");
                 if (LumoFortnight(cldr, dateformatter)) {
 
                     System.out.println("Installments" + Installments);
