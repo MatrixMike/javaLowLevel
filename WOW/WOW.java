@@ -14,7 +14,7 @@ import java.util.*;
 
 public class WOW {
     private static int daysAhead = 365;	
-
+    //    Calendar cldr = Calendar.getInstance(); 
     /**
      * main()
      * @author  (Mike Hewitt)
@@ -26,15 +26,15 @@ public class WOW {
         Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
-        cldr.set(Calendar.YEAR, 2017);			// set the year (start date for repayment) 11/09/2017
-        cldr.set(Calendar.MONTH, 10);			// set the month September
-        cldr.set(Calendar.DAY_OF_MONTH, 1);	// set the date - today - a Friday
+        //        cldr.set(Calendar.YEAR, 2017);			// set the year (start date for repayment) 11/09/2017
+        //        cldr.set(Calendar.MONTH, 10);			// set the month September
+        //        cldr.set(Calendar.DAY_OF_MONTH, 1);	// set the date - today - a Friday
         System.out.printf("WOW Food Days%n%n");
         for (int n= 1; n<Installments;  n=n+1) {  
             {
                 balanceCheck(cldr, dateformatter);
- //               System.out.printf("Installment "+ n + "%n");
-				System.out.printf("%n");
+                //               System.out.printf("Installment "+ n + "%n");
+                System.out.printf("%n");
                 if (LumoFortnight(cldr, dateformatter)) {
 
                     System.out.println("Installments" + Installments);
