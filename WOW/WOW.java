@@ -30,6 +30,11 @@ public class WOW {
         //        cldr.set(Calendar.MONTH, 10);			// set the month September
         //        cldr.set(Calendar.DAY_OF_MONTH, 1);	// set the date - today - a Friday
         System.out.printf("WOW Food Days%n%n");
+/*
+ * (((
+                    (C.get(Calendar.DAY_OF_YEAR)) - 50) % 14) == 0 )
+ */
+
 
         while((cldr.get(Calendar.MONTH) < 12) &&  (cldr.get(Calendar.YEAR) <= 2017) || December162017Check(cldr, dateformatter) ) {
             // Statements: month less than December (when we know the actual final date we can code for that)

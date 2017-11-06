@@ -28,7 +28,7 @@ public static void main (String args[]) {
 	int first_time_through = 0 ;			// change to boolean 
 	boolean first_time = true;
 	int dateDiff;
-	System.out.println(" " +EventsWithStreams(100));		// means what ? check reduce
+//	System.out.println(" " +EventsWithStreams(100));		// means what ? check reduce
 	System.out.println("Next Friday the thirteenth is on");
 	for (long n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  // n was int now long
 		// find current first of month       
@@ -71,7 +71,7 @@ public static void main (String args[]) {
       //  System.out.print( "number " + n);
     }
 
-    public static long EventsWithStreams(long n){
+/*    public static long EventsWithStreams(long n){
 		LongPredicate<long> multip5 = w -> (w % 5) > 0;
 	//	StringBuilder sb = new StringBuilder;
         return LongStream.rangeClosed(1, n)   //  was (1,31)
@@ -84,5 +84,5 @@ public static void main (String args[]) {
         .reduce(0, (long a, long b) -> a + b);
       //  System.out.print( "number " + n);
     }
-
+*/
 }
