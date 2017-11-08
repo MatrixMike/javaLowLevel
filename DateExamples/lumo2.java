@@ -2,7 +2,7 @@
  * 
  * Copyright 2015 Michael Hewitt <mikeh@electroteach.com>
  * 02.11.2017
- *
+ * http://grammarist.com/spelling/installment-instalment/
  * http://www.java2s.com/Tutorials/Java/java.util/Calendar/Java_Calendar_get_int_field_.htm
  */
 /*
@@ -21,22 +21,23 @@ public class lumo2 {
      * @version (1.1)
      */
     public static void main (String args[]) {
-        Double LumoInstallments = 75.00;
-        Integer Installments = 14;
+		String Instalment = "Instalment";
+        Double LumoInstalments = 75.00;
+        Integer Instalments = 14;
         Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
         cldr.set(Calendar.YEAR, 2017);			// set the year (start date for repayment) 11/09/2017
         cldr.set(Calendar.MONTH, 8);			// set the month September
         cldr.set(Calendar.DAY_OF_MONTH, 11);	// set the date
-        System.out.printf("Lumo Bill payment scheme%n%n");
-        for (int n= 1; n<Installments;  n=n+1) {  
+        System.out.printf("Lumo Bill payment " + Instalment +" "+ "scheme%n%n");
+        for (int n= 1; n<Instalments;  n=n+1) {  
             {
                 balanceCheck(cldr, dateformatter);
-                System.out.printf("Installment "+ n + "%n");
+                System.out.printf(Instalment+ " "+ n + "%n");
                 if (LumoFortnight(cldr, dateformatter)) {
 
-                    System.out.println("Installments" + Installments);
+                    System.out.println(Instalment + "s" + Instalments);
                     //				                    balanceCheck(cldr, dateformatter));
                 }
             }
