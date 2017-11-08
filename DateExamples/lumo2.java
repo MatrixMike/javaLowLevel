@@ -27,7 +27,7 @@ public class lumo2 {
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
         cldr.set(Calendar.YEAR, 2017);			// set the year (start date for repayment) 11/09/2017
-        cldr.set(Calendar.MONTH, 9);			// set the month September
+        cldr.set(Calendar.MONTH, 8);			// set the month September
         cldr.set(Calendar.DAY_OF_MONTH, 11);	// set the date
         System.out.printf("Lumo Bill payment scheme%n%n");
         for (int n= 1; n<Installments;  n=n+1) {  
