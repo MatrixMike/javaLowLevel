@@ -1,4 +1,5 @@
 /*
+ * derived from mlug.java
  * Friday13.java
  * 
  * Copyright 2015 Michael Hewitt <mikeh@electroteach.com>
@@ -16,7 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class nerg {
-private static int daysAhead = 365;	
+private static int daysAhead = 500;	
 
 public static void main (String args[]) {
 	Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
@@ -24,7 +25,10 @@ public static void main (String args[]) {
 
 	for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {  
 		{
-			weekCheck(cldr, dateformatter);		
+		int monthA = cldr.get(Calendar.MONTH);
+		if (monthA != 0) {// for NERG omit January i.e. month 0  
+			weekCheck(cldr, dateformatter);
+        }		
 		}
 	    cldr.add(Calendar.DAY_OF_YEAR, +1);  //  examine why cldr and Calendar 
 	 }
