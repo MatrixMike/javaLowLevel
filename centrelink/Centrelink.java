@@ -37,6 +37,8 @@ public class Centrelink {
         Double balance = 0.0;
         Double newstartFunds = 718.20;
         Double rentMonthly = 1173.00;
+        Double lumoInstalment = 75.00;
+        
         boolean printBalance = true;
 
         int i = 120;
@@ -79,9 +81,9 @@ public class Centrelink {
                     //				System.out.print("R=");
                     printBalance = true;
                 }
-                if (LumoInstalment(cldr, dateformatter)) {
+                if (Lumo.LumoInstalment(cldr, dateformatter)) {
                     lumo = true;
-                    balance -= rentMonthly;
+                    balance -= lumoInstalment;		//fudge for now but use a getter later
                     //				System.out.format(" balance R= %8.2f%n" , balance);
                     //				System.out.printf(" balance R= $%8.2f" , balance);
                     //				System.out.print("R=");
@@ -147,10 +149,10 @@ public class Centrelink {
         return    C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
     }
 
-    public static boolean LumoInstalment(Calendar C, SimpleDateFormat S){
-        return    true ;   //   was C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
+/*    public static boolean LumoInstalment(Calendar C, SimpleDateFormat S){
+        return    C.get(Calendar.DAY_OF_MONTH)  ==   27 ;   //   was C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
     }
-
+*/
     /**
      * weekCheck()
      * @author  (Mike Hewitt)
