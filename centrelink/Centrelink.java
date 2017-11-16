@@ -59,7 +59,7 @@ public class Centrelink {
         for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {
             newstart = false;
             rent     = false;
-            lumo     = true;
+            lumo     = false;
             {  // add here a check that month is Jan thru Nov -> so don't do weekCheck for December 
                 //			weekCheck(cldr, dateformatter);
                 //System.out.println(NewstartCredit(cldr, dateformatter));
@@ -79,7 +79,15 @@ public class Centrelink {
                     //				System.out.print("R=");
                     printBalance = true;
                 }
-
+                if (LumoInstalment(cldr, dateformatter)) {
+                    lumo = true;
+                    balance -= rentMonthly;
+                    //				System.out.format(" balance R= %8.2f%n" , balance);
+                    //				System.out.printf(" balance R= $%8.2f" , balance);
+                    //				System.out.print("R=");
+                    printBalance = true;
+                }
+                
                 if (printBalance) {
                     balanceCheck(cldr, dateformatter);
                     /* swapping to new system
@@ -133,11 +141,14 @@ public class Centrelink {
         if (newstart == true) System.out.print("N"); else System.out.print(" ");
         if (lumo     == true) System.out.print("L"); else System.out.print(" "); // intermediate code 
 												// to provide framework to add lumo as an afterthought
-
     }
 
     public static boolean RentDebit(Calendar C, SimpleDateFormat S){
         return    C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
+    }
+
+    public static boolean LumoInstalment(Calendar C, SimpleDateFormat S){
+        return    true ;   //   was C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
     }
 
     /**
