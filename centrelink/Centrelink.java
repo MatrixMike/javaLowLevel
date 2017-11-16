@@ -73,7 +73,7 @@ public class Centrelink {
                     //				System.out.print("N=");
                     printBalance = true;
                 }
-                if (RentDebit(cldr, dateformatter)) {
+                if (Rent.RentDebit(cldr, dateformatter)) {
                     rent = true;
                     balance -= rentMonthly;
                     //				System.out.format(" balance R= %8.2f%n" , balance);
@@ -135,11 +135,11 @@ public class Centrelink {
         if (lumo     == true) System.out.print("L"); else System.out.print(" "); // intermediate code 
 												// to provide framework to add lumo as an afterthought
     }
-
+/*
     public static boolean RentDebit(Calendar C, SimpleDateFormat S){
         return    C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
     }
-
+*/
 
     /**
      * weekCheck()
