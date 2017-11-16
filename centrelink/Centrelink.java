@@ -30,7 +30,8 @@ public class Centrelink {
      * @author  (Mike Hewitt)
      * @version (1.1)
      */
-    public static boolean newstart, rent = false;
+    public static boolean newstart, rent, lumo = false; 
+
 
     public static void main (String args[]) {
         Double balance = 0.0;
@@ -58,6 +59,7 @@ public class Centrelink {
         for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {
             newstart = false;
             rent     = false;
+            lumo     = true;
             {  // add here a check that month is Jan thru Nov -> so don't do weekCheck for December 
                 //			weekCheck(cldr, dateformatter);
                 //System.out.println(NewstartCredit(cldr, dateformatter));
@@ -129,6 +131,8 @@ public class Centrelink {
     public static void printNR (){
         if (rent     == true) System.out.print("R"); else System.out.print(" ");
         if (newstart == true) System.out.print("N"); else System.out.print(" ");
+        if (lumo     == true) System.out.print("L"); else System.out.print(" "); // intermediate code 
+												// to provide framework to add lumo as an afterthought
 
     }
 
