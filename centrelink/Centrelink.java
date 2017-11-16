@@ -103,20 +103,11 @@ public class Centrelink {
 // https://stackoverflow.com/questions/13791409/java-format-double-value-as-dollar-amount
                     //				System.out.print(" -> " + form.format(balance));
                 }
-
             }
-
             cldr.add(Calendar.DAY_OF_YEAR, +1);  //  examine why cldr and Calendar 
         }
     }
 
-    /**
-     * weekCheck()
-     * @author  (Mike Hewitt)
-     * @version (1.1)
-     * @param C supply instance(?) of Calendar
-     * @param S supply previously organised display format
-     */
     public static void balanceCheck(Calendar C, SimpleDateFormat S){
         String testStr; 
         //		Calendar now = Calendar.getInstance();
@@ -149,10 +140,7 @@ public class Centrelink {
         return    C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
     }
 
-/*    public static boolean LumoInstalment(Calendar C, SimpleDateFormat S){
-        return    C.get(Calendar.DAY_OF_MONTH)  ==   27 ;   //   was C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
-    }
-*/
+
     /**
      * weekCheck()
      * @author  (Mike Hewitt)
