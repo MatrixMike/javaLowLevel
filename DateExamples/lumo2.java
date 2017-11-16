@@ -23,7 +23,7 @@ public class lumo2 {
     public static void main (String args[]) {
 		String Instalment = "Instalment";
         Double LumoInstalments = 75.00;
-        Integer Instalments = 14;
+        Integer Instalments = 14;			// loop control
         Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
@@ -33,7 +33,7 @@ public class lumo2 {
         System.out.printf("Lumo Bill payment " + Instalment +" "+ "scheme%n%n");
         for (int n= 1; n<Instalments;  n=n+1) {  
             {
-                balanceCheck(cldr, dateformatter);
+                balanceCheck(cldr, dateformatter);		// prints the date
                 System.out.printf(Instalment+ " "+ n + "%n");
                 if (LumoFortnight(cldr, dateformatter)) {
 
@@ -42,6 +42,7 @@ public class lumo2 {
                 }
             }
             cldr.add(Calendar.DAY_OF_YEAR, +14);  //  examine why cldr and Calendar 
+            // 14 here is for days in fortnight
         }
     }
 
@@ -66,8 +67,8 @@ public class lumo2 {
      */
     public static boolean LumoFortnight(Calendar C, SimpleDateFormat S){	 
         return (((
-                    (C.get(Calendar.DAY_OF_YEAR)) - 50) % 14) == 0 )
-        ;
+                    (C.get(Calendar.DAY_OF_YEAR)) - 50) % 14) == 0 ) // 14 here is for days in fortnight
+        ;												// but what is 50 doing?
         //&& (C.get(Calendar.DAY_OF_WEEK)==2) ))	 
     }
 
@@ -78,7 +79,7 @@ public class lumo2 {
      * @param C supply instance(?) of Calendar
      * @param S supply previously organised display format
      */
-
+/*
     public static void weekCheck(Calendar C, SimpleDateFormat S){
         String testStr; 
         //		    Calendar now = Calendar.getInstance();
@@ -104,4 +105,6 @@ public class lumo2 {
 
         }
     }
+    */
 }
+
