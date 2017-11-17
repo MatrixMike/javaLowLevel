@@ -34,9 +34,9 @@ public class Lumo {
         Calendar cldrF = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
         cldrF.set(Calendar.YEAR, 2018);			// set the year (start date for repayment) 11/09/2017
         cldrF.set(Calendar.MONTH, 1);			// set the month September
-        cldrF.set(Calendar.DAY_OF_MONTH, 2);	
+        cldrF.set(Calendar.DAY_OF_MONTH, 26);	
         FDOY = cldrF.get(Calendar.DAY_OF_YEAR);	
-
+		System.out.printf("interval =  %3d %n",  FDOY - SDOY );
  /*                   (C.get(Calendar.DAY_OF_YEAR)) - 50) % 14) == 0 ) // 14 here is for days in fortnight
         ;												// but what is 50 doing?		
 */		
