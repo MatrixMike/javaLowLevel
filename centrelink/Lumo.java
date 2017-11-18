@@ -21,9 +21,11 @@ import java.util.Locale;
 public class Lumo {
     public static boolean LumoInstalment(Calendar C, SimpleDateFormat S){
         Integer Instalments = 14;           // loop control
-        Integer SDOY, FDOY;
+        Integer SDOY, FDOY, TDOY;
 
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
+        Calendar cldrT = Calendar.getInstance();
+        TDOY = C.get(Calendar.DAY_OF_YEAR);
 
         Calendar cldrS = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
         cldrS.set(Calendar.YEAR, 2017);         // set the year (start date for repayment) 11/09/2017
@@ -38,11 +40,9 @@ public class Lumo {
         FDOY =  + cldrF.get(Calendar.DAY_OF_YEAR);   //   was + 365
  //       System.out.printf("interval =  %3d%n",  FDOY - SDOY );
                      // 14 here is for days in fortnight
-        ;                                               // but what is 50 doing?
-
-        return    (((C.get(Calendar.DAY_OF_YEAR) - FDOY ) % 14) == 0 );
-
+                                                       // but what is 50 doing?
+        return    (((C.get(Calendar.DAY_OF_YEAR) - TDOY ) % 14) == 0 );
         //C.get(Calendar.DAY_OF_MONTH)  ==   27 ;   //   was C.get(Calendar.DAY_OF_MONTH)  ==   28 ;
     }
-    }
+   }
 
