@@ -65,10 +65,7 @@ public class Centrelink {
  *   if  ((cldr.get(Calendar.YEAR)  == today.get(Calendar.YEAR)) && 
  * => wanted to indicate by means of ">" the current date in the sequence but the current result
  * is the dates before now (including today) are indicates with an ">"
- */			if ((cldr.get(Calendar.YEAR)  == today.get(Calendar.YEAR)) && 
-				(cldr.get(Calendar.DAY_OF_YEAR) <= (dateTolerance + today.get(Calendar.DAY_OF_YEAR))))
-			{System.out.printf(">"); // %n for newline
-			}else System.out.printf(" ");
+ */
 			
             newstart = false;
             rent     = false;
@@ -92,7 +89,7 @@ public class Centrelink {
                     //				System.out.print("R=");
                     printBalance = true;
                 }
-                if (Lumo.LumoInstalment(cldr, dateformatter)) {
+ /*               if (Lumo.LumoInstalment(cldr, dateformatter)) {
                     lumo = true;
                     balance -= lumoInstalment;		//fudge for now but use a getter later
                     //				System.out.format(" balance R= %8.2f%n" , balance);
@@ -100,7 +97,7 @@ public class Centrelink {
                     //				System.out.print("R=");
                     printBalance = true;
                 }
-                
+ */               
                 if (printBalance) {
                     balanceCheck(cldr, dateformatter);
                     /* swapping to new system
@@ -108,6 +105,10 @@ public class Centrelink {
                     if (newstart == true) System.out.print("N");
                      */
                     printNRL();
+                    			if ((cldr.get(Calendar.YEAR)  == today.get(Calendar.YEAR)) && 
+				(cldr.get(Calendar.DAY_OF_YEAR) <= (dateTolerance + today.get(Calendar.DAY_OF_YEAR))))
+			{System.out.printf(">"); // %n for newline
+			}else System.out.printf(" ");
                     //				System.out.format(" balance N= %8.2f%n" , balance);
                     printBalance = false;
                     System.out.printf(" balance T= $%8.2f%n" , balance);
