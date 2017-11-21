@@ -35,9 +35,9 @@ public class Centrelink {
 
     public static void main (String args[]) {
         Double balance = 0.0;
-        Double newstartFunds = 718.20;
-        Double rentMonthly = 1173.00;
-        Double lumoInstalment = 75.00;
+        Double newstartFunds	= 718.20;
+        Double rentMonthly		= 1173.00;
+        Double lumoInstalment	= 75.00;
         
         boolean printBalance = true;
 		int dateTolerance = 0;		// orig was 7 but set to zero to work for today
@@ -92,7 +92,7 @@ public class Centrelink {
                     //				System.out.print("R=");
                     printBalance = true;
                 }
-                if (Lumo.LumoInstalment(cldr, dateformatter)) {
+/*                if (Lumo.LumoInstalment(cldr, dateformatter)) {
                     lumo = true;
                     balance -= lumoInstalment;		//fudge for now but use a getter later
                     //				System.out.format(" balance R= %8.2f%n" , balance);
@@ -100,14 +100,14 @@ public class Centrelink {
                     //				System.out.print("R=");
                     printBalance = true;
                 }
-                
+*/                
                 if (printBalance) {
                     balanceCheck(cldr, dateformatter);
                     /* swapping to new system
                     if (rent     == true) System.out.print("R");
                     if (newstart == true) System.out.print("N");
                      */
-                    printNR();
+                    printNRL();
                     //				System.out.format(" balance N= %8.2f%n" , balance);
                     printBalance = false;
                     System.out.printf(" balance T= $%8.2f%n" , balance);
@@ -140,7 +140,7 @@ public class Centrelink {
         //&& (C.get(Calendar.DAY_OF_WEEK)==2) ))	 
     }
 
-    public static void printNR (){
+    public static void printNRL (){
         if (rent     == true) System.out.print("R"); else System.out.print(" ");
         if (newstart == true) System.out.print("N"); else System.out.print(" ");
         if (lumo     == true) System.out.print("L"); else System.out.print(" "); // intermediate code 

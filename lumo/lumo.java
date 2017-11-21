@@ -23,15 +23,23 @@ public class lumo {
     public static void main (String args[]) {
         Double LumoInstallments = 75.00;
         Integer Installments = 14;
+		int dateTolerance = 0;		// orig was 7 but set to zero to work for today
+		        
         Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
-
+        Calendar today = Calendar.getInstance(); 
+        
         cldr.set(Calendar.YEAR, 2017);          // set the year (start date for repayment) 11/09/2017
         cldr.set(Calendar.MONTH, 10);           // set the month September
         cldr.set(Calendar.DAY_OF_MONTH, 3); // set the date
         System.out.printf("Lumo Bill payment scheme%n%n");
         for (int n= 1; n<Installments;  n=n+1) {
             {
+			if ((cldr.get(Calendar.YEAR)  == today.get(Calendar.YEAR)) && 
+				(cldr.get(Calendar.DAY_OF_YEAR) <= (dateTolerance + today.get(Calendar.DAY_OF_YEAR))))
+			{System.out.printf(">"); // %n for newline
+			}else System.out.printf(" ");	
+				
                 balanceCheck(cldr, dateformatter);
                 System.out.printf("Installment %3d%n", n );
                 if (LumoFortnight(cldr, dateformatter)) {
