@@ -1,0 +1,15 @@
+Lumo Bill payment Instalment scheme
+
+> 11-Sep-2017 Installment   1
+> 25-Sep-2017 Installment   2
+> 09-Oct-2017 Installment   3
+> 23-Oct-2017 Installment   4
+> 06-Nov-2017 Installment   5
+> 20-Nov-2017 Installment   6
+  04-Dec-2017 Installment   7
+  18-Dec-2017 Installment   8
+  01-Jan-2018 Installment   9
+  15-Jan-2018 Installment  10
+  29-Jan-2018 Installment  11
+  12-Feb-2018 Installment  12
+  26-Feb-2018 Installment  13

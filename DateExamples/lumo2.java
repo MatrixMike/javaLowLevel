@@ -41,7 +41,7 @@ public class lumo2 {
 			{System.out.printf(">"); // %n for newline
 			}else System.out.printf(" ");
                 balanceCheck(cldr, dateformatter);		// prints the date
-                System.out.printf("Installment %3d%n", n );
+                System.out.printf("Installment %3d%n", n );  // make use of defined string "Instalment"
                 if (LumoFortnight(cldr, dateformatter)) {
 
                     System.out.println(Instalment + "s" + Instalments);

@@ -92,7 +92,7 @@ public class Centrelink {
                     //				System.out.print("R=");
                     printBalance = true;
                 }
-/*                if (Lumo.LumoInstalment(cldr, dateformatter)) {
+                if (Lumo.LumoInstalment(cldr, dateformatter)) {
                     lumo = true;
                     balance -= lumoInstalment;		//fudge for now but use a getter later
                     //				System.out.format(" balance R= %8.2f%n" , balance);
@@ -100,7 +100,7 @@ public class Centrelink {
                     //				System.out.print("R=");
                     printBalance = true;
                 }
-*/                
+                
                 if (printBalance) {
                     balanceCheck(cldr, dateformatter);
                     /* swapping to new system
