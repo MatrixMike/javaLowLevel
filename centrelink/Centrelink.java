@@ -30,7 +30,7 @@ public class Centrelink {
      * @author  (Mike Hewitt)
      * @version (1.1)
      */
-    public static boolean newstart, rent, lumo = false; 
+    public static boolean newstart, rent, lumof = false; 
 
 
     public static void main (String args[]) {
@@ -69,7 +69,7 @@ public class Centrelink {
 			
             newstart = false;
             rent     = false;
-            lumo     = false;
+            lumof     = false;
             {  // add here a check that month is Jan thru Nov -> so don't do weekCheck for December 
                 //			weekCheck(cldr, dateformatter);
                 //System.out.println(NewstartCredit(cldr, dateformatter));
@@ -89,15 +89,15 @@ public class Centrelink {
                     //				System.out.print("R=");
                     printBalance = true;
                 }
- /*               if (Lumo.LumoInstalment(cldr, dateformatter)) {
-                    lumo = true;
+                if (Lumo.LumoInstalment(cldr, dateformatter)) {
+                    lumof = true;
                     balance -= lumoInstalment;		//fudge for now but use a getter later
                     //				System.out.format(" balance R= %8.2f%n" , balance);
                     //				System.out.printf(" balance R= $%8.2f" , balance);
                     //				System.out.print("R=");
                     printBalance = true;
                 }
- */               
+                
                 if (printBalance) {
                     balanceCheck(cldr, dateformatter);
                     /* swapping to new system
@@ -144,7 +144,7 @@ public class Centrelink {
     public static void printNRL (){
         if (rent     == true) System.out.print("R"); else System.out.print(" ");
         if (newstart == true) System.out.print("N"); else System.out.print(" ");
-        if (lumo     == true) System.out.print("L"); else System.out.print(" "); // intermediate code 
+        if (lumof    == true) System.out.print("L"); else System.out.print(" "); // intermediate code 
 												// to provide framework to add lumo as an afterthought
     }
 /*
