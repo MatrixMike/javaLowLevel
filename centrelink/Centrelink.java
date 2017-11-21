@@ -51,6 +51,8 @@ public class Centrelink {
         form = NumberFormat.getCurrencyInstance(localesN[i]);
 
         Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
+        Calendar today = Calendar.getInstance(); 
+                
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
         cldr.set(Calendar.YEAR, 2017); // set the year
@@ -59,6 +61,9 @@ public class Centrelink {
 
         //	Calendar cldr = Calendar.set(2017, 1);
         for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {
+			if (cldr.get(Calendar.DAY_OF_YEAR) == today.get(Calendar.DAY_OF_YEAR))
+			{System.out.printf(">"); // %n for newline
+			}
             newstart = false;
             rent     = false;
             lumo     = false;

@@ -25,6 +25,7 @@ public class lumo2 {
         Double LumoInstalments = 75.00;
         Integer Instalments = 14;			// loop control
         Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
+        Calendar today = Calendar.getInstance(); 
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
 
         cldr.set(Calendar.YEAR, 2017);			// set the year (start date for repayment) 11/09/2017
@@ -33,6 +34,10 @@ public class lumo2 {
         System.out.printf("Lumo Bill payment " + Instalment +" "+ "scheme%n%n");
         for (int n= 1; n<Instalments;  n=n+1) {  
             {
+			if (cldr.get(Calendar.DAY_OF_YEAR) >= today.get(Calendar.DAY_OF_YEAR))
+			{
+				System.out.printf(">"); // %n for newline
+			}
                 balanceCheck(cldr, dateformatter);		// prints the date
                 System.out.printf(Instalment+ " "+ n + "%n");
                 if (LumoFortnight(cldr, dateformatter)) {
