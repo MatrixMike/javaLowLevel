@@ -40,7 +40,7 @@ public class Centrelink {
         Double lumoInstalment = 75.00;
         
         boolean printBalance = true;
-
+		int dateTolerance = 0;		// orig was 7 but set to zero to work for today
         int i = 120;
 
         Locale[] localesN = DecimalFormat.getAvailableLocales(); // appears same as NumberFormat
@@ -63,11 +63,12 @@ public class Centrelink {
         for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {
 /*
  *   if  ((cldr.get(Calendar.YEAR)  == today.get(Calendar.YEAR)) && 
- */
- 			
-			if (cldr.get(Calendar.DAY_OF_YEAR) <= (7 + today.get(Calendar.DAY_OF_YEAR)))
+ * => wanted to indicate by means of ">" the current date in the sequence but the current result
+ * is the dates before now (including today) are indicates with an ">"
+ */			if ((cldr.get(Calendar.YEAR)  == today.get(Calendar.YEAR)) && 
+				(cldr.get(Calendar.DAY_OF_YEAR) <= (dateTolerance + today.get(Calendar.DAY_OF_YEAR))))
 			{System.out.printf(">"); // %n for newline
-			}
+			}else System.out.printf(" ");
 			
             newstart = false;
             rent     = false;
