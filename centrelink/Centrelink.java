@@ -61,9 +61,14 @@ public class Centrelink {
 
         //	Calendar cldr = Calendar.set(2017, 1);
         for (int n= - cldr.get(Calendar.DAY_OF_MONTH); n<daysAhead;  n=n+1) {
+/*
+ *   if  ((cldr.get(Calendar.YEAR)  == today.get(Calendar.YEAR)) && 
+ */
+ 			
 			if (cldr.get(Calendar.DAY_OF_YEAR) <= (7 + today.get(Calendar.DAY_OF_YEAR)))
 			{System.out.printf(">"); // %n for newline
 			}
+			
             newstart = false;
             rent     = false;
             lumo     = false;
