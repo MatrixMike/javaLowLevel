@@ -1,0 +1,9 @@
+Discussion - tutoring explanation
+
+for each day in the range
+1. check if it is a newstart payment (in)
+2. check if it is a rent payment (out)
+
+if any (either) of the above then print a line with date, balance and an indication of what made the balance change
+
+Idea - system design - : Could set/clear flags to remember the above conditions and print values in an order chosen by output(display) requirements. That could be an order different from 
