@@ -3,8 +3,8 @@
  * 
  * Copyright 2015 Michael Hewitt <mikeh@electroteach.com>
  * 11 November 2015
- * 
- * 
+ * Obviously did not get changed to reflect the title, see Friday13.java
+ * Some code here that does not work correctly over year boundaries
  */
  /*
  DAY_OF_WEEK was 3 = Tuesday ; 5 =Thursday
