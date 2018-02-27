@@ -37,6 +37,11 @@ public class WOWdates {
 		System.out.printf("WOW 2018  " + Instalment +" "+ "scheme%n%n");
         for (int n= 1; n<Instalments;  n=n+1) {  
             {
+				if ((cldr.get(Calendar.YEAR)  == 2018) && (cldr.get(Calendar.MONTH) == 2 ) && (cldr.get(Calendar.DAY_OF_MONTH)  == 30))	// Good Friday
+				
+				{
+					System.out.print("Good Friday");
+					}
 			if ((cldr.get(Calendar.YEAR)  == today.get(Calendar.YEAR)) && 
 				(cldr.get(Calendar.DAY_OF_YEAR) <= (dateTolerance + today.get(Calendar.DAY_OF_YEAR))))
 			{System.out.printf(">"); // %n for newline
