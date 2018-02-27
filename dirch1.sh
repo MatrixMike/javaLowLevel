@@ -3,7 +3,8 @@
 # dirch1.sh
 #
 #cd ${0%/*}
-cd ~/javaLowLevel
+#cd ~/javaLowLevel  || exit
+cd /media/mikeh/mikeSpace/javaLowLevel  || exit
 pwd
 
 
