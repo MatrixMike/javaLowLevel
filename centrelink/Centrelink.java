@@ -24,7 +24,7 @@ import java.text.DecimalFormat;
 import java.util.Locale;
 
 public class Centrelink {
-    private static int daysAhead = 365;	
+    private static int daysAhead = 365*2;	
     /**
      * main()
      * @author  (Mike Hewitt)
