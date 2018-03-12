@@ -40,7 +40,9 @@ public class WOWdates {
 				if ((cldr.get(Calendar.YEAR)  == 2018) && (cldr.get(Calendar.MONTH) == 2 ) && (cldr.get(Calendar.DAY_OF_MONTH)  == 30))	// Good Friday
 				
 				{
-					System.out.print("Good Friday");
+					System.out.print("Good Friday {so postponed FD}");
+					//  n=n+7;   wrong
+					cldr.add(Calendar.DAY_OF_YEAR, +7);
 					}
 			if ((cldr.get(Calendar.YEAR)  == today.get(Calendar.YEAR)) && 
 				(cldr.get(Calendar.DAY_OF_YEAR) <= (dateTolerance + today.get(Calendar.DAY_OF_YEAR))))
