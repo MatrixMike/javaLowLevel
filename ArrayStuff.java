@@ -24,7 +24,7 @@ arl.add(-2);
 		String[] str = new String[10];
 		int size1 =  str.length;
 		
-		ArrayList<Integer> arr = new ArrayList(10);
+		ArrayList<Integer> arr = new ArrayList<Integer>(10);
 		int size = arr.size(); 
 		System.out.println("Array info = " + arr.size() +" " + str.length+" " + args.length);
 		System.out.println("Arraylist contains: " + arl.toString()); 
