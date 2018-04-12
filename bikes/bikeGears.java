@@ -1,10 +1,12 @@
 /*
  * bikeGears.java
  * 28.02.2017
+ * 12.04.2018
 
  * aim was to create a program that has a main calling a class.method that returns a List
  * 09.05.2017  execute with java from one directory level outside (above) 
- * java java bikes.bikeGears 
+ * javac bikes/bikeGears.java
+ * java bikes.bikeGears 
  */
 package bikes;
 import java.util.List;
@@ -14,13 +16,13 @@ import java.util.Arrays;
 class b1gears   {
   static List getFront() {
 	 StringBuilder sb1 = new StringBuilder();
-	 List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+	 List<Integer> list = Arrays.asList(24, 28, 21, 18, 16, 14, 13);
      list.forEach(s -> sb1.append(s +"q")); 
      return list;
 	}
 	  static List getRear() {
 	 StringBuilder sb1 = new StringBuilder();
-	 List<Integer> list = Arrays.asList(17, 20 , 23);
+	 List<Integer> list = Arrays.asList(38, 48, 28);
      list.forEach(s -> sb1.append(s +"q")); 
      return list;
 	}
