@@ -13,6 +13,8 @@ javac MainLocaleMap.java
 geany *.java
 </li><li>
 javac *.java
+</li><li>
+java MainLocale | grep Spanish
 </li>
 </ol>
 
