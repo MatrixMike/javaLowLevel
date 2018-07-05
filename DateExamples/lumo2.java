@@ -29,7 +29,8 @@ public class lumo2 {
         Calendar cldr = Calendar.getInstance();  // change 'M' - MM -> 2 digits; MMM -> 3 letters
         Calendar today = Calendar.getInstance(); 
         SimpleDateFormat dateformatter =   new SimpleDateFormat("dd-MMM-yyyy");  // ("dd-MM-yyyy E 'at' hh:mm:ss a zzz");
-
+ //       System.out.print(" "+ dateformatter.format(today.getTime())+" ");
+        
         cldr.set(Calendar.YEAR, 2017);			// set the year (start date for repayment) 11/09/2017
         cldr.set(Calendar.MONTH, 8);			// set the month September
         cldr.set(Calendar.DAY_OF_MONTH, 11);	// set the date

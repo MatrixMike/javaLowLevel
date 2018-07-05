@@ -52,7 +52,10 @@ public static void main(String[] args) {
 
 	System.out.println( "<body>") ;
 	System.out.println( "<H1 ALIGN=CENTER>My PIC projects</H1>") ;
+	Calendar today = Calendar.getInstance(); 
+
 	System.out.println( "<H2 ALIGN=CENTER>Wednesday, 11 January 2012</H2>") ;
+	System.out.print(" "+ dateformatter.format(today.getTime())+" ");
 	System.out.println( "<H3 ALIGN=CENTER>colour & background coming soon</H3>") ;
 
   // Monday, 9 January 2012   - ctrl shift right click
