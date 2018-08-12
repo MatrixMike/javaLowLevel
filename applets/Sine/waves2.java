@@ -155,8 +155,8 @@ int paintcount = 0;
  //       System.out.println("MJH freqb= "+Fb);
     }
 /**
- * @param 
- * @return 
+ * @param null
+ * @return string
  */
   public String getAppletInfo() {
     return "Draws a sin graph. Now using Lambdas and Streams  - 25-08-2015";
