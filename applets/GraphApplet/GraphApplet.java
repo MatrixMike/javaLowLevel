@@ -6,7 +6,8 @@
  * So to get the effect need to run javadoc on this source
  * this was worked on using geany 1.23.1 with javadoc Standard Doclet version 1.8.0_11
  */
-package mikeApplet;
+// following line commented as appletview rejected it : investigate why
+//package mikeApplet;
 import java.awt.Graphics;
 /**
  * An Applet to generate and display values as a function of x
