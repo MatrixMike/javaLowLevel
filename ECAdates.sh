@@ -1,5 +1,6 @@
 #!/bin/sh
-cd ~/workspace/MeetingsPredictor/bin
+#cd ... || exit
+cd "$HOME/workspace/MeetingsPredictor/bin"  || exit
 appletviewer LabelECA.LabelECA1447208706142.html
 
 
