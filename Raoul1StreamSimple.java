@@ -17,13 +17,21 @@ public class Raoul1StreamSimple {
 		Stream<String> LTP537G   = Stream.of("B","A","M","k","h","g","t","f","e","dp","S","R","D","U","P","c","N"); 
 /*        numbers.map(n -> n * 2)
                .forEach(System.out::println);
-*/        IC4017Q.map(n -> n + 0)
+*/        
+/*IC4017Q.map(n -> n + 0)
                .forEach(System.out::println);
+ */
+               
           System.out.println();
           LTP537G.map(n -> n + 0)    
                 .forEach((s) -> System.out.printf(" %s ",s)); 
                 
   //              forEach((s) -> System.out.printf("%s ", s))
+//		          LTP537G.map(n = 3)    
+//                .forEach((s) -> System.out.printf(" %s ",s)); 
+ //             LTP537G.get(3); 
+           System.out.println(); 
+ 	IC4017Q.limit(5).forEach(System.out::println); 	
     }
 }
 
