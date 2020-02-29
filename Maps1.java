@@ -13,7 +13,7 @@ public class Maps1 {
 	public static void main (String[] args) {
 		Map<Integer, String> mapT = new HashMap<>();
         Map<Integer, String> LTP  = new HashMap<>();
-        		Stream<Integer> IC4017Q   = Stream.of(3,2,4,7,10,1,5,6,9,11); 
+        Stream<Integer> IC4017Q   = Stream.of(3,2,4,7,10,1,5,6,9,11); 
 	for (int i = 10; i > 0; i--) {
 		mapT.putIfAbsent(i, "val" + i);
 	}
@@ -56,9 +56,14 @@ LTP.putIfAbsent(17, "N");
 	mapT.forEach((id1, val) -> System.out.println(val));
 	
 	LTP.forEach((id1, val) -> System.out.println(val));
-	
-    System.out.println(); 	
-	 	IC4017Q.limit(5).forEach(System.out::println); 
+// aim to input 4017 pin numbers and output LTP537G segment names	
+    System.out.println(); 
+    IC4017Q.limit(5).forEach(System.out::println); 	
+
+	 	// was IC4017Q.limit(5).forEach(System.out::println); 
+	 	LTP.forEach((id1, val) -> System.out.println(val)); 
+	 	//  .forEach((s) -> System.out.printf(" %s ",LTP(idl, )); 
+	 //	IC4017Q.limit(5).forEach
 	}
 }
 

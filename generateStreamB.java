@@ -44,7 +44,7 @@ import java.util.stream.Collectors.*;
 /**
  * print from stream and lambda
  */
-public static void stream_from_function() {
+public static void Istream_from_function() {
 			Predicate <Integer> badPrint = bp -> !((bp == 10) | (bp == 12) | (bp == 43)) ; // add 1,2,3
 			// add 62,78,83,139,145,146,153
       Locale[] array = Locale.getAvailableLocales();
@@ -59,12 +59,29 @@ public static void stream_from_function() {
                 // println or print 
                // .forEach(System.out::print(" ")); 
     }
+    
+public static void Cstream_from_function() {
+			Predicate <String> badPrint = bp -> !((bp == "I") | (bp == "J") | (bp == "Q")) ; // add 1,2,3
+			// add 62,78,83,139,145,146,153
+      Locale[] array = Locale.getAvailableLocales();
+        Stream.iterate("cd", c -> c + 1)  // want to generate characters from a to z
+               // .limit(35)
+              //  .skip(2)
+              //  .filter(multip5)
+                .filter(badPrint)		//seems to filter in a.o.t. filter out SO negate predicate above
+                .limit(26)
+                .forEach(System.out::println);  // change to print w/o a new line but a space between integers
+                // array[i].getDisplayLanguage()
+                // println or print 
+               // .forEach(System.out::print(" ")); 
+    }    
 /**
  * 
  * @param args info from command line
  * 
  */
 public static void main(String args[]) {
-        stream_from_function();
+        Istream_from_function();
+        Cstream_from_function();
     }
 }

@@ -24,7 +24,7 @@ public class MOOC1 {
     List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10,100);
     // make filter do some work - like only letting through the squares of x that are in range 50 to 70
 	//	list.skip(3);
-        list.forEach(s -> sb1.append(s +"q"));
+    //    list.forEach(s -> sb1.append(s +"q"));
         list.forEach(s -> sb1.append(s +"v"));
 	//	list.removeIf(s -> (s > 5) );	// change 99
 	// sb1.append(s +"X");
@@ -63,7 +63,7 @@ public class MOOC1 {
  // want to capitalise the first letter of word
  // also try CamelCase - concatentate words where non-first have capital first letters
 
-				StringBuilder sb = new StringBuilder();
+				StringBuilder sb  = new StringBuilder();
 				StringBuilder sb1 = new StringBuilder();
 //				list.removeIf(s -> (s.length() & 1) == 0);  // odd or even
 				list.removeIf(gr99);	// change 99
@@ -75,7 +75,7 @@ public class MOOC1 {
 				sb1.append("one");
 
 			//	  sb1.append(toUpperCase("two"));
-				list.replaceAll(String::toUpperCase);		//Z  similar structures - how to read what it means
+			//	list.replaceAll(String::toUpperCase);		//Z  similar structures - how to read what it means
 			//	list.forEach(System.out::println);			//Z print length and count of occurrence
 				list.forEach( v -> System.out.println("value is "+ v));
 				// also join all together but with designated separator
