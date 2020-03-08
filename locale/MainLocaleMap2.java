@@ -15,7 +15,7 @@ import java.util.TreeMap;
 //import java.util.*;
 import java.util.function.Predicate;
 
-public class MainLocaleMap {
+public class MainLocaleMap2 {
 
   public static void main(String[] args) {
 
@@ -23,7 +23,7 @@ public class MainLocaleMap {
 			Predicate <Integer> badPrint = bp -> !((bp == 10) | (bp == 12) | (bp == 43)) ;
     Calendar now = Calendar.getInstance();
 // create an object of locale class 
-    Locale[] array    =       Locale.getAvailableLocales();
+    Locale[] arrayN    =       Locale.getAvailableLocales();
     Locale[] localesN = NumberFormat.getAvailableLocales();
     
     Locale locale = Locale.getDefault();
@@ -31,7 +31,7 @@ public class MainLocaleMap {
 
 	//String here = Locale.getDisplayCountry();
 	for (int i = 0; i < localesN.length; i ++) {  
-		locale = array[i];
+		locale = arrayN[i];
     // call the getDisplayNames method
     if (i != 53){// (i != 53)
 // https://stackoverflow.com/questions/13612710/java-util-missingresourceexception-couldnt-find-3-letter-country-code-for-cs
@@ -49,10 +49,15 @@ public class MainLocaleMap {
          //https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
          System.out.printf("<%3d> ",i);  // change to field of 3 for neater grep sorting
          System.out.print(localesN[i].getDisplayName());
-         System.out.print("<"+array[i].getISO3Country()+ "> ");
-         System.out.print("<"+array[i].getISO3Language()+ "> ");
-   //mx      System.out.print(array[i].getDisplayLanguage());
-         System.out.print(localesN[i].getDisplayLanguage());
+         System.out.print("{"+arrayN[i].getISO3Country()+ "} ");
+         System.out.print("<"+arrayN[i].getISO3Language()+ "> ");
+         
+         if (localesN[i].getDisplayName()  == "Vietnamese"  ) //arrayN[i].getDisplayLanguage())
+             System.out.println("same");  // investigate the comparison facilities 
+             
+   //mx      System.out.print(arrayN[i].getDisplayLanguage());
+//         System.out.print("{"+arrayN[i].getISO3Country()+ "} ");
+         System.out.print("/"+localesN[i].getDisplayLanguage()+"/");
          System.out.printf(" %s %s %n", navMap1, navMap2);  // sorted alphabetically
 //         System.out.printf("%n%s %n", navMap2);  // sorted alphabetically
   //  System.out.printf("%n%s %n", navMap);  // sorted alphabetically
@@ -64,4 +69,4 @@ public class MainLocaleMap {
 
   }
 }
-
+//08.03.2020 10:42:44  add checks : if country == language or country not equal to language  : 
