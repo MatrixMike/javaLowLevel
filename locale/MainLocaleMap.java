@@ -30,10 +30,11 @@ public class MainLocaleMap {
          locale = Locale.FRANCE;
 
 	//String here = Locale.getDisplayCountry();
-	for (int i = 0; i < localesN.length; i ++) {  
+	for (int i = 401; i < localesN.length; i ++) {  
 		locale = array[i];
     // call the getDisplayNames method
-    if (i != 53){// (i != 53)
+    // 367 Vietnamese
+    if ( i!=57){// (i != 53)
 // https://stackoverflow.com/questions/13612710/java-util-missingresourceexception-couldnt-find-3-letter-country-code-for-cs
          Map<String, Integer> representations1 = now.getDisplayNames(
                Calendar.DAY_OF_WEEK, Calendar.LONG, locale);
