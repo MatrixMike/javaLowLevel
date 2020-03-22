@@ -30,10 +30,13 @@ public class MainLocaleMap2 {
          locale = Locale.FRANCE;
 
 	//String here = Locale.getDisplayCountry();
+	System.out.println("length= "+ localesN.length);
 	for (int i = 0; i < localesN.length; i ++) {  
+		// omit 58,62,67,83,400,441,475,493,511,595,611,614,619,691,747,746
 		locale = arrayN[i];
     // call the getDisplayNames method
-    if (i != 53){// (i != 53)
+    if (i !=57 & i != 67 & i!= 83 & i!=62 & i != 400 & i!=437 & i!=441 & 
+    i!=475 & i!=493 & i!=511 & i!=595 & i!=611 & i!=614 & i!=619 & i!=691  & i!=746 & i!=747){// (i != 53)
 // https://stackoverflow.com/questions/13612710/java-util-missingresourceexception-couldnt-find-3-letter-country-code-for-cs
          Map<String, Integer> representations1 = now.getDisplayNames(
                Calendar.DAY_OF_WEEK, Calendar.LONG, locale);
