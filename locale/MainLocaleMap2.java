@@ -52,9 +52,9 @@ public class MainLocaleMap2 {
          System.out.print("{"+arrayN[i].getISO3Country()+ "} ");
          System.out.print("<"+arrayN[i].getISO3Language()+ "> ");
          
-         if (localesN[i].getDisplayName()  == "Vietnamese"  ) //arrayN[i].getDisplayLanguage())
-             System.out.println("same");  // investigate the comparison facilities 
-             
+         if (localesN[i].getDisplayName().toString() == "Vietnamese"  ) //arrayN[i].getDisplayLanguage())
+             System.out.println("Tsame");  // investigate the comparison facilities - // extra as same found in samedi
+          System.out.println( ">>> "+ localesN[i].getDisplayName().toString()  );
    //mx      System.out.print(arrayN[i].getDisplayLanguage());
 //         System.out.print("{"+arrayN[i].getISO3Country()+ "} ");
          System.out.print("/"+localesN[i].getDisplayLanguage()+"/");
