@@ -1,0 +1,5 @@
+<691> Arabic (World)Exception in thread "main" java.util.MissingResourceException: Couldn't find 3-letter country code for 001
+	at java.base/java.util.Locale.getISO3Country(Locale.java:1739)
+	at MainLocaleMap2.main(MainLocaleMap2.java:55)
+
+

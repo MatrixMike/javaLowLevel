@@ -31,12 +31,17 @@ public class MainLocaleMap2 {
 
 	//String here = Locale.getDisplayCountry();
 	System.out.println("length= "+ localesN.length);
+	String viet = "Vietnamese";
+	System.out.println(viet);
 	for (int i = 0; i < localesN.length; i ++) {  
 		// omit 58,62,67,83,400,441,475,493,511,595,611,614,619,691,747,746
 		locale = arrayN[i];
+
     // call the getDisplayNames method
     if (i !=57 & i != 67 & i!= 83 & i!=62 & i != 400 & i!=437 & i!=441 & 
-    i!=475 & i!=493 & i!=511 & i!=595 & i!=611 & i!=614 & i!=619 & i!=691  & i!=746 & i!=747){// (i != 53)
+    i!=475 & i!=493 & i!=511 & i!=595 & i!=611 & i!=614 & i!=619 )
+    {
+		// (i != 53)
 // https://stackoverflow.com/questions/13612710/java-util-missingresourceexception-couldnt-find-3-letter-country-code-for-cs
          Map<String, Integer> representations1 = now.getDisplayNames(
                Calendar.DAY_OF_WEEK, Calendar.LONG, locale);
@@ -52,11 +57,12 @@ public class MainLocaleMap2 {
          //https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
          System.out.printf("<%3d> ",i);  // change to field of 3 for neater grep sorting
          System.out.print(localesN[i].getDisplayName());
-         System.out.print("{"+arrayN[i].getISO3Country()+ "} ");
+ //        System.out.print("{"+arrayN[i].getISO3Country()+ "} ");
          System.out.print("<"+arrayN[i].getISO3Language()+ "> ");
-         
-         if (localesN[i].getDisplayName().toString() == "Vietnamese"  ) //arrayN[i].getDisplayLanguage())
-             System.out.println("Tsame");  // investigate the comparison facilities - // extra as same found in samedi
+			System.out.println("*"+localesN[i].getDisplayName().toString()+"*");         
+         if (localesN[i].getDisplayName().toString().equals(viet)  ) //arrayN[i].getDisplayLanguage())
+			System.out.println("Tsame");  // investigate the comparison facilities - // extra as same found in samedi
+
           System.out.println( ">>> "+ localesN[i].getDisplayName().toString()  );
    //mx      System.out.print(arrayN[i].getDisplayLanguage());
 //         System.out.print("{"+arrayN[i].getISO3Country()+ "} ");
