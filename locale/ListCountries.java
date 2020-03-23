@@ -21,7 +21,7 @@ public class ListCountries {
     public static void main(String... args){
 
         // Create a collection of all available countries
-//        List<Country> countries = new ArrayList<Country>();
+        List<Country> countries = new ArrayList<Country>();
 
         // Map ISO countries to custom country object
         String[] countryCodes = Locale.getISOCountries();
