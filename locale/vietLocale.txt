@@ -1,0 +1,7 @@
+Vietnamese
+< 17> Vietnamese (Vietnam)<vie> *Vietnamese (Vietnam)*
+>>> Vietnamese (Vietnam)
+/Vietnamese/ {Chủ nhật=1, Thứ ba=3, Thứ bảy=7, Thứ hai=2, Thứ năm=5, Thứ sáu=6, Thứ tư=4} {tháng ba=2, tháng bảy=6, tháng chín=8, tháng hai=1, tháng mười=9, tháng mười hai=11, tháng mười một=10, tháng một=0, tháng năm=4, tháng sáu=5, tháng tám=7, tháng tư=3} 
+<121> Vietnamese<vie> *Vietnamese*
+>>> Vietnamese
+/Vietnamese/ {Chủ nhật=1, Thứ ba=3, Thứ bảy=7, Thứ hai=2, Thứ năm=5, Thứ sáu=6, Thứ tư=4} {tháng ba=2, tháng bảy=6, tháng chín=8, tháng hai=1, tháng mười=9, tháng mười hai=11, tháng mười một=10, tháng một=0, tháng năm=4, tháng sáu=5, tháng tám=7, tháng tư=3} 
