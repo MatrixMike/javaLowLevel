@@ -27,6 +27,7 @@ public class ListCountryGDGquiz {
     }
 
     public void run() {
+		char c = 'R';
 	String country = "";
 	String open = "CEFGHIJKLMNSTUVWXYZ";
 	String closed = "ABDOPQR";
@@ -45,8 +46,9 @@ public class ListCountryGDGquiz {
 		country = 	obj.getDisplayCountry();
 		System.out.println(country);
 	}
-	while (fr.current() != CharacterIterator.DONE) {  // test current  ; was CharacterIterator.DONE  // "R"
-		
+	while (fr.current() !=  c ) {  // test current  ; was CharacterIterator.DONE  // "R"
+		// 
+		System.out.print(fr.current()+" X ");
 		fr.next();
 		}
 	System.out.println("Done");
