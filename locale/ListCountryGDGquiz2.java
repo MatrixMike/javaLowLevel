@@ -13,7 +13,7 @@ import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
 import java.util.Locale;
 
-public class ListCountryGDGquiz {
+public class ListCountryGDGquiz2 {
 /* open letters   in uppercase - CEFGHIJKLMNSTUVWXYZ
  * closed letters in uppercase - ABDOPQR
  */
@@ -21,13 +21,14 @@ public class ListCountryGDGquiz {
     public static void main(String[] args) {
 
 
-	ListCountry obj = new ListCountry();  // explanation needed here
+/*	ListCountry obj = new ListCountry();  // explanation needed here
 	obj.run();
 
     }
 
     public void run() {
-		char c = 'R';
+*/		
+		char c = 'E';
 	String country = "";
 	String open = "CEFGHIJKLMNSTUVWXYZ";
 	String closed = "ABDOPQR";
