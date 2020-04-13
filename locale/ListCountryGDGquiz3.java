@@ -13,7 +13,7 @@ import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
 import java.util.Locale;
 
-public class ListCountryGDGquiz2 {
+public class ListCountryGDGquiz3 {
 /* open letters   in uppercase - CEFGHIJKLMNSTUVWXYZ
  * closed letters in uppercase - ABDOPQR
  */
@@ -21,14 +21,12 @@ public class ListCountryGDGquiz2 {
     public static void main(String[] args) {
 
 
-/*	ListCountry obj = new ListCountry();  // explanation needed here
+	ListCountry obj = new ListCountry();
 	obj.run();
 
     }
 
     public void run() {
-*/		
-		char c = 'E';
 	String country = "";
 	String open = "CEFGHIJKLMNSTUVWXYZ";
 	String closed = "ABDOPQR";
@@ -38,7 +36,7 @@ public class ListCountryGDGquiz2 {
 	CharacterIterator fr = new StringCharacterIterator(france);
 	String[] locales = Locale.getISOCountries();
 
-/*	for (String countryCode : locales) {
+	for (String countryCode : locales) {
 
 		Locale obj = new Locale("", countryCode);
 
@@ -47,13 +45,10 @@ public class ListCountryGDGquiz2 {
 		country = 	obj.getDisplayCountry();
 		System.out.println(country);
 	}
-	*/
-	while (fr.current() !=  c ) {  // test current  ; was CharacterIterator.DONE  // "R"
-		// 
-		System.out.print(fr.current());
+	while (fr.current() != CharacterIterator.DONE) {  // test current  ; was CharacterIterator.DONE  // "R"
+		// if current == member of closed 
 		fr.next();
 		}
-	System.out.println();
 	System.out.println("Done");
     }
 	
