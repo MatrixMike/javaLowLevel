@@ -8,7 +8,7 @@
  * javac bikes/bikeGears.java
  * java bikes.bikeGears 
  */
-package bikes;
+// package bikes;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
