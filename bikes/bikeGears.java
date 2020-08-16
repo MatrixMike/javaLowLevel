@@ -8,7 +8,7 @@
  * javac bikes/bikeGears.java
  * java bikes.bikeGears 
  */
-package bikes;
+// package bikes;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,6 +30,7 @@ class b1gears   {
 
 public class bikeGears {	
 	public static void main (String[] args) {
+		System.out.println("start");
 		System.out.println(b1gears.getFront());
 	//	System.out.println(b1gears.getFront().length());
 		System.out.println(b1gears.getRear());
