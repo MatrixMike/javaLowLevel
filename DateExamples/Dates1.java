@@ -1,7 +1,7 @@
 /*
  * Dates1.java
  * 
- * Copyright 2015 Mike <mhewitt@theiet.org>
+ * Copyright 2020 Mike <matroxmike@icloud.com>
  * 
  * 
  * 
