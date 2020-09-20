@@ -1,28 +1,11 @@
+//package com.coders.location;
+
 /*
  * Repeater1.java
  * 
  * Copyright 2020 Michael <mikeh@mikeh-K52N>
  * 
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- * 
- * 
  */
-
-
-//package  PersonSorter;
 
 
 import java.util.List;
@@ -35,9 +18,11 @@ import java.time.Period;
 public class Repeater1 {
 
     public enum Sex {
-        MALE, FEMALE
+        MALE, FEMALE  // could use this as UHF VHF indicator
     }
-
+    public enum LOS_Band {  // Line of Sight Band
+        VHF, UHF  // could use this as UHF VHF indicator
+    }
     String name;
     LocalDate birthday;
     Sex gender;
@@ -47,11 +32,14 @@ public class Repeater1 {
     String callsign;
 
     Repeater1(String nameArg, LocalDate birthdayArg,
-        Sex genderArg, String emailArg) {
+        Sex genderArg, String emailArg   , String callsignArg , Double latitudeArg, Double longitudeArg ) {
         name = nameArg;
         birthday = birthdayArg;
         gender = genderArg;
         emailAddress = emailArg;
+        callsign = callsignArg;    
+        latitude = latitudeArg;
+        longitude = longitudeArg; 
     }
 
     public int getAge() {
@@ -63,6 +51,11 @@ public class Repeater1 {
     public void printPerson() {
       System.out.println(name + ", " + this.getAge());
     }
+    
+    public void printRepeaterLatitude() {
+      System.out.println(callsign + ", " + this.getLatitude());
+    }    
+    
 /*
   *
   * @return gender
@@ -72,11 +65,28 @@ public class Repeater1 {
     }
 /*
   *
+  * @return gender
+  */
+           /*public LOS_Band getLOSBand() {
+                 return LOSBand;                 
+    }                                   */
+    
+/*
+  *
   * @return name
   */
     public String getName() {
         return name;
     }
+    
+/*
+  *
+  * @return callsign
+  */
+    public String getCallsign() {
+        return callsign;
+    }    
+    
 /*
   *
   * @return emailAddress
@@ -89,6 +99,13 @@ public class Repeater1 {
     public LocalDate getBirthday() {
         return birthday;
     }
+    
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }  
+    public double getLatitude() {
+        return latitude;
+    }      
 
     public static int compareByAge(Repeater1 a, Repeater1 b) {
         return a.birthday.compareTo(b.birthday);
@@ -100,31 +117,54 @@ public class Repeater1 {
 
         roster.add(
             new Repeater1(
-            "VK3RMH",
-            IsoChronology.INSTANCE.date(1980, 6, 20),
+            "QTHR",
+            IsoChronology.INSTANCE.date(2020, 9, 20),
             Repeater1.Sex.MALE,
-            "fred@example.com"));
+            "fred@example.com",
+            "QTHR",
+            1.1,
+            2.2));
+
+        roster.add(
+            new Repeater1(
+            "VK3RMH",
+            IsoChronology.INSTANCE.date(1980, 9, 20),
+            Repeater1.Sex.MALE,
+            "fred@example.com"
+            ,"VK3RMH",
+            1.1,
+            2.2));
         
 
         roster.add(
             new Repeater1(
             "VK3RGL",
-            IsoChronology.INSTANCE.date(1980, 6, 20),
+            IsoChronology.INSTANCE.date(1980, 9, 20),
             Repeater1.Sex.MALE,
-            "fred@example.com"));
+            "fred@example.com",
+            "VK3RGL",
+            1.1,
+            2.2));
             
         roster.add(
             new Repeater1(
-            "Fred",
+            "VK3RMM",
             IsoChronology.INSTANCE.date(1980, 6, 20),
             Repeater1.Sex.MALE,
-            "fred@example.com"));
+            "fred@example.com",
+            "VK3RMM",
+            -37.3896290,
+            144.5960390));
             
         roster.add(
             new Repeater1(
             "Jane",
             IsoChronology.INSTANCE.date(1990, 7, 15),
-            Repeater1.Sex.FEMALE, "jane@example.com"));
+            Repeater1.Sex.FEMALE, "jane@example.com",
+            "Jane",
+            1.1,
+            2.2));
+/*            
         roster.add(
             new Repeater1(
             "George",
@@ -135,12 +175,13 @@ public class Repeater1 {
             "Bob",
             IsoChronology.INSTANCE.date(2000, 9, 12),
             Repeater1.Sex.MALE, "bob@example.com"));
+            * 
             roster.add(
             new Repeater1(
             "Mike",
             IsoChronology.INSTANCE.date(1955,11,1),
             Repeater1.Sex.MALE, "mike@electroteach.com"));
-
+*/
         return roster;
     }
 
