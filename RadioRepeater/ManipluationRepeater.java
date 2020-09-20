@@ -35,13 +35,14 @@ public class ManipluationRepeater {
 
         System.out.println();
 //         Consumer<Repeater1> giveRaise = e -> e.setLatitude(e.getSalary() / 100 * 5 + e.getSalary());
-        Consumer<Repeater1> giveRaise1 = e -> e.setLatitude(e.getLatitude() / 100 * 5 + e.getLatitude());
-        
+        Consumer<Repeater1> giveRaise1 = e -> e.setLatitude(e.getLatitude()* 2 + e.getLatitude());
+        roster.forEach(giveRaise1);        
         roster
             .stream()
  //           .sorted()    // with zero arguments causes crash -> investigate proper usage
             .forEach(p -> p.printRepeaterLatitude());
         Consumer<Repeater1> giveRaise2 = e -> e.setLatitude(e.getLatitude() / 100 * 5 + e.getLatitude());  
+                roster.forEach(giveRaise2);
                 roster
             .stream()
  //           .sorted()    // with zero arguments causes crash -> investigate proper usage
