@@ -2,7 +2,7 @@
  * printTest1.java
  * 
  * Copyright 2020 Mike <mike@tecra>
- * 
+ * 18.08.2020 16:22:21
  */
 
 public class printTest1 {
