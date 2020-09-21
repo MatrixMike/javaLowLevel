@@ -1,6 +1,6 @@
 import java.io.Serializable;
 import java.time.LocalDate;
-
+// look up POJO   Plain Old java Object
 
 public class EmployeeBean implements Serializable {
 	 
