@@ -30,9 +30,10 @@ public class Repeater1 {
     Double latitude;
     Double longitude;
     String callsign;
+    Integer range;    // distance in metres from current location
 
     Repeater1(String nameArg, LocalDate birthdayArg,
-        Sex genderArg, String emailArg   , String callsignArg , Double latitudeArg, Double longitudeArg ) {
+        Sex genderArg, String emailArg   , String callsignArg , Double latitudeArg, Double longitudeArg, Integer rangeArg ) {
         name = nameArg;
         birthday = birthdayArg;
         gender = genderArg;
@@ -40,6 +41,8 @@ public class Repeater1 {
         callsign = callsignArg;    
         latitude = latitudeArg;
         longitude = longitudeArg; 
+        range = rangeArg;
+        
     }
 
     public int getAge() {
@@ -86,6 +89,17 @@ public class Repeater1 {
     public String getCallsign() {
         return callsign;
     }    
+ 
+    public void setRange(Integer range) {
+        this.range = range;
+    }  
+    public Integer getRange() {
+        return range;
+    } 
+    public void printRange() {
+      System.out.println(callsign + ", " + this.getRange());
+    }  
+ 
     
 /*
   *
@@ -123,7 +137,8 @@ public class Repeater1 {
             "fred@example.com",
             "QTHR",
             1.1,
-            2.2));
+            2.2,
+            0));
 
         roster.add(
             new Repeater1(
@@ -133,7 +148,8 @@ public class Repeater1 {
             "fred@example.com"
             ,"VK3RMH",
             1.1,
-            2.2));
+            2.2,
+            0));
         
 
         roster.add(
@@ -144,7 +160,8 @@ public class Repeater1 {
             "fred@example.com",
             "VK3RGL",
             1.1,
-            2.2));
+            2.2,
+            0));
             
         roster.add(
             new Repeater1(
@@ -154,7 +171,8 @@ public class Repeater1 {
             "fred@example.com",
             "VK3RMM",
             -37.3896290,
-            144.5960390));
+            144.5960390,
+            0));
             
         roster.add(
             new Repeater1(
@@ -163,7 +181,8 @@ public class Repeater1 {
             Repeater1.Sex.FEMALE, "jane@example.com",
             "Jane",
             1.1,
-            2.2));
+            2.2,
+            0));
 /*            
         roster.add(
             new Repeater1(

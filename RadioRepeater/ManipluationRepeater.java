@@ -47,7 +47,16 @@ public class ManipluationRepeater {
             .stream()
  //           .sorted()    // with zero arguments causes crash -> investigate proper usage
             .forEach(p -> p.printRepeaterLatitude());  
-            
+                    System.out.println();
+        System.out.println("Repeater callsigns and their ranges: "); 
+        Consumer<Repeater1> initialArbitaryV = e -> e.setRange(e.getRange() + 100 * 5 + e.getRange()); 
+		roster.forEach(initialArbitaryV);
+            roster
+            .stream()
+ //         .sorted()    // with zero arguments causes crash -> investigate proper usage
+            .forEach(p -> p.printRange());  
+        System.out.println();    
+                        
         // 2. Sum of ages with sum operation
 
         Integer totalAge = roster
