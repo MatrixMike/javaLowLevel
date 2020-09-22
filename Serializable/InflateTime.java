@@ -35,6 +35,6 @@ String filename = "time.ser";
    System.out.println("Flattened time: " + time.getTime());
    System.out.println();
       // print out the current time
-   System.out.println("Current time: " + Calendar.getInstance().getTime());
+   System.out.println("Current time:   " + Calendar.getInstance().getTime());
  }
 }
