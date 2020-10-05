@@ -2,11 +2,8 @@
 
 /*
  * Repeater1.java
- * 
  * Copyright 2020 Michael <mikeh@mikeh-K52N>
- * 
  */
-
 
 import java.util.List;
 import java.util.ArrayList;
@@ -38,11 +35,11 @@ public class Repeater1 {
         birthday = birthdayArg;
         gender = genderArg;
         emailAddress = emailArg;
-        callsign = callsignArg;    
+        callsign = callsignArg;
         latitude = latitudeArg;
-        longitude = longitudeArg; 
+        longitude = longitudeArg;
         range = rangeArg;
-        
+
     }
 
     public int getAge() {
@@ -54,11 +51,11 @@ public class Repeater1 {
     public void printPerson() {
       System.out.println(name + ", " + this.getAge());
     }
-    
+
     public void printRepeaterLatitude() {
       System.out.println(callsign + ", " + this.getLatitude());
-    }    
-    
+    }
+
 /*
   *
   * @return gender
@@ -71,9 +68,9 @@ public class Repeater1 {
   * @return gender
   */
            /*public LOS_Band getLOSBand() {
-                 return LOSBand;                 
+                 return LOSBand;
     }                                   */
-    
+
 /*
   *
   * @return name
@@ -81,26 +78,26 @@ public class Repeater1 {
     public String getName() {
         return name;
     }
-    
+
 /*
   *
   * @return callsign
   */
     public String getCallsign() {
         return callsign;
-    }    
- 
+    }
+
     public void setRange(Integer range) {
         this.range = range;
-    }  
+    }
     public Integer getRange() {
         return range;
-    } 
+    }
     public void printRange() {
       System.out.println(callsign + ", " + this.getRange());
-    }  
+    }
 
-    
+
 /*
   *
   * @return emailAddress
@@ -113,13 +110,13 @@ public class Repeater1 {
     public LocalDate getBirthday() {
         return birthday;
     }
-    
+
     public void setLatitude(double latitude) {
         this.latitude = latitude;
-    }  
+    }
     public double getLatitude() {
         return latitude;
-    }      
+    }
 
     public static int compareByAge(Repeater1 a, Repeater1 b) {
         return a.birthday.compareTo(b.birthday);
@@ -150,7 +147,7 @@ public class Repeater1 {
             1.1,
             2.2,
             0));
-        
+
 
         roster.add(
             new Repeater1(
@@ -162,7 +159,7 @@ public class Repeater1 {
             1.1,
             2.2,
             0));
-            
+
         roster.add(
             new Repeater1(
             "VK3RMM",
@@ -173,7 +170,7 @@ public class Repeater1 {
             -37.3896290,
             144.5960390,
             0));
-            
+
         roster.add(
             new Repeater1(
             "Jane",
@@ -183,7 +180,7 @@ public class Repeater1 {
             1.1,
             2.2,
             0));
-/*            
+/*
         roster.add(
             new Repeater1(
             "George",
@@ -194,7 +191,7 @@ public class Repeater1 {
             "Bob",
             IsoChronology.INSTANCE.date(2000, 9, 12),
             Repeater1.Sex.MALE, "bob@example.com"));
-            * 
+            *
             roster.add(
             new Repeater1(
             "Mike",

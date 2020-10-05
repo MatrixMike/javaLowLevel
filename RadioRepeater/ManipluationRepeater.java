@@ -3,6 +3,7 @@
 /*
  * 24.09.2015 19:02:45
  * 20.09.2020 13:14:28
+
  */
 //package  PersonSorter;
 
@@ -17,16 +18,13 @@ import java.util.function.Predicate;
 
 import java.util.function.*;
 import java.lang.Double;
-//import com.google.android.gms.location.*;   // how to fix this - 
+//import com.google.android.gms.location.*;   // how to fix this -
 
-public class ManipluationRepeater { 
+public class ManipluationRepeater {
 
     public static void main(String... args) {
-
         // Create sample data
-
         List<Repeater1> roster = Repeater1.createRoster();
-
         System.out.println("Contents of roster:");
 
         roster
@@ -37,31 +35,31 @@ public class ManipluationRepeater {
         System.out.println();
 //         Consumer<Repeater1> giveRaise = e -> e.setLatitude(e.getSalary() / 100 * 5 + e.getSalary());
         Consumer<Repeater1> giveRaise1 = e -> e.setLatitude(e.getLatitude()* 2 + e.getLatitude());
-        roster.forEach(giveRaise1);        
+        roster.forEach(giveRaise1);
         roster
             .stream()
  //           .sorted()    // with zero arguments causes crash -> investigate proper usage
             .forEach(p -> p.printRepeaterLatitude());
-        Consumer<Repeater1> giveRaise2 = e -> e.setLatitude(e.getLatitude() / 100 * 5 + e.getLatitude());  
+        Consumer<Repeater1> giveRaise2 = e -> e.setLatitude(e.getLatitude() / 100 * 5 + e.getLatitude());
                 roster.forEach(giveRaise2);
                 roster
             .stream()
  //           .sorted()    // with zero arguments causes crash -> investigate proper usage
-            .forEach(p -> p.printRepeaterLatitude());  
+            .forEach(p -> p.printRepeaterLatitude());
                     System.out.println();
 /*                                                Location.distanceBetween(wayLatitude, wayLongitude,
                                 homeLatitude, homeLongitude, results);
                                 */
-                                
-        System.out.println("Repeater callsigns and their ranges: "); 
-        Consumer<Repeater1> initialArbitaryV = e -> e.setRange(e.getRange() + 100 * 5 + e.getRange()); 
+
+        System.out.println("Repeater callsigns and their ranges: ");
+        Consumer<Repeater1> initialArbitaryV = e -> e.setRange(e.getRange() + 100 * 5 + e.getRange());
 		roster.forEach(initialArbitaryV);
             roster
             .stream()
  //         .sorted()    // with zero arguments causes crash -> investigate proper usage
-            .forEach(p -> p.printRange());  
-        System.out.println();    
-                        
+            .forEach(p -> p.printRange());
+        System.out.println();
+
         // 2. Sum of ages with sum operation
 
         Integer totalAge = roster
