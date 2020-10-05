@@ -17,6 +17,7 @@ import java.util.function.Predicate;
 
 import java.util.function.*;
 import java.lang.Double;
+//import com.google.android.gms.location.*;   // how to fix this - 
 
 public class ManipluationRepeater { 
 
@@ -48,6 +49,10 @@ public class ManipluationRepeater {
  //           .sorted()    // with zero arguments causes crash -> investigate proper usage
             .forEach(p -> p.printRepeaterLatitude());  
                     System.out.println();
+/*                                                Location.distanceBetween(wayLatitude, wayLongitude,
+                                homeLatitude, homeLongitude, results);
+                                */
+                                
         System.out.println("Repeater callsigns and their ranges: "); 
         Consumer<Repeater1> initialArbitaryV = e -> e.setRange(e.getRange() + 100 * 5 + e.getRange()); 
 		roster.forEach(initialArbitaryV);

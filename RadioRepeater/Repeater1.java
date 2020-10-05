@@ -99,7 +99,7 @@ public class Repeater1 {
     public void printRange() {
       System.out.println(callsign + ", " + this.getRange());
     }  
- 
+
     
 /*
   *
