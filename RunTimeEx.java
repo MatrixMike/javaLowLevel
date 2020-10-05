@@ -11,7 +11,7 @@
  * @author Piet
  */
 //public class Opgave20 {
-public class RunTimeEx {
+public class RTE1 {
     public static void main(String... args) {
         System.out.print("a");
         try {
