@@ -35,8 +35,8 @@ for(Object obj : list)
 {
     Class<?> clazz = obj.getClass();
 
-    Field field = org.springframework.util.ReflectionUtils.findField(clazz, "value");
-    org.springframework.util.ReflectionUtils.makeAccessible(field);
+ //   Field field = org.springframework.util.ReflectionUtils.findField(clazz, "value");
+ //   org.springframework.util.ReflectionUtils.makeAccessible(field);
 
     System.out.println("value=" + field.get(obj));
 }	
