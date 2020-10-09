@@ -16,7 +16,7 @@ public class ArrayListEx1 {
 	List<String> al = new ArrayList<String>();
 	al = Arrays.asList(Dogs);
 	for(String s: al){
-	   System.out.println(s.trim());
+	   System.out.println(s.trim().toUpperCase());
 	}
    }
 }
