@@ -53,6 +53,8 @@ public class main {
 	Parent  p1 = new Parent();
     Integer x = p1.getCv();
     p1.setName("  UPpeRCASE WORD  ");
+    p1.setText2("some text 2");
+    p1.setCv(34);
 	String s = p1.getName().toLowerCase().trim().trim(); //.toUpperCase(Locale.getDefault()); 
 	
 	// https://www.tutorialspoint.com/java/java_string_touppercase.htm
