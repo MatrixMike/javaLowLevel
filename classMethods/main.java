@@ -57,7 +57,7 @@ public class main {
 	
 	// https://www.tutorialspoint.com/java/java_string_touppercase.htm
 	System.out.println(s);
-//	System.out.println(toString());
+	System.out.println(p1.toString());
 	}
 }
 
