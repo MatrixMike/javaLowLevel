@@ -17,6 +17,7 @@ public class ListTest1 {
         drealv.add(-3.4);
         drealv.add(3.1);
         Collections.sort(drealv);
+        System.out.println(drealv);
 	}
 }
 
