@@ -18,7 +18,14 @@ public class ArrayListEx1 {
 	
 	List<String> al = new ArrayList<String>();
 	al = Arrays.asList(Dogs);
-	Collections.sort(al);
+	Collections
+//	.toUpperCase()
+	.sort(al);
+	        Collections.reverse (al);
+	for(String s: al){
+	   System.out.println(s);
+	}
+	System.out.println();
 	for(String s: al){
 	   System.out.println(s.trim().toUpperCase().toLowerCase());
 	}
