@@ -25,14 +25,14 @@ public class ManipluationRepeater {
     public static void main(String... args) {
         // Create sample data
         List<Repeater1> roster = Repeater1.createRoster();
-        System.out.println("Contents of roster:");
+        System.out.println("Contents of Repeater collection:");
 
         roster
             .stream()
  //           .sorted()    // with zero arguments causes crash -> investigate proper usage
             .forEach(p -> p.printPerson());
 
-        System.out.println();
+        System.out.println("end");
 //         Consumer<Repeater1> giveRaise = e -> e.setLatitude(e.getSalary() / 100 * 5 + e.getSalary());
         Consumer<Repeater1> giveRaise1 = e -> e.setLatitude(e.getLatitude()* 2 + e.getLatitude());
         roster.forEach(giveRaise1);
@@ -42,7 +42,8 @@ public class ManipluationRepeater {
             .forEach(p -> p.printRepeaterLatitude());
         Consumer<Repeater1> giveRaise2 = e -> e.setLatitude(e.getLatitude() / 100 * 5 + e.getLatitude());
                 roster.forEach(giveRaise2);
-                roster
+                
+            roster
             .stream()
  //           .sorted()    // with zero arguments causes crash -> investigate proper usage
             .forEach(p -> p.printRepeaterLatitude());
@@ -111,8 +112,8 @@ public class ManipluationRepeater {
         System.out.println("Members by gender:");
         Map<Repeater1.Sex, List<Repeater1>> byGender =
             roster
-                .stream()
-                .collect(
+            .stream()
+            .collect(
                     Collectors.groupingBy(Repeater1::getGender));
 
         List<Map.Entry<Repeater1.Sex, List<Repeater1>>>
@@ -133,8 +134,8 @@ public class ManipluationRepeater {
         System.out.println("\nNames by gender:");
         Map<Repeater1.Sex, List<String>> namesByGender =
             roster
-                .stream()
-                .collect(
+            .stream()
+            .collect(
                      Collectors.groupingBy(
                          Repeater1::getGender,
                          Collectors.mapping(
@@ -158,8 +159,8 @@ public class ManipluationRepeater {
         System.out.println("\nTotal age by gender:");
         Map<Repeater1.Sex, Integer> totalAgeByGender =
             roster
-                .stream()
-                .collect(
+            .stream()
+            .collect(
                      Collectors.groupingBy(
                          Repeater1::getGender,
                          Collectors.reducing(
@@ -182,8 +183,8 @@ public class ManipluationRepeater {
         System.out.println("Average age by gender:");
         Map<Repeater1.Sex, Double> averageAgeByGender =
             roster
-                .stream()
-                .collect(
+            .stream()
+            .collect(
                      Collectors.groupingBy(
                          Repeater1::getGender,
                          Collectors.averagingInt(Repeater1::getAge)));
