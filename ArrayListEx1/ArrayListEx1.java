@@ -12,7 +12,14 @@ public class ArrayListEx1 {
             "bull dog","cavalier King Charles Spaniel",
             " Pit Bull ", "Pug", "Golden Retriever ",
             "German Shepherd", "Great Dane", "Boxer"};
-            
+    ArrayList<String> names = new ArrayList<String>(); 
+
+    names.add("Bob");
+    names.add("David");
+    names.add("Cindy");  
+    names.add("Amy");  
+    Collections.sort(names);
+    System.out.println("names " + names + "names end");
 	String num = "22,33,44,55,66,77";
 	String str[] = num.split(",");
 	
@@ -33,7 +40,7 @@ public class ArrayListEx1 {
 //	al.add("Donkey");			// make this work
 //  ArrayList<String> al = Arrays.asList(Dogs);
 
-//		System.out.println(al);
+		System.out.println(al);
 				System.out.println("end2");
 	Collections
 //	.toUpperCase()
