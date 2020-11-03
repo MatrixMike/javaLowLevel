@@ -102,11 +102,17 @@ public class ManipluationRepeater {
       //      .filter(GenderMale)
             .map(p -> p.getName())
             .collect(Collectors.toList());
-
-        namesOfMaleMembersCollect
+            
+        List<String> nameOfCallSigns = roster
+            .stream()
+      //      .filter(GenderMale)
+            .map(p -> p.getCallsign())
+            .collect(Collectors.toList());
+            
+/*       namesOfMaleMembersCollect
             .stream()
             .forEach(p -> System.out.println(p));
-
+*/
         // 6. Group members by gender
 
         System.out.println("Members by gender:");
