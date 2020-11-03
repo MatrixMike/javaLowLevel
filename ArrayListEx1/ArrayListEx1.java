@@ -36,7 +36,7 @@ public class ArrayListEx1 {
 	System.out.println(values + "end1");
 	System.out.println(list2 + "end2");
 		System.out.println("start");	
-	List<String> al =          /*new ArrayList<String>();*/ Arrays.asList(Dogs);
+    List<String> al =          /*new ArrayList<String>();*/ Arrays.asList(Dogs);
 //	al.add("Donkey");			// make this work
 //  ArrayList<String> al = Arrays.asList(Dogs);
 

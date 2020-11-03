@@ -108,6 +108,11 @@ public class ManipluationRepeater {
       //      .filter(GenderMale)
             .map(p -> p.getCallsign())
             .collect(Collectors.toList());
+            System.out.println("now a list of callsigns");
+            
+             nameOfCallSigns
+            .stream()
+            .forEach(p -> System.out.println(p));
             
 /*       namesOfMaleMembersCollect
             .stream()
