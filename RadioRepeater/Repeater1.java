@@ -121,11 +121,8 @@ public class Repeater1 {
     public static int compareByAge(Repeater1 a, Repeater1 b) {
         return a.birthday.compareTo(b.birthday);
     }
-
+    public static List<Repeater1> roster = new ArrayList<>();
     public static List<Repeater1> createRoster() {
-
-        List<Repeater1> roster = new ArrayList<>();
-
         roster.add(
             new Repeater1(
             "QTHR",
