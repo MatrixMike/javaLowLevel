@@ -30,7 +30,8 @@ public class Repeater1 {
     Integer range;    // distance in metres from current location
 
     Repeater1(String nameArg, LocalDate birthdayArg,
-        Sex genderArg, String emailArg   , String callsignArg , Double latitudeArg, Double longitudeArg, Integer rangeArg ) {
+        Sex genderArg, String emailArg   , String callsignArg , 
+        Double latitudeArg, Double longitudeArg, Integer rangeArg ) {
         name = nameArg;
         birthday = birthdayArg;
         gender = genderArg;
@@ -197,7 +198,9 @@ public class Repeater1 {
 */
         return roster;
     }
-
+public static void main(String args[]) {
+	createRoster();
+	}
 }
 
 
