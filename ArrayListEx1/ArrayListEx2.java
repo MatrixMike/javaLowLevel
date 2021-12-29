@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 //  import java.util.Arrays;
-public class ArrayListEx1 {
+public class ArrayListEx2 {
     public static void main(String args[]){
 		    String[] Dogs = {"Greyhounds","boxers","dobermans","Husky",
             "Labrador", "Chow Chow", " Beagle ",
@@ -17,9 +17,9 @@ public class ArrayListEx1 {
 	al2 = java.util.Arrays.asList(Dogs);    // using fully qualified name before working in Android App
 //	al2.add("cat");
 	
-/*	for(String s: al2){
+	for(String s: al2){
 	   System.out.println(s.trim().toLowerCase());
 	}
-	*/
+	
    }
 }
