@@ -34,6 +34,7 @@ class b1gears   {
 					
 	   System.out.println(n + 2);
 	}
+	   listr.forEach((n) -> System.out.println(n));
 	System.out.println(sb1);
      return listr;
 	}
