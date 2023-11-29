@@ -115,7 +115,7 @@ public class CountryUtil {
 
   }
 
-  public static void printCounties(List<Country> countries) {
+  public static void printCountries(List<Country> countries) {
 
     for (Country country : countries) {
 
@@ -133,7 +133,7 @@ public class CountryUtil {
 
     List<Country> countries = getCountries(Locale.US);
 
-    printCounties(countries);
+    printCountries(countries);
 
     System.out.println("---- List of countries in Japanese ----");
 
@@ -141,7 +141,7 @@ public class CountryUtil {
 
     countries = getCountries(Locale.JAPANESE);
 
-    printCounties(countries);
+    printCountries(countries);
 
   }
 
